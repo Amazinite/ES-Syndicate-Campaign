@@ -456,7 +456,7 @@ mission "syndicate notice player"
 		"assisted the syndicate" ++
 		conversation 
 			`Upon landing, you receive a message from Nate Remington.`
-			`	"I hope you've been having a good time since I last met you, captain. I'm calling to inform you that I've made sure that a few higher-ups in the Syndicate know of you helping on Lodestone. You've been given <payment> for your services. Safe travels, captain."`
+			`	"I hope you've been having a good time since I last met you, Captain. I'm calling to inform you that I've made sure that a few higher-ups in the Syndicate know of you helping on Lodestone. You've been given <payment> for your services. Safe travels, captain."`
 				decline
 
 
