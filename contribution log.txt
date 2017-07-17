@@ -1,0 +1,9 @@
+The following is a list of users who have contributed to the Syndicate campaign. This list will be updated with more users as they help. Any and all help will be recorded, from catching the typos of writers to contributing ideas and writing.
+
+Derpy Horse: Writing, storyboard
+Messy: Storyboard
+Elyssaen: Contributing ideas
+
+# To do
+Kiko: Writing of the Sal string
+Jafdy: Set the random conditions of the intro missions based on the number of times the player has assisted the Syndicate

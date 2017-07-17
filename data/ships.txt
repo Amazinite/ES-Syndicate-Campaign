@@ -1,0 +1,119 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+shipyard "Syndicate Advanced"
+	Prospector
+
+ship "Prospector"
+	sprite "ship/prospector"
+	attributes
+		category "Heavy Freighter"
+		"cost" 9720000
+		"shields" 16300
+		"hull" 6600
+		"required crew" 46
+		"bunks" 74
+		"mass" 640
+		"drag" 9.1
+		"heat dissipation" .55
+		"fuel capacity" 600
+		"cargo space" 1000
+		"outfit space" 590
+		"weapon capacity" 260
+		"engine capacity" 160
+		weapon
+			"blast radius" 220
+			"shield damage" 2200
+			"hull damage" 1100
+			"hit force" 3300
+	outfits
+		"Proton Gun" 3
+		"Heavy Laser" 5
+		"Heavy Anti-Missile Turret" 2
+		"Anti-Missile Turret"
+		
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"Liquid Nitrogen Cooler"
+		
+		"X3700 Ion Thruster"
+		"X2700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Scram Drive"
+		
+	engine -70 179.5
+	engine 70 179.5
+	engine 0 196.5
+	gun -88.5 91.5 "Proton Gun"
+	gun 88.5 91.5 "Proton Gun"
+	gun -11.5 -138
+	gun 11.5 -138
+	gun -7.5 -129.5
+	gun 7.5 -129.5
+	gun 0 -120.5
+	gun 0 33 "Proton Gun"
+	turret -14 87.5
+	turret 14 87.5
+	turret 0 120 "Anti-Missile Turret"
+	fighter -52 40 under back
+	fighter 52 40 under back
+	fighter -70 100 over
+	fighter 70 100 over
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	explode "huge explosion" 4
+	"final explode" "final explosion large"
+	description "The Prospector mining freighter is a recent development from Syndicated Shipyard and the only ship in human space specifcally designed for the purpose of mining. With more cargo space than even a Bulk Freighter and enough guns to tear apart any asteroid in an instant, the Prospector is the absolute mining vessel for any merchant miner."
+
+ship "Prospector" "Prospector (Warship)" # Overheats after about 1.5 minutes of constant firing, thrusting, and turning
+	outfits
+		"Proton Gun" 8
+		"Heavy Anti-Missile Turret"
+		"Armageddon Core"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+		"Liquid Helium Cooler"
+		"Water Coolant System"
+		"Outfits Expansion" 3
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+	turret
+	turret
+	turret "Heavy Anti-Missile Turret"
+
+ship "Prospector" "Prospector (Mark II)" # Overheats after about one minute of constant firing, thrusting, turning, and afterburning
+	outfits
+		"Particle Cannon" 5
+		"Torpedo Launcher" 3
+		"Torpedo" 90
+		"Heavy Anti-Missile Turret"
+		"Armageddon Core"
+		"LP073a Battery Pack"
+		"S-970 Regenerator"
+		"Liquid Helium Cooler"
+		"Outfits Expansion" 4
+		"Ionic Afterburner"
+		"X3700 Ion Thruster"
+		"X4200 Ion Steering"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+	gun
+	gun
+	gun "Particle Cannon"
+	gun "Particle Cannon"
+	gun "Particle Cannon"
+	gun "Particle Cannon"
+	gun "Particle Cannon"
+	gun
