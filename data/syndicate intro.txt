@@ -26,23 +26,23 @@ mission "Syndi Workers 0"
 	passengers 11 13
 	on offer
 		conversation
-			`Entering the spaceport, a large group of roughly a dozen people standing around and asking captains who walk by for help catches your eye. They are all in dirty clothing, and only a few of them appear to be carrying any luggage.` 
+			`Entering the spaceport, you notice a large group of roughly a dozen people approaching pilot after pilot, but are repeatedly turned away. They are all in dirty clothing, and a small number appear to be carrying luggage.` 
 				choice
-					`	(Ask what they need.)`
+					`	(Ask them what they need.)`
 					`	(Ignore them.)`
-						defer
-			`	You talk with the group for a few minutes and learn that they have all recently been released from their five year contracts with the Syndicate and they are now looking for a captain to take them to <destination>, one of the Syndicate frontier worlds, to start new lives. Most of them were born on Earth and moved to <origin> together after signing contracts with the Syndicate.`
-			`	The Syndicate pays for transportation and housing for people coming to their factory worlds, but in exchange these people must work on those factory worlds for five years. After the time is up, the workers are allowed to leave and many of them decide to move to cheap frontier worlds as this group is doing. Even though the conditions in the factories can be bad, many of those in the group say that it was all worth it. One even says that he would rather stay on <origin> for another five years than to go back to Earth.`
+						decline
+			`	After talking to the group, you learn that they were recently released from their five-year factory contracts with the Syndicate, and are now looking for someone to take them to <destination>, a Syndicate frontier world, to start new lives. Most of them were born on Earth and moved to <origin> together after signing contracts with the Syndicate.`
+			`	The Syndicate offers five-year contracts which cover transportation and housing fees on their frontier worlds. After their contracts expire, most workers choose to leave their factory worlds and settle on cheaper frontier worlds, as this group hopes to do.`
 			`	There are <bunks> people in the group, and they say that they will pay you <payment> to transport them.`
 			choice
 				`	"I'd be glad to help you."`
 					accept
 				`	"Sorry, I don't have enough room."`
-					defer
+					decline
 					
 	on complete
 		payment 5000 100
-		dialog `Your passengers pick up their things and make their way off of your ship, stepping onto the surface of <planet> for the first time. They hand you the <payment> that they have and walk over to the immigrations desk in the spaceport, staffed by a woman in a Syndicate uniform.`
+		dialog `Your passengers pick up their belongings and make their way off of your ship, stepping onto the surface of <planet> for the first time. You see them as they slowly make their way over to the immigrations desk in the spaceport, which is staffed by a woman in Syndicate uniform.`
 
 
 
