@@ -8,6 +8,217 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+ship "Timer Ship (1 Minute)"
+	attributes
+		"hull" 1
+		"mass" 100
+		"drag" 5
+		"automaton" 1
+		"thrust" 10
+		"turn" 600
+	outfits
+		"Timer Weapon (1 Minute)"
+	gun 0 0
+
+outfit "Timer Weapon (1 Minute)"
+	category "Guns"
+	thumbnail "outfit/unknown"
+	"gun ports" -1
+	weapon
+		"velocity" 10
+		"lifetime" 20
+		"reload" 600
+		"trigger radius" 200
+		"blast radius" 20
+		"hull damage" 0.5
+
+event "mining in alnair"
+	system Alnair
+		remove fleet "Small Core Pirates"
+		remove fleet "Large Core Pirates"
+
+event "reset alnair"
+	system Alnair
+		add fleet "Small Core Pirates" 3000
+		add fleet "Large Core Pirates" 4000
+
+mission "Syndi Prospecting 0"
+	name "The Mining Business" # Rename?
+	description "Escort the <npc> to Alnair and distract or destroy any pirates in the system until the captain of the <npc> hails you. Then return to <destination>."
+	waypoint "Alnair"
+	source
+		government Syndicate
+		near Alnair 1 100
+	to offer
+		random < 60
+		not "event: war begins"
+	on offer
+		conversation
+			`You notice an interceptor on the landing pad across from the <ship> that appears to be in a rough condition. There are a few places along the hull that have large dents and there is smoke coming from the engine section. While one of the crew members are repairing the damage, the rest are unloading large crates from the back of the interceptor. You catch one of them opening the crates to reveal large amounts of minerals: copper, iron, and even platinum.`
+			choice
+				`	(Approach them.)`
+				`	(Ignore them.)`
+					decline
+					
+			`	As you walk over, one of the crew members, presumably the captain given that he is overseeing the other crew work, notices you.`
+			`	"Hello there. Is there anything I can help you with?"`
+			choice
+				`	"What happened to your ship?"`
+				`	"Where did you get all of those minerals?"`
+			
+			`	The captain looks over to his ship. "Oh, that's nothing. We were busy mining asteroids in Alnair when a pirate interceptor jumped in from Persian and nearly blasted us out of the sky. Lucky for us we were able to grab the good asteroids before they could. Had they not showed up, we would probably have gotten a lot more."`
+			choice
+				`	"Where do you find the best asteroids?"`
+					goto asteroids
+				`	"How could you put your life on the line just for some minerals?"`
+			
+			`	"Asteroid mining can be a really rewarding job, so sometimes the money is worth it."`
+			label asteroids
+			`	"Unfortunately, the best asteroids tend to be in the most dangerous places since miners have trouble safely getting to them. Places like Alnair or Moktar where pirates like to visit and few merchants are willing to go given how close they are to the pirate worlds."`
+			`	"Tell you what, your ship looks capable. Do you think you could cover me and distract the pirates while I mine. I'd give you part of the profit if you did."`
+			choice
+				`	"Sure thing."`
+				`	"No. I don't want to get myself killed doing someone else's work."` # Rewrite
+					decline
+			
+			`	"Great. I'll mark Alnair on your map. Just make sure the pirates don't blow me up while I mine. I'll hail you when I'm ready to leave the system, then we can return here."`
+				accept
+	
+	on accept
+		event "mining in alnair"
+	
+	npc accompany
+		personality escort mining
+		government Merchant
+		ship "Hawk" "Johansen's Glory"
+	
+	npc disable
+		personality unconstrained nemesis heroic
+		system Alnair
+		government "Test Dummy"
+		ship "Timer Ship (1 Minute)" "Timer"
+		dialog `The merchant captain hails your ship. "My cargo hold is full. Let's head back to <destination>."`
+	
+	npc
+		personality nemesis heroic staying
+		system Alnair
+		government Pirate
+		fleet
+			names pirate
+			variant
+				"Sparrow"
+	
+	on fail
+		event "reset alnair"
+	
+	on complete
+		event "reset alnair"
+		payment 30000
+		conversation
+			`	After selling off the minerals on the local market, the merchant captain returns to you and hands you <payment>. "Thanks for the help, Captain. By the way, my name's Adam Johansen. And you are?"`
+			`	"<first> <last>," you respond.`
+			`	"Well it was a pleasure working with you, Captain <last>. I suppose I might be seeing you in the future if you stick around the Core."`
+
+
+
+mission "Syndicate Prospecting 1"
+	name "Mining For Iron"
+	description "Mine 10 tons of iron for Johansen, then land on <destination>."
+	source
+		government Syndicate
+	to offer
+		random < 40
+		not "event: war begins"
+		has "Syndicate Prospecting 0: done"
+	on offer
+		conversation # Rewrite
+			`While browsing through the local market, you bump into Adam Johansen. "<last>, what a coincidence seeing you here. I was just getting ready to go out on another mining trip. Do you think you could join me? I'll need you to mine ten tons of iron. You can find iron asteroids in most systems. Just keep an eye out for reddish looking asteroids. What do you say?"`
+			choice
+				`	"I'll get my ship ready."`
+					accept
+				`	"Sorry, but I have other things to do."`
+					decline
+	
+	npc accompany
+		personality escort mining
+		government Merchant
+		ship "Hawk" "Johansen's Glory"
+	
+	on visit
+		dialog `You have landed on <planet>, but you either don't have ten iron mined or have left Johansen behind. Continue mining for iron or wait for Johansen to enter the system to complete this mission.`
+	
+	on complete
+		outfit "Iron" -10
+		payment 36000
+		dialog `Johansen has his crew unload the ten tons of iron off your ship before paying you <payment>. "Thanks again, Captain. I always appreciate the help."`
+
+
+
+mission "Syndicate Prospecting 2"
+	landing
+	name "Prospecting For Ores"
+	description "Fly through the Oblate, Moktar, Cardax, and Volax systems, then report to <destination> so that Johansen may read your ship's scanner logs to check for minable asteroids."
+	waypoint "Oblate"
+	waypoint "Moktar"
+	waypoint "Cardax"
+	waypoint "Volax"
+	destination Foundry
+	source
+		government Syndicate Republic
+	to offer
+		random < 30
+		not "event: war begins"
+		has "Syndicate Prospecting 1: done"
+	on offer
+		dialog `Upon landing, you receive a message from Adam Johansen, the miner you met in the Core. "Hello there, Captain. I was wondering if you could scout out the asteroid content in a few uninhabited systems for me so I can know if they're worth mining in. I'll mark the systems on your map. Meet me on <destination> once you're finished and I'll pay you <payment>."`
+	
+	on complete
+		event "sawyer stranded" 10
+		payment 60000
+		dialog 
+			`Johansen begins analyzing the scanner logs that you gave him and determining which sytems would be good to mine in.`
+			`"Moktar and Cardax are pretty sparse. Volax doesn't even have any asteroids worth mining. Oblate seem like it would be the best to mine in out of these systems, but even then it's nothing special compared to what can be found in inhabited systems. Well, that was a bust. Here's <payment> anyways. Thanks for saving me the trouble."`
+
+
+
+event "sawyer stranded"
+
+mission "Syndicate Prospecting 3" # Must add a branch in FW Reconciliation if this mission is done
+	landing
+	name "Saving the Day"
+	description "Repair the <npc> in the Durax system and escort them safely back to <destination>."
+	source 
+		near Durax 1 6
+	destination Foundry
+	source
+		government Syndicate Republic
+	to offer
+		not "event: war begins"
+		has "sawyer stranded"
+	on offer
+		dialog
+			`You receive another message from Johansen. "Captain <last>, I need you to do something really important. Although I wouldn't normally ask you to do this, you're the closest person I know who can help. I just got word that a friend of mine is stranded in Durax. His ship is named the <npc>. Please rescue him and escort his ship to <destination>."`
+	
+	npc accompany save
+		system Durax
+		personality escort derelict timid
+		government Syndicate
+		ship "Star Queen" "Pathos"
+	
+	on complete
+		payment 150000
+		conversation # Rewrite, especially the last paragraph
+			`You land on <planet> with the <npc>. A bearded man steps off of the <npc> and runs over to you.`
+			`	"Thank you so much, captain. I wouldn't be alive if you hadn't come to save me."`
+			`	As the man begins to explain his situation to you, he turns and notices Johansen across the spaceport.`
+			`	"Johansen! You won't believe what just happened to me!" he yells to Johansen.`
+			`	"I know, Sawyer," Johansen responds. "I'm the one who sent Captain <last> to save you."`
+			`	The two men talk to each other for a few minutes, not even paying attention to your presence. After a while, Johansen reaches into his pocket and hands you a credit chip worth an astounding <credits>.`
+			`	"Thank you for saving Sawyer, <last>. I wish that I had more to give you."`
+			`	You talk with Sawyer and Johansen for a little longer before they leave. You learn that Sawyer is a physicist working for the Syndicate, and he has been for many years now. He was investigating an anomaly that was detected in Durax when a pirate fleet destroyed his escorts and left him stranded. Sawyer eventually leaves to his ship to return his findings to the Syndicate, and Johansen goes to his own to continue his mining adventures, leaving you to do whatever you want.`
+
+
+
 mission "Syndi Workers 0"
 	name "Free at Last"
 	description "Transport a number of former Syndicate factory workers to their new home on the frontier world of <destination>."
