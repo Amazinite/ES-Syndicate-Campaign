@@ -94,7 +94,7 @@ mission "Syndi Workers 2"
 	description "Transport these <bunks> strike breakers to <destination> so that goods production may return to normal."
 	minor
 	source
-		government Syndicatee
+		government Syndicate
 	destination
 	to offer
 		random < 50
