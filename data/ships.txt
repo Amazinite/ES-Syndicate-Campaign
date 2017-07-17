@@ -73,7 +73,7 @@ ship "Prospector"
 	explode "large explosion" 8
 	explode "huge explosion" 4
 	"final explode" "final explosion large"
-	description "The Prospector is a recent development from Syndicated Shipyards, and is the only ship in human space specifically designed for mining operations. With more cargo space than even a Bulk Freighter and enough weaponry to instantly shred asteroids, the Prospector is indomitable in it's role as a mining freighter. Due to its staggering cargo capacity, the Prospector is also highly versatile, and can be retrofitted as a capable transport or warship."
+	description "The Prospector is a recent development from Syndicated Shipyards, and is the only ship in human space specifically designed for mining operations. With more cargo space than even a Bulk Freighter and enough weaponry to instantly shred asteroids, the Prospector is indomitable in its role as a mining freighter. Due to its staggering cargo capacity, however, the Prospector is also highly versatile, and can be retrofitted as a capable transport or warship."
 
 ship "Prospector" "Prospector (Warship)" # Overheats after about 1.5 minutes of constant firing, thrusting, and turning
 	outfits
