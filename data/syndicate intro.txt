@@ -302,7 +302,7 @@ mission "Syndi Workers 1"
 
 mission "Syndi Workers 2"
 	name "Workers Strike"
-	description "Transport these <bunks> strike breakers to <destination> so that goods production may return to normal."
+	description "Transport these <bunks> strike breakers to <destination> so that goods production may return to normal." # Rewrite
 	minor
 	source
 		government Syndicate
