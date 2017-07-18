@@ -57,6 +57,7 @@ outfit "Warhead Loading System" # Name subject to change
 	"outfit space" -65
 	"weapon capacity" -65
 	"gun ports" -1
+	"nuke capacity" 5
 	weapon
 		sprite "projectile/missile"
 			"no repeat"
