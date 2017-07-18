@@ -409,7 +409,7 @@ mission "Syndi Relations 0"
 	npc save accompany
 		government Syndicate
 		personality escort timid
-		ship "Arrow" "(Insert meaningful name here)"
+		ship "Arrow" "Libidine"
 	
 	on visit
 		dialog `You have landed on <planet>, but you left Nate Remington behind! Wait for his ship to enter the system before landing.`
@@ -436,7 +436,7 @@ mission "Syndi Relations 1"
 	npc save accompany
 		government Syndicate
 		personality escort timid
-		ship "Arrow" "(Insert meaningful name here)"
+		ship "Arrow" "Libidine"
 	
 	on complete
 		payment 200000
@@ -509,7 +509,7 @@ mission "Syndi Relations 2"
 					decline
 	
 	on complete
-		conversation
+		conversation # Rewrite
 			`Nate gives you the coordinates to his villa, which is located far from the spaceport city in a mountainous region of the planet. It's almost night where Nate's villa is on <planet> and the sun setting over the mountains is a beautiful sight. It's easy to see why Nate speaks so highly of this place.`
 			`	The villa itself is huge, far more than it seems that a single person could use. It is located part way up a mountain and overlooks a lake in the valley below. The front of the villa has four landing pads able to fit smaller transport ships. A larger ship would have to take up multiple landing pads, leaving all but the largest ships unable to land.`
 			choice
@@ -624,7 +624,7 @@ event "lodestone eruption"
 
 
 
-mission "Syndi Relations 3B" # Looking for a rewrite
+mission "Syndi Relations 3B" # Rewrite
 	name "Lodestone Disaster"
 	description "Drop Nate Remington off on <destination> so that he may begin work on getting the spaceport rebuilt.."
 	landing
@@ -742,7 +742,7 @@ mission "Syndi Security 0"
 
 
 
-mission "Syndi Security 1" # Looking for a rewrite
+mission "Syndi Security 1" # Rewrite
 	name "Defending the Frontier"
 	description "Fight off the pirates in the Zaurak system before landing on <planet>."
 	landing
@@ -785,7 +785,7 @@ mission "Syndi Security 1" # Looking for a rewrite
 	npc save
 		personality escort heroic
 		government Syndicate
-		ship "Vanguard (Particle)" "(Insert meaningful name here)"
+		ship "Vanguard (Particle)" "S.S. Atticus"
 	
 	npc kill
 		personality heroic staying
@@ -863,7 +863,7 @@ mission "Syndi Security 2"
 	npc
 		personality escort heroic
 		government Syndicate
-		ship "Vanguard (Particle)" "(Insert meaningful name here)"
+		ship "Vanguard (Particle)" "S.S. Atticus"
 	
 	npc kill
 		personality heroic staying
