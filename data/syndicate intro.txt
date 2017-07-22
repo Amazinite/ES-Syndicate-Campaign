@@ -259,7 +259,7 @@ mission "Syndi Workers 0"
 
 mission "Syndi Workers 1"
 	name "Picking Up the Slack"
-	description "Syndicate employees have asked you to replace the job of a merchant who quit. Pick up a group of 20 workers on <stopovers> who have recently signed contracts with the Syndicate and transport them to <destination>."
+	description "Syndicate employees have asked you to replace the job of a ship captain who quit. Pick up a group of 20 workers on <stopovers> who have recently signed contracts with the Syndicate and transport them to <destination>."
 	minor
 	source
 		government Syndicate
@@ -296,7 +296,7 @@ mission "Syndi Workers 1"
 		conversation
 			`The workers leave your ship in almost the same fashion as they got on it, with either a face of excitement or reluctance. For of many them, this was their first time flying on a spacecraft, and most happened to throw up after the first jump, if not the second. Syndicate employees board your ship after all the workers step off and clean any mess that was left behind, almost as if this is routine.`
 			`	The same Syndicate employee that hired you to transport the workers is watching on the side. Once all the workers have been escorted out of the spaceport and the Syndicate employees have cleaned your ship's interior, he walks up to you and hands you <payment>.`
-			`	"Thank you for accepting this job on such short notice, captain. Merchants don't quit work for the Syndicate often, but when they do it's a hassle to replace them. Have a nice day."`
+			`	"Thank you for accepting this job on such short notice, captain. Ship captains don't quit work for the Syndicate often, but when they do it's a hassle to replace them. Have a nice day."`
 
 
 
@@ -315,7 +315,7 @@ mission "Syndi Workers 2"
 	passengers 15 20
 	on offer
 		conversation
-			`Upon landing on <origin>, you are greeted by a Syndicate employee wearing what appears to be riot gear. "Hello <first> <last>. I, along with a number of others, require transport to <destination> in order to end a workers strike that has broken out which is hurting Syndicate profits. There are <bunks> of us in total. You will be paid <payment>."`
+			`Upon landing on <origin>, you are greeted by a Syndicate employee wearing what appears to be riot gear. "Hello, <first> <last>. I, along with a number of others, require transport to <destination> in order to end a worker's strike that has broken out which is hurting Syndicate profits. There are <bunks> of us in total. You will be paid <payment>."`
 			choice
 				`	"I'd be glad to."`
 					accept
@@ -354,7 +354,7 @@ mission "Syndi Relations 0"
 	on offer
 		conversation
 			`Wandering through the spaceport, you notice how underdeveloped it seems when compared to the spaceport of other worlds. There are far fewer landing pads, and those that do exist seem poorly built. This must be a frontier world, worlds which are on the very edge of human space and have yet to reach a level of development close to that of richer regions like the Paradise Worlds.`
-			`	"Beautiful, isn't it?" a sarcastic voice says behind you. The owner of the voice steps foward so that he is next to you, but doesn't look directly at you. He is a young man who looks almost like the kind of guy you would find in a movie or a boy band. Despite that it is currently dusk at the spaceport and the sun is to his back, he is wearing sunglasses. In his left hand he is holding a bottle that even from a few feet away you can smell is alcohol, and judging by the label it is a very expensive brand.`
+			`	"Beautiful, isn't it?" a sarcastic voice says behind you. The owner of the voice steps foward so that he is next to you, but doesn't look directly at you. He is a young man who looks like the kind of guy you would find in a movie or a boy band. Despite that it is currently dusk at the spaceport and the sun is to his back, he is wearing sunglasses. In his left hand he is holding a bottle that you can smell is alcohol from a few feet away; and judging by the label it is a very expensive brand.`
 			`	"Welcome to <origin>, one of the worst places to be in the galaxy." He turns to face you with his free hand outstreched.`
 			choice
 				`	(Shake his hand.)`
@@ -426,7 +426,7 @@ mission "Syndi Relations 1"
 		has "chosen sides"
 	blocked "You have landed on <origin>, but you don't have enough space for the cargo. Return when you have at least 10 tons of free cargo space."
 	cargo "infrastructure materials" 10
-	
+	U
 	on offer
 		conversation
 			`Remington contacts the spaceport authorities and informs them that you will be carrying the other half of the cargo. Ten tons of boxes full of all sorts of materials are loaded onto your ship.`
@@ -511,7 +511,7 @@ mission "Syndi Relations 2"
 	on complete
 		conversation # Rewrite
 			`Nate gives you the coordinates to his villa, which is located far from the spaceport city in a mountainous region of the planet. It's almost night where Nate's villa is on <planet> and the sun setting over the mountains is a beautiful sight. It's easy to see why Nate speaks so highly of this place.`
-			`	The villa itself is huge, far more than it seems that a single person could use. It is located part way up a mountain and overlooks a lake in the valley below. The front of the villa has four landing pads able to fit smaller transport ships. A larger ship would have to take up multiple landing pads, leaving all but the largest ships unable to land.`
+			`	The villa itself is huge, far more than it seems that a single person could use. It is located part way up a mountain and overlooks a lake in the valley below. The front of the villa has four landing pads able to fit smaller transport ships. A larger ship would have to take up multiple landing pads, leaving all but the smallest ships unable to land.`
 			choice
 				`	"This is where you live?"`
 				`	"This place is massive."`
@@ -594,7 +594,7 @@ mission "Syndi Relations 3A"
 				`	(Pull the covers over your head.)`
 					goto covers
 			
-			`	"That's good. Just so you know, my ship is suppose to get back from the shop tomorrow. I don't have anywhere I need to go until then, so you can leave whenever you want."`
+			`	"That's good. Just so you know, my ship is supposed to get back from the shop tomorrow. I don't have anywhere I need to go until then, so you can leave whenever you want."`
 				goto disaster
 			
 			label covers
@@ -699,7 +699,7 @@ mission "Syndi Security 0"
 	on offer
 		conversation
 			`As soon as you step off of your ship you are approached by a man in a uniform marked with a logo that reads "Syndicated Security." He flashes a badge at you that you assume is some sort of identification, but the glare from the spaceport lights stops you from being able to read it.`
-			`	"Hello there, <first> <last>. My name is Thomas Hensley and I am going to need to speak with you."`
+			`	"Hello there, <first> <last>. My name is Thomas Hensley and I need to speak with you."`
 			choice
 				`	"Am I being detained?"`
 				`	"What is it that you need, sir?"`
@@ -710,11 +710,11 @@ mission "Syndi Security 0"
 			label need
 			branch remington
 				has "Syndi Relations 3B: done"
-			`	Hensley removes the sunglasses that he is wearing and hangs them on his shirt collar. "I have spoken to a number of Syndicate employees who have had previous interactions with you, and they have spoken rather highly of you. Your combat record has also caught my eye; you have proven yourself as someone who is not to be messed with. As such, hearing that you were landing on <origin>, I was hoping you would be willing to help me, or should I say the Syndicate, thin some pirate influence up near the frontier worlds."`
+			`	Hensley removes the sunglasses that he is wearing and hangs them on his shirt collar. "I have spoken to a number of Syndicate employees who have had previous interactions with you, and they have spoken rather highly of you. Your combat record has also caught my eye; you have proven yourself as someone who is not to be messed with. As such, hearing that you were landing on <origin>, I was hoping you would be willing to help me, or should I say the Syndicate, thin out some pirate influence near the frontier worlds."`
 				goto next
 			
 			label remington
-			`	Hensley removes the sunglasses that he is wearing and hangs them on his shirt collar. "I have spoken to a friend of mine named Nate Remington, and has spoken spoken rather highly of you. Your combat record has also caught my eye; you have proven yourself as someone who is not to be messed with. As such, hearing that you were landing on <origin>, I was hoping you would be willing to help me, or should I say the Syndicate, thin some pirate influence up near the frontier worlds."`
+			`	Hensley removes the sunglasses that he is wearing and hangs them on his shirt collar. "I have spoken to a friend of mine named Nate Remington, who has spoken spoken rather highly of you. Your combat record has also caught my eye; you have proven yourself as someone who is not to be messed with. As such, hearing that you were landing on <origin>, I was hoping you would be willing to help me, or should I say the Syndicate, thin some pirate influence up near the frontier worlds."`
 			
 			label next
 			`	"Most of SynSec, as we call it, is currently dealing with foiling a large pirate raid from Buccaneer Bay down south, so we are low on ships that would normally be up north."`
