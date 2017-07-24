@@ -237,11 +237,11 @@ mission "Syndi Workers 0"
 	passengers 11 13
 	on offer
 		conversation
-			`Entering the spaceport, a large group of roughly a dozen people standing around and asking passing captains by for help catches your eye. Each captain that they speak with shakes their head as they decline whatever the group is asking. They are all in dirty clothing, and  a few of them are carrying luggage.` 
-				choice
-					`	(Ask them what they need.)`
-					`	(Ignore them.)`
-						decline
+			`Entering the spaceport, a large group of roughly a dozen people standing around and asking passing captains by for help catches your eye. Each captain that they speak with shakes their head as they decline whatever the group is asking. They are all in dirty clothing, and  a few of them are carrying luggage.`
+			choice
+				`	(Ask them what they need.)`
+				`	(Ignore them.)`
+					decline
 			`	You talk with the group for a few minutes and learn that they have all recently been released from their five year contracts with the Syndicate and they are now looking for a captain to take them to <destination>, one of the Syndicate frontier worlds, to start new lives. Most of them were born on Earth and moved to <origin> together after signing contracts with the Syndicate.`
 			`	The Syndicate pays for transportation and housing for people coming to their factory worlds, but in exchange these people must work on those factory worlds for five years. After the time is up, the workers are allowed to leave and many of them decide to move to cheap frontier worlds as this group is doing. Even though the conditions in the factories can be bad, many of those in the group say that it was all worth it. One even says that he would rather stay on <origin> for another five years than to go back to Earth.`
 			`	There are <bunks> people in the group, and they say that they will pay you <payment> to transport them.`
@@ -264,7 +264,7 @@ mission "Syndi Workers 1"
 	source
 		government Syndicate
 		near "Delta Capricorni" 1 1
-	stopovers Earth
+	stopover Earth
 	destination Maker
 	passengers 20
 	to offer
@@ -367,12 +367,12 @@ mission "Syndi Relations 0"
 			branch hensley
 				has "Syndi Security 3: done"
 			`	"Nate Remington's the name. Don't wear it out. What brings you to a place like this?"`
-				goto choice
+				goto choice1
 				
 			label hensley
 			`	"Really? Thomas Hensley has told me about you. Nate Remington's the name. Don't wear it out. What brings you to a place like this?"`
 			
-			label choice
+			label choice1
 			choice
 				`	"I'm sightseeing the galaxy."`
 					goto sightseeing
@@ -390,14 +390,14 @@ mission "Syndi Relations 0"
 			`	"If you really need something to eat, I'd wait till you get to a world with a little more culture. These frontier worlds never have anything good on them."`
 			`	"I'm here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
 			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth sightseeing on."`
-				goto choice
+				goto choice2
 			
 			label sightseeing
 			`	Nate begins to laugh right as you mention sightseeing. "Sightseeing? On a planet like this? Oh boy, either you don't have the kind of money to sightsee on a world like Calda or you just don't know yet. You're wasting your time on a place like this, buddy."`
 			`	"I'm here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
 			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth eating on."`
 			
-			label choice
+			label choice2
 			choice
 				`	"Sounds like a good deal to me."`
 				`	"Sorry, but I'm not headed in that direction."`
