@@ -10,11 +10,11 @@
 
 ship "Timer Ship (1 Minute)"
 	attributes
-		"hull" 1
+		"hull" 1.1
 		"mass" 100
 		"drag" 5
 		"automaton" 1
-		"thrust" 10
+		"thrust" 30
 		"turn" 600
 	outfits
 		"Timer Weapon (1 Minute)"
@@ -28,7 +28,7 @@ outfit "Timer Weapon (1 Minute)"
 		"velocity" 10
 		"lifetime" 20
 		"reload" 600
-		"trigger radius" 200
+		"trigger radius" 20000
 		"blast radius" 20
 		"hull damage" 0.5
 
@@ -42,9 +42,9 @@ event "reset alnair"
 		add fleet "Small Core Pirates" 3000
 		add fleet "Large Core Pirates" 4000
 
-mission "Syndi Prospecting 0"
-	name "The Mining Business" # Rename?
-	description "Escort the <npc> to Alnair and distract or destroy any pirates in the system until the captain of the <npc> hails you. Then return to <destination>."
+mission "Core Prospecting 0"
+	name "The Mining Business"
+	description "Escort the Johansen's Glory to Alnair and distract or destroy any pirates in the system until the captain of the Johansen's Glory hails you. Then return to <destination>."
 	waypoint "Alnair"
 	source
 		government Syndicate
@@ -78,7 +78,7 @@ mission "Syndi Prospecting 0"
 			`	"Tell you what, your ship looks capable. Do you think you could cover me and distract the pirates while I mine. I'd give you part of the profit if you did."`
 			choice
 				`	"Sure thing."`
-				`	"No. I don't want to get myself killed doing someone else's work."` # Rewrite
+				`	"Sorry, I'm not interested in helping you."
 					decline
 			
 			`	"Great. I'll mark Alnair on your map. Just make sure the pirates don't blow me up while I mine. I'll hail you when I'm ready to leave the system, then we can return here."`
@@ -111,6 +111,9 @@ mission "Syndi Prospecting 0"
 	on fail
 		event "reset alnair"
 	
+	on visit
+		dialog `You have landed on <planet>, but the merchant is either not done mining or is not in the system with you.`
+	
 	on complete
 		event "reset alnair"
 		payment 30000
@@ -121,7 +124,7 @@ mission "Syndi Prospecting 0"
 
 
 
-mission "Syndicate Prospecting 1"
+mission "Core Prospecting 1"
 	name "Mining For Iron"
 	description "Mine 10 tons of iron for Johansen, then land on <destination>."
 	source
@@ -129,9 +132,9 @@ mission "Syndicate Prospecting 1"
 	to offer
 		random < 40
 		not "event: war begins"
-		has "Syndicate Prospecting 0: done"
+		has "Core Prospecting 0: done"
 	on offer
-		conversation # Rewrite
+		conversation
 			`While browsing through the local market, you bump into Adam Johansen. "<last>, what a coincidence seeing you here. I was just getting ready to go out on another mining trip. Do you think you could join me? I'll need you to mine ten tons of iron. You can find iron asteroids in most systems. Just keep an eye out for reddish looking asteroids. What do you say?"`
 			choice
 				`	"I'll get my ship ready."`
@@ -154,7 +157,7 @@ mission "Syndicate Prospecting 1"
 
 
 
-mission "Syndicate Prospecting 2"
+mission "Core Prospecting 2"
 	landing
 	name "Prospecting For Ores"
 	description "Fly through the Oblate, Moktar, Cardax, and Volax systems, then report to <destination> so that Johansen may read your ship's scanner logs to check for minable asteroids."
@@ -168,7 +171,7 @@ mission "Syndicate Prospecting 2"
 	to offer
 		random < 30
 		not "event: war begins"
-		has "Syndicate Prospecting 1: done"
+		has "Core Prospecting 1: done"
 	on offer
 		dialog `Upon landing, you receive a message from Adam Johansen, the miner you met in the Core. "Hello there, Captain. I was wondering if you could scout out the asteroid content in a few uninhabited systems for me so I can know if they're worth mining in. I'll mark the systems on your map. Meet me on <destination> once you're finished and I'll pay you <payment>."`
 	
@@ -177,24 +180,25 @@ mission "Syndicate Prospecting 2"
 		payment 60000
 		dialog 
 			`Johansen begins analyzing the scanner logs that you gave him and determining which sytems would be good to mine in.`
-			`"Moktar and Cardax are pretty sparse. Volax doesn't even have any asteroids worth mining. Oblate seem like it would be the best to mine in out of these systems, but even then it's nothing special compared to what can be found in inhabited systems. Well, that was a bust. Here's <payment> anyways. Thanks for saving me the trouble."`
+			`"Moktar and Cardax are pretty sparse. Volax doesn't even have any asteroids worth mining. Oblate seem like it would be the best to mine in out of these systems, but even then it's nothing special compared to what can be found in safer systems. Well, that was a bust. Here's <payment> anyways. Thanks for saving me the trouble."`
 
 
 
 event "sawyer stranded"
 
-mission "Syndicate Prospecting 3" # Must add a branch in FW Reconciliation if this mission is done
+mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mission is done
 	landing
 	name "Saving the Day"
 	description "Repair the <npc> in the Durax system and escort them safely back to <destination>."
 	source 
 		near Durax 1 6
 	destination Foundry
+	waypoint Durax
 	source
 		government Syndicate Republic
 	to offer
 		not "event: war begins"
-		has "sawyer stranded"
+		has "event: sawyer stranded"
 	on offer
 		dialog
 			`You receive another message from Johansen. "Captain <last>, I need you to do something really important. Although I wouldn't normally ask you to do this, you're the closest person I know who can help. I just got word that a friend of mine is stranded in Durax. His ship is named the <npc>. Please rescue him and escort his ship to <destination>."`
@@ -207,15 +211,14 @@ mission "Syndicate Prospecting 3" # Must add a branch in FW Reconciliation if th
 	
 	on complete
 		payment 150000
-		conversation # Rewrite, especially the last paragraph
+		conversation
 			`You land on <planet> with the <npc>. A bearded man steps off of the <npc> and runs over to you.`
-			`	"Thank you so much, Captain. I wouldn't be alive if you hadn't come to save me."`
-			`	As the man begins to explain his situation to you, he turns and notices Johansen across the spaceport.`
+			`	"Thank you so much, Captain. I wouldn't be alive if you hadn't come to save me." As the man begins to explain his situation to you, he turns and notices Johansen across the spaceport.`
 			`	"Johansen! You won't believe what just happened to me!" he yells to Johansen.`
 			`	"I know, Sawyer," Johansen responds. "I'm the one who sent Captain <last> to save you."`
-			`	The two men talk to each other for a few minutes, not even paying attention to your presence. After a while, Johansen reaches into his pocket and hands you a credit chip worth an astounding <credits>.`
+			`	The two men talk to each other for a few minutes, not even paying attention to your presence.It's clear that they haven't seen eachother in some time. After a while, Johansen reaches into his pocket and hands you a credit chip worth an astounding <payment>.`
 			`	"Thank you for saving Sawyer, <last>. I wish that I had more to give you."`
-			`	You talk with Sawyer and Johansen for a little longer before they leave. You learn that Sawyer is a physicist working for the Syndicate, and he has been for many years now. He was investigating an anomaly that was detected in Durax when a pirate fleet destroyed his escorts and left him stranded. Sawyer eventually leaves to his ship to return his findings to the Syndicate, and Johansen goes to his own to continue his mining adventures, leaving you to do whatever you want.`
+			`	You talk with Sawyer and Johansen for a little longer. You learn that Sawyer is a physicist working for the Syndicate, and he has been for many years now. He was investigating an anomaly that was detected in Durax when a pirate fleet destroyed his escorts and left him stranded. Sawyer eventually mentions that he must leave to return his findings to the Syndicate. You bid Sawyer and Johansen a farewell before returning to your ship.`
 
 
 
