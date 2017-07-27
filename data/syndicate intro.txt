@@ -186,7 +186,7 @@ mission "Core Prospecting 2"
 
 event "sawyer stranded"
 
-mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mission is done
+mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mission is to be merged
 	landing
 	name "Saving the Day"
 	description "Repair the <npc> in the Durax system and escort them safely back to <destination>."
@@ -740,7 +740,7 @@ mission "Syndi Security 0"
 
 mission "Syndi Security 1" # Rewrite
 	name "Defending the Frontier"
-	description "Fight off the pirates in the Zaurak system before landing on <planet>."
+	description "Fight off the pirates in the Zaurak system before landing on Canyon."
 	landing
 	destination Canyon
 	to offer
@@ -812,8 +812,8 @@ mission "Syndi Security 1: Escorts"
 		fleet
 			names syndicate
 			variant
-				"Quicksilver (Particle)"
-				"Quicksilver (Particle)"
+				"Quicksilver (Proton)"
+				"Quicksilver (Proton)"
 		
 	npc kill
 		personality escort heroic
