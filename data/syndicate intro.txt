@@ -209,7 +209,7 @@ mission "Syndicate Prospecting 3" # Must add a branch in FW Reconciliation if th
 		payment 150000
 		conversation # Rewrite, especially the last paragraph
 			`You land on <planet> with the <npc>. A bearded man steps off of the <npc> and runs over to you.`
-			`	"Thank you so much, captain. I wouldn't be alive if you hadn't come to save me."`
+			`	"Thank you so much, Captain. I wouldn't be alive if you hadn't come to save me."`
 			`	As the man begins to explain his situation to you, he turns and notices Johansen across the spaceport.`
 			`	"Johansen! You won't believe what just happened to me!" he yells to Johansen.`
 			`	"I know, Sawyer," Johansen responds. "I'm the one who sent Captain <last> to save you."`
@@ -237,7 +237,7 @@ mission "Syndi Workers 0"
 	passengers 11 13
 	on offer
 		conversation
-			`Entering the spaceport, a large group of roughly a dozen people standing around and asking passing captains by for help catches your eye. Each captain that they speak with shakes their head as they decline whatever the group is asking. They are all in dirty clothing, and  a few of them are carrying luggage.`
+			`Entering the spaceport, a group of roughly a dozen people standing around and asking passing captains for help catches your eye. Each captain that they speak with shakes their head as they decline whatever the group is asking. They are all in dirty clothing and a few of them are carrying luggage.`
 			choice
 				`	(Ask them what they need.)`
 				`	(Ignore them.)`
@@ -253,7 +253,7 @@ mission "Syndi Workers 0"
 					
 	on complete
 		payment 5000 100
-		dialog `Your passengers pick up their belongings and make their way off of your ship, stepping onto the surface of <planet> for the first time. They hand you the <payment> before making their way over to the immigrations desk in the spaceport that is staffed by a woman in a Syndicate uniform.`
+		dialog `Your passengers pick up their belongings and make their way off of your ship, stepping onto the surface of <planet> for the first time. They hand you <payment> and you wish them farewell before they make their way over to the immigrations desk in the spaceport.`
 
 
 
@@ -263,7 +263,7 @@ mission "Syndi Workers 1"
 	minor
 	source
 		government Syndicate
-		near "Delta Capricorni" 1 1
+		near "Delta Capricorni" 1 2
 	stopover Earth
 	destination Maker
 	passengers 20
@@ -296,17 +296,19 @@ mission "Syndi Workers 1"
 		conversation
 			`The workers leave your ship in almost the same fashion as they got on it, with either a face of excitement or reluctance. For of many them, this was their first time flying on a spacecraft, and most happened to throw up after the first jump, if not the second. Syndicate employees board your ship after all the workers step off and clean any mess that was left behind, almost as if this is routine.`
 			`	The same Syndicate employee that hired you to transport the workers is watching on the side. Once all the workers have been escorted out of the spaceport and the Syndicate employees have cleaned your ship's interior, he walks up to you and hands you <payment>.`
-			`	"Thank you for accepting this job on such short notice, captain. Merchants don't quit work for the Syndicate often, but when they do it's a hassle to replace them. Have a nice day."`
+			`	"Thank you for accepting this job on such short notice, Captain. Merchants don't quit work for the Syndicate often, but when they do it's a hassle to replace them. Have a nice day."`
 
 
 
-mission "Syndi Workers 2"
+mission "Syndi Workers 2" # Pretty much a spaceport-ized strike breaker job, but this is done to make it apparent to the player that not everything in the Syndicate is all nice and cozy.
 	name "Worker's Strike"
-	description "Transport these <bunks> strike breakers to <destination> so that goods production may return to normal." # Rewrite
+	description `Bring <bunks> strike breakers to <destination>, to take the place of workers who are on strike.`
 	minor
 	source
 		government Syndicate
 	destination
+		government Syndicate
+		attributes factory
 	to offer
 		random < 50
 		has "Syndi Workers 1: done"
@@ -315,7 +317,7 @@ mission "Syndi Workers 2"
 	passengers 15 20
 	on offer
 		conversation
-			`Upon landing on <origin>, you are greeted by a Syndicate employee wearing what appears to be riot gear. "Hello, <first> <last>. I, along with a number of others, require transport to <destination> in order to end a worker's strike that has broken out which is hurting Syndicate profits. There are <bunks> of us in total. You will be paid <payment>."`
+			`Upon landing on <origin>, you are greeted by a Syndicate employee. "Hello, <first> <last>. We need you to transport <bunks> strike breakers to <destination> where the factory workers are on strike. This hasn't been good for profits, so we need this done immediately. You will be paid <payment>."`
 			choice
 				`	"I'd be glad to."`
 					accept
@@ -356,12 +358,9 @@ mission "Syndi Relations 0"
 			`Wandering through the spaceport, you notice how underdeveloped it seems when compared to the spaceport of other worlds. There are far fewer landing pads, and those that do exist seem poorly built. This must be a frontier world, worlds which are on the very edge of human space and have yet to reach a level of development close to that of richer regions like the Paradise Worlds.`
 			`	"Beautiful, isn't it?" a sarcastic voice says behind you. The owner of the voice steps foward so that he is next to you, but doesn't look directly at you. He is a young man who looks almost like the kind of guy you would find in a movie or a boy band. Despite that it is currently dusk at the spaceport and the sun is to his back, he is wearing sunglasses. In his left hand he is holding a bottle of acohol that even from a few feet away you can smell, and judging by the label it is a very expensive brand.`
 			`	"Welcome to <origin>, one of the worst places to be in the galaxy." He turns to face you with his free hand outstreched.`
-			choice
+			choice # Add a 2nd option? Might add a "(Don't shake his hand.)" option if we add a character rep system
 				`	(Shake his hand.)`
-					goto shake
-				`	(Slap his hand.)`
-			`	The man gives you a strange look when you slap his hand, but does not say anything in response.`
-			label shake
+				
 			`	"I'm <first> <last>," you say.`
 			
 			branch hensley
@@ -388,14 +387,14 @@ mission "Syndi Relations 0"
 				
 			label refuel
 			`	"If you really need something to eat, I'd wait till you get to a world with a little more culture. These frontier worlds never have anything good on them."`
-			`	"I'm here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
-			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth sightseeing on."`
+			`	"I'm only here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
+			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth eating on."`
 				goto choice2
 			
 			label sightseeing
 			`	Nate begins to laugh right as you mention sightseeing. "Sightseeing? On a planet like this? Oh boy, either you don't have the kind of money to sightsee on a world like Calda or you just don't know yet. You're wasting your time on a place like this, buddy."`
-			`	"I'm here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
-			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth eating on."`
+			`	"I'm only here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
+			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth sightseeing on."`
 			
 			label choice2
 			choice
@@ -420,6 +419,10 @@ mission "Syndi Relations 1"
 	name "The Final Final Frontier"
 	description "Bring the supplies you picked up from <origin> to <destination>."
 	landing
+	destination
+		government Syndicate
+		attributes frontier
+		near Polaris 1 100
 	to offer
 		has "Syndi Relations 0: done"
 	to fail
@@ -429,7 +432,7 @@ mission "Syndi Relations 1"
 	
 	on offer
 		conversation
-			`Remington contacts the spaceport authorities and informs them that you will be carrying the other half of the cargo. Ten tons of boxes full of all sorts of materials are loaded onto your ship.`
+			`Remington contacts the spaceport authorities and informs them that you will be carrying the other half of the cargo. Ten tons of boxes full of a variety of materials are loaded onto your ship.`
 			`	"We'll be dropping these supplies off at <destination>." Nate says to you. "After that you'll get to see one of the most amazing worlds in the galaxy."`
 				accept
 		
@@ -437,6 +440,9 @@ mission "Syndi Relations 1"
 		government Syndicate
 		personality escort timid
 		ship "Arrow" "Libidine"
+	
+	on visit
+		dialog `You have landed on <planet>, but you left Nate Remington behind! Wait for his ship to enter the system before landing.`
 	
 	on complete
 		payment 200000
@@ -451,23 +457,23 @@ mission "Syndi Relations 1"
 			
 			label call
 			`	One of the spaceport workers shouts over to Nate. "All the cargo is unloaded, sir. You're free to take off now."`
-			`	"Thank you. I don't know your name but I'll see to it that you're paid well. Okay <first>, now that we're free, you can come hang out at my place on Shangri-la. You'll see that they don't call it paradise for nothing."`
+			`	"Thank you. I don't know your name but I'll see to it that you're paid well. Okay <first>, now that we're free, you can come hang out at my place on Shangri-La. You'll see that they don't call it paradise for nothing."`
 			choice
 				`	"Sounds like a great place."`
-				`	"Sorry, but I don't want to go to Shangri-la with you."`
+				`	"Sorry, but I don't want to go to Shangri-La with you."`
 			`	Before Nate can begin walking back to his ship, or even before you can respond, a device on his belt begins to ring. After a few tries, he finally unclips it from his belt.`
-			`	"This is Nate Remington, what's so important right now? Oh, Hensley, nice to hear from you. What is it?" Nate, who was previously talking loud enough for someone across the albeit small spaceport to hear, begins speaking in a hushed voice. "Really...? Oh my. Alright, I'll be over as soon as I can."`
+			`	"This is Nate Remington, what's so important right now? Oh, Hensley, nice to hear from you. What is it?" Nate, who was previously speaking loud enough for someone across the albeit small spaceport to hear, begins speaking in a hushed voice. "Really...? Oh my. Alright, I'll be over as soon as I can."`
 			
 			branch hensley
 				has "Syndi Security 3: done"
-			`	"<first>, it looks like I'm not going to be able to bring you to Shangri-la after all, or at least not right now. Duty calls, you know."` 
+			`	"<first>, it looks like I'm not going to be able to bring you to Shangri-La after all, or at least not right now. Duty calls, you know."` 
 				goto end
 				
 			label hensley
-			`	"<first>, it looks like I'm not going to be able to bring you to Shangri-la after all, or at least not right now. Hensley needs me to get him out of an... interesting situation."`
+			`	"<first>, it looks like I'm not going to be able to bring you to Shangri-La after all, or at least not right now. Hensley needs me to get him out of an... interesting situation."`
 			
 			label end
-			`	He hands you a credit chip worth <payment>. "Hopefully that pays for the trip to <origin> and here. I'll be seeing you around, captain. Safe travels."`
+			`	He hands you a credit chip worth <payment>. "Hopefully that pays for the trip to <origin> and here. I'll be seeing you around, Captain. Safe travels."`
 
 
 
@@ -477,7 +483,7 @@ mission "Syndi Relations 2"
 	minor
 	source
 		planet Hephaestus Foundry Reunion Tinker Nimbus
-	destination Shangri-la
+	destination Shangri-La
 	passengers 1
 	to offer
 		has "Syndi Relations 1: done"
@@ -487,14 +493,14 @@ mission "Syndi Relations 2"
 		has "chosen sides"
 	on offer
 		conversation
-			`As you are walking through the spaceport, you hear Nate call out your name. You look around for a few seconds before you spot him walking away from one of the spaceport resturaunts.`
+			`As you are walking through the spaceport, you hear someone call out your name. You look around for a few seconds before you spot Nate walking away from one of the spaceport resturaunts.`
 			`	"Just the person I wanted to see! I just had an important meeting with some higher ups in the Syndicate talking about the Free Worlds situation. Can you believe that the Navy has deployed fleets near the Free Worlds? I've been told they're even building a base on New Wales."`
 			choice
 				`	"No, I can't believe it. Do they have any proof that the Free Worlds are the ones responsible for the bombings?"`
 				`	"Why wouldn't I believe it? It's obvious that the Free Worlds are the ones who bombed Geminus and Martini."`
 					goto yes
 					
-			`	"Well you should believe it. And I don't know about any proof, but they clearly have enough of a reason to be building a base nearby and sending so many ships down to the south."`
+			`	"Well you should believe it. I don't know what proof they have, but they clearly have enough if they're going to build a base so close by them and send so many ships down to the south."`
 				goto lift
 					
 			label yes
@@ -505,12 +511,12 @@ mission "Syndi Relations 2"
 			choice
 				`	"I'd be glad to."`
 					accept
-				`	"Sorry, but I don't want to go to Shangri-la."`
+				`	"Sorry, but I don't want to go to Shangri-La."`
 					decline
 	
 	on complete
-		conversation # Rewrite
-			`Nate gives you the coordinates to his villa, which is located far from the spaceport city in a mountainous region of the planet. It's almost night where Nate's villa is on <planet> and the sun setting over the mountains is a beautiful sight. It's easy to see why Nate speaks so highly of this place.`
+		conversation
+			`Nate gives you the coordinates to his villa, which is located far from the spaceport city in a mountainous region of the planet. It's almost night where Nate's villa is on Shangri-La and the sun setting over the mountains is a beautiful sight. It's easy to see why Nate speaks so highly of this place.`
 			`	The villa itself is huge, far more than it seems that a single person could use. It is located part way up a mountain and overlooks a lake in the valley below. The front of the villa has four landing pads able to fit smaller transport ships. A larger ship would have to take up multiple landing pads. Only the largest of ships would be unable to land.`
 			choice
 				`	"This is where you live?"`
@@ -524,8 +530,8 @@ mission "Syndi Relations 2"
 			`	"I told you it was paradise. Well, aside from the occasional pirate raid," Nate says with a wink. "Those normally only strike the spaceport anyways."`
 			
 			label next
-			`	After you land, completely unsolicited, Nate begins going on a rant as he looks off the edge of the balcony down at the lake below.`
-			`	"Somehow, the Syndicate consider <plnaet> to be on the frontier. I consider that a load of bull. Polaris is right next to Achernar, one of the most important systems to the Syndicate and the only way in or out of this system. How that can be considered frontier real-estate is a mystery to me. Heck, just look at all the other so called frontier worlds across the galaxy. No matter where you look, none of them stand up to this place. It's really a disgrace to <planet> to even consider lumping it into a category with the rest of those worlds."`
+			`	As you come in for a landing, Nate begins telling you the history of the planet. It was once used as a prison colony, but it started to become the world it is today when richer people became interested in buying real estate on the planet. He then begins ranting about how the planet is classified.`
+			`	"Somehow, the Syndicate consider Shangri-La to be on the frontier. I consider that a load of bull. Polaris is right next to Achernar, perhaps the most important system to the Syndicate and the only way in or out of this system. How that can be considered frontier real estate is a mystery to me. Heck, just look at all the other so called frontier worlds across the galaxy. No matter where you look, none of them stand up to this place. It's really a disgrace to Shangri-La to even consider lumping it into a category with the rest of those worlds."`
 			choice
 				`	"Does it even matter?"`
 				`	"That is pretty disgracful."`
@@ -548,20 +554,7 @@ mission "Syndi Relations 2"
 			
 			`	Shortly after the sun sets, ships begin landing and unloading their passengers before flying off to park at the spaceport. The party-goers look as expensive as you would expect, wearing extravigant clothing of all colors and styles. You look very cheap by comparison. When Nate sees you looking down at your clothing, he says "Don't worry, the fancy people always come first, but they're only a small part of the party." A few minutes later, another ship lands which unloads about a dozen passengers all wearing more civilian style clothing, some of which even manages to make you look like the fancy one.`
 			`	By the time midnight hits, the house is filled to the brim with guests and loud music blarring throughout every room. You spend your time wandering around the crowd, dancing, and socializing with people willing to talk to you. Never before have you seen a party this big, and you feel slightly bad for whoever is going to clean up the mess that gets left behind.`
-			`	While walking over to the snack bar, a woman waves a glass of liquid in your face that smells of whiskey. "Want a drink?"`
-			choice
-				`	"Sorry, I don't drink alcohol."`
-				`	(Take the drink.)`
-					goto drank
-			
-			`	She shrugs in response before downing the entire glass of alcohol right in front of you and then stumbles away.`
-				goto end
-			
-			label drank
-			`	You take a sip of the alcohol, which is extremely strong, while continuing your way over to the snack bar.`
-			
-			label end
-			``
+			`` # Say more about during the party? Give a choice of some sort? I'd like it to be a seemingly insignificant choice that actually helps you out later down the line. e.g. bump into someone important that will change something that happens in the middle.
 			`	The party starts to die down over the next few hours as guests either leave or pass out on the floor. Starting to get tired, you look around for a place away from all the noise where you can sleep. You end up finding an area farther back in the villa where no one seems to have been during the party. After opening a few doors that lead to bathrooms or closets, you finally find a bedroom.`
 				goto bed
 			
@@ -588,7 +581,7 @@ mission "Syndi Relations 3A"
 	on offer
 		conversation
 			`When you wake up, everything is quiet. You can't hear any music or the noise of people moving around in the halls. Suddenly the door to your room opens, letting in the light from the hallway.`
-			`	"Rise and shine, captain." After your eyes adjust to the new lighting, you see that the person who opened the door is Nate. "Still here, I see. I assume you slept well."`
+			`	"Rise and shine, Captain." After your eyes adjust to the new lighting, you see that the person who opened the door is Nate. "Still here, I see. I assume you slept well."`
 			choice
 				`	"Absolutely."`
 				`	(Pull the covers over your head.)`
@@ -619,43 +612,43 @@ event "lodestone eruption"
 	planet Lodestone
 		description `Lodestone is a young, volcanically active world. The atmosphere is often filled with choking dust or sulfur dioxide, and new eruptions can occur with hardly any warning. Building any sort of structure here is an exercise in futility.`
 		description `	The only reason Lodestone is inhabited is because of the planet's unusually rich reserves of heavy metals and other rare minerals.`
-		description `	Due to a recent volcanic disaster, the spaceport has been left unusable. It will take months before a new one is rebuilt.`
+		description `	Due to a recent volcanic disaster, the spaceport has been left unusable. It will take months before a new one can be built.`
 		remove spaceport
 
 
 
-mission "Syndi Relations 3B" # Rewrite
+mission "Syndi Relations 3B"
 	name "Lodestone Disaster"
 	description "Drop Nate Remington off on <destination> so that he may begin work on getting the spaceport rebuilt.."
 	landing
 	destination Maker
 	passengers 1
 	to offer
-		has "Syndi Relations 3: done"
+		has "Syndi Relations 3A: done"
 	to fail
 		has "chosen sides"
 	on offer
-		conversation
+		conversation # The reading is a little thick before you reach the decision at the bottom: add another decision near the beginning. Maybe a karma decision: help or don't help.
 			`As you come in for a landing, you see towers of smoke billowing up from the volcano next to the spaceport, which is raised above the ground as to avoid being buried in lava. About two dozen ships are busy ferrying passengers to safety away from the spaceport.`
 			`	"The lava flows likely won't bury the spaceport, but there's the chance that the volcano could explode and launch lava up into the air. If that lands on the spaceport then the spaceport is done for. You should help evacuate the spaceport just in case that happens."`
 			`	You join the other ships transporting people away from the spaceport in order to speed up the process. Tensions rise with each passing moment as the volcano could explode at any second.`
-			`	After a half hour of helping, you see that almost all of those on the spaceport have been rescured. There can't be more than a hundred people waiting by the landing pads for transportation. A large transport ship able to carry the rest to safety lands and the people begin boarding. Just then, you hear a loud rumble followed by an explosion. Lava begins flying through the air at incredible speeds all around the mouth of the volcano. While most of it misses the spaceport, some airborne globs of lava to hit in various places: a warehouse, a resturaunt, and the spaceport control tower.`
-			`	You look back down to the transport ship and see that amost all of the pasengers are on board when lava strikes near the ship. The lava splashes when it lands; the ship is left unscaved due to its shields reflecting any damage, but the same can not be said for the people who were still outside of the ship. Nate whinces as the transport ship activates its repulsor engines and flies off. "That's not going to look good on camera."`
+			`	After a half hour of helping, you see that almost all of those on the spaceport have been rescued. There can't be more than a hundred people waiting by the landing pads for transportation. A large transport ship able to carry the rest to safety lands and the people begin boarding. Just then, you hear a loud rumble followed by an explosion. Lava begins flying through the air at incredible speeds all around the mouth of the volcano. While most of it misses the spaceport, some airborne globs of lava to hit in various places: a warehouse, a resturaunt, and the spaceport control tower.`
+			`	You look back down to the transport ship and see that almost all of the pasengers are on board when lava strikes near the ship. The lava splashes when it lands; the ship is left unscaved due to its shields reflecting any damage, but the same can not be said for the people who were still outside of the ship. Nate whinces as the transport ship activates its repulsor engines and flies off. "That's not going to look good on camera."`
 			choice
 				`	"What do we do now?"`
 				`	"This entire situation isn't going to look good on camera."`
 			
-			`	"The only thing to do now is to start rebuilding. Drop me off on <destination> so I can speak with some contacts there. I'll also see to it that the Syndicate take notice your work and pay you well for helping during this disaster."`
+			`	"The only thing to do now is to start rebuilding. Drop me off on <destination> so I can speak with some contacts there."`
 				accept
 	
 	on complete
 		event "syndicate notice player" 30
 		event "lodestone spaceport rebuilt" 120
-		dialog `Nate hops off your ship after you land. "Thanks for the ride <first>. And for the help on Lodestone. I'll be in contact with you for the future, should you decide to continue doing work for the Syndicate. Heck, maybe you can even apply for a salaried position. Goodbye until then, captain."`
+		dialog `Nate hops off your ship after you land. "Thanks for the ride <first>. I'll be in contact with you for the future, should you decide to continue doing work for the Syndicate. Heck, maybe you can even apply for a salaried position. I'll make sure the Syndicate knows that you've helped me, which should give you a pretty good shot at getting accepted if you apply. Goodbye until then, Captain."`
 
 
 
-event "syndicate notice player
+event "syndicate notice player"
 
 mission "syndicate notice player"
 	invisible
@@ -667,7 +660,7 @@ mission "syndicate notice player"
 		"assisted the syndicate" ++
 		conversation 
 			`Upon landing, you receive a message from Nate Remington.`
-			`	"I hope you've been having a good time since I last met you, Captain. I'm calling to inform you that I've made sure that a few higher-ups in the Syndicate know of you helping on Lodestone. You've been given <payment> for your services. Safe travels, captain."`
+			`	"I hope you've been having a good time since I last met you, Captain. I'm calling to inform you that I've made sure that a few higher-ups in the Syndicate know of you helping during the Lodestone situation. We've transfered <payment> to your account for your help. Safe travels, Captain."`
 				decline
 
 
@@ -754,7 +747,7 @@ mission "Syndi Security 1" # Rewrite
 	on offer
 		conversation
 			`When you come in for a landing on <origin>, a man in a Syndicated Security uniform flags you down and leads you to a landing pad on the edge of the spaceport. He motions for you to open your ship while he is still outside. Without even waiting for the doors to fully open, he slides into your ship and closes the doors behind him. Moments later, he is inside of the cockpit with you.`
-			`	"No time for introductions, captain. We need to get back to the headquarters. An attack could happen at any second. Now if you'll excuse me, I will be flying your ship to the security complex."`
+			`	"No time for introductions, Captain. We need to get back to the headquarters. An attack could happen at any second. Now if you'll excuse me, I will be flying your ship to the security complex."`
 			`	The security guard flies your ship to a facility far outside of the spaceport. The complex is almost as big as the spaceport itself with dozens of landing pads circling around a tall central building. Most of the landing pads are currently empty, save for three ships parked on the northern side that are painted in the distinct Syndicate purple. In the shadow of the largest Syndicate ship you see two more ships that appear to have merchant colors.`
 			`	The security guard glances over at you and notices that you spotted the merchant ships. "You're not the only merchant that Captain Hensley hired to help us. He knows we're going to need every gun we can get if something does happen." After he lands your ship next to the others, he escorts you across the empty landing pads and into the main door of the tall building in the center of the facility.`
 			`	The inside of the building looks surprisingly similar to the bank you were on in New Boston, all the walls and floors a bright gleaming metal. You walk past a lounge area full of people in either security uniforms or civilian clothing.`
@@ -793,6 +786,7 @@ mission "Syndi Security 1" # Rewrite
 		system Zaurak
 		fleet "Large Core Pirates"
 		fleet "Small Core Pirates"
+		dialog `The pirate fleets attacking Zaurak have been killed.`
 	
 	on visit
 		dialog `You have landed on <planet>, but there are still pirates attacking the system! Depart and deal with the rest of the pirates before landing.`
@@ -829,11 +823,11 @@ mission "Syndi Security 1: Escorts"
 
 
 
-mission "Syndi Security 2"
+mission "Syndi Security 2" # Rewrite
 	name "Defending the Frontier"
 	description "The recent pirate fleet movements were all a distraction to allow the pirates to attack <destination>. Fend off the pirates attacking <planet>."
 	landing
-	destination Shangri-la
+	destination Shangri-La
 	clearance
 	to offer
 		has "Syndi Security 1: done"
@@ -873,7 +867,7 @@ mission "Syndi Security 2"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
-		dialog `All the pirates attacking Shangri-la have been destroyed.`
+		dialog `All the pirates attacking Shangri-La have been destroyed.`
 	
 	npc
 		personality heroic staying
@@ -890,9 +884,10 @@ mission "Syndi Security 2"
 
 mission "Syndi Security 3"
 	name "Defending the Frontier"
-	description "Attack <destination> and fight off the pirates defending the planet before landing and freeing any slaves that were taken from the attack on Shangri-la."
+	description "Attack <destination> and fight off the pirates defending the planet before landing and freeing any slaves that were taken from the attack on Shangri-La."
 	landing
 	destination "Deadman's Cove"
+	clearance
 	to offer
 		has "Syndi Security 2: done"
 	to fail
@@ -901,7 +896,7 @@ mission "Syndi Security 3"
 		conversation
 			`The spaceport city of <origin> is a mess. The pirates seem to have destroyed the gun emplacements that defend the area and ransacked the city for as long as they could before the Syndicate showed up. Many of the roof tops show the scorch marks of engines, as if pirates either landed there or were flying close to the buildings. Most of the windows that you can see are broken, and the smoke from fires is rising up into the air from parts of the city.`
 			`	With the pirates gone, there are now dozens of merchant and Syndicate ships pouring into the system to help clean up after the disaster. A few ships are flying over the city and hovering above buildings, either dropping off supplies or picking up survivors.`
-			`	You finally manage to find an open area to land (half way on a landing pad and half way on the grass around the spaceport) and make your way to the spaceport's main building to see if you can find out how to help. A group of at least a hundred SynSec guards has gathered there, and standing above everyone else is Thomas Hensley giving orders.`
+			`	You finally manage to find an open area to land (half way on a landing pad and half way on the grass around the crowded spaceport) and make your way to the spaceport's main building to see if you can find out how to help. A group of at least a hundred SynSec guards has gathered there, and standing above everyone else is Thomas Hensley giving orders.`
 			`	"Division Four, check the east side of the city! Division Five, check the west side! Put out any fires you can and pick up anyone looking for transport. Divisions Six, Seven, and Eight will be surveying the rest of the planet. Take out any stragglers and mark down any other population centers that have been hit. Divisions Nine and Ten will be coming with me to <destination>." As the crowd of guards begins to disperse, Hensley spots you standing along the wall and approaches you with a credit chip in his hand.`
 			`	"Here's that 500,000 credits I promised you, <last>. How did you like your little taste of SynSec work?"`
 			choice
@@ -922,7 +917,7 @@ mission "Syndi Security 3"
 			`	"Security work isn't for everyone. That's the beauty of the Syndicate though. There's a job for everyone."`
 			
 			label end
-			`	"Since I have you here, I might as well ask if you want to help us some more. Those pirates weren't here just to have fun breaking windows and setting fire to buildings. They took with them dozens of slaves and millions of credits worth of goods. We need to get all that back. We're having a fleet leave from here tomorrow, and other fleet is already making its way to <destination> from Markab. There's another <payment> in it for you if you help. What do you say?"`
+			`	"Since I have you here, I might as well ask if you want to help us some more. Those pirates weren't here just to have fun breaking windows and setting fire to buildings. They took with them dozens of slaves and millions of credits worth of goods, and we need to get all that back. We're having a fleet leave from here tomorrow, and another fleet is already making its way to <destination> from Markab. There's another <payment> in it for you if you help. What do you say?"`
 			choice
 				`	"I'll be sure to follow the fleet to Deadman's Cove."`
 					accept
@@ -954,6 +949,9 @@ mission "Syndi Security 3"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
+	
+	on visit
+		dialog `You have landed on <planet>, but there are still some pirates defending the system. Take off and destroy all the pirate ships defending <planet>.`
 	
 	on complete
 		payment 500000
