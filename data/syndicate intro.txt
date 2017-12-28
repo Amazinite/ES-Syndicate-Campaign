@@ -78,7 +78,7 @@ mission "Core Prospecting 0"
 			`	"Tell you what, your ship looks capable. Do you think you could cover me and distract the pirates while I mine. I'd give you part of the profit if you did."`
 			choice
 				`	"Sure thing."`
-				`	"Sorry, I'm not interested in helping you."
+				`	"Sorry, I'm not interested in helping you."`
 					decline
 			
 			`	"Great. I'll mark Alnair on your map. Just make sure the pirates don't blow me up while I mine. I'll hail you when I'm ready to leave the system, then we can return here."`

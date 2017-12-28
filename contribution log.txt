@@ -4,6 +4,7 @@ Derpy Horse: Writing, storyboard
 Messy: Storyboard, typo catching, and rewrites
 Vilhelm16: Typo catching
 Elyssaen and Startome: Contributing ideas
+LocalGod79, Wrzlprnft, and Kiko: Development of the Prospector
 
 # To do
 Kiko: Writing of the Sal string
