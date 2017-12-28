@@ -139,4 +139,4 @@ outfit "Modified Proton Fragment"
 		"shield damage" 8
 		"hull damage" 6.6
 
-# The magnificant Modified Proton Gun seeks to compete with the Particle Cannon of the Navy; it fires further (even if only by 4 range), travels almost as fast (26 vs 30 velocity) and deals 37.7% more damage thanks to being able to fire 33.3% faster than its predecessor. Although it doesn't have the accuracy of the Particle Cannon and it does require more energy and produce (way) more heat, you should still totally buy it, because as we all know, the Proton Gun is the best cannon here is!
+# The magnificant Modified Proton Gun seeks to compete with the Particle Cannon of the Navy; it fires further (even if only by 4 range), travels almost as fast (26 vs 30 velocity) and deals 37.7% more damage thanks to being able to fire 33.3% faster than its predecessor. Although it doesn't have the accuracy of the Particle Cannon and it requires more energy and produces (way) more heat, you should still totally buy it, because as we all know, the Proton Gun is the best cannon there is!
