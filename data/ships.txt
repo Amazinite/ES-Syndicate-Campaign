@@ -15,105 +15,111 @@ ship "Prospector"
 	sprite "ship/prospector"
 	attributes
 		category "Heavy Freighter"
-		"cost" 9720000
-		"shields" 16300
-		"hull" 6600
-		"required crew" 46
-		"bunks" 74
-		"mass" 640
-		"drag" 9.1
-		"heat dissipation" .55
+		"cost" 11750000
+		"shields" 11700
+		"hull" 9000
+		"required crew" 25
+		"bunks" 30
+		"mass" 700
+		"drag" 10
+		"heat dissipation" .45
 		"fuel capacity" 600
-		"cargo space" 1000
+		"cargo space" 750
 		"outfit space" 590
 		"weapon capacity" 260
 		"engine capacity" 160
 		weapon
-			"blast radius" 220
-			"shield damage" 2200
-			"hull damage" 1100
-			"hit force" 3300
+			"blast radius" 180
+			"shield damage" 1800
+			"hull damage" 900
+			"hit force" 2700
 	outfits
-		"Proton Gun" 3
 		"Heavy Laser" 5
 		"Heavy Anti-Missile Turret" 2
-		"Anti-Missile Turret"
+		"Proton Turret"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
 		"D41-HY Shield Generator"
-		"Liquid Nitrogen Cooler"
+		"Water Coolant System" 2
 		
-		"X3700 Ion Thruster"
-		"X2700 Ion Thruster"
+		"X4700 Ion Thruster"
 		"X4200 Ion Steering"
+		"X2200 Ion Steering"
 		"Scram Drive"
 		
 	engine -70 179.5
 	engine 70 179.5
 	engine 0 196.5
-	gun -88.5 91.5 "Proton Gun"
-	gun 88.5 91.5 "Proton Gun"
-	gun -11.5 -138
-	gun 11.5 -138
-	gun -7.5 -129.5
-	gun 7.5 -129.5
-	gun 0 -120.5
-	gun 0 33 "Proton Gun"
+	gun -88.5 91.5
+	gun 88.5 91.5
+	gun -11.5 -138 "Heavy Laser"
+	gun 11.5 -138 "Heavy Laser"
+	gun -7.5 -129.5 "Heavy Laser"
+	gun 7.5 -129.5 "Heavy Laser"
+	gun 0 -120.5 "Heavy Laser"
+	gun 0 33
 	turret -14 87.5
 	turret 14 87.5
-	turret 0 120 "Anti-Missile Turret"
+	turret 0 120 "Proton Turret"
 	fighter -52 40 under back
 	fighter 52 40 under back
-	fighter -70 100 over
-	fighter 70 100 over
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	explode "huge explosion" 4
+	fighter -52 -64 under
+	fighter 52 -64 under
+	explode "small explosion" 25
+	explode "medium explosion" 35
+	explode "large explosion" 45
+	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "The Prospector is a recent development from Syndicated Shipyards, and is the only ship in human space specifically designed for mining operations. With more cargo space than even a Bulk Freighter and enough weaponry to instantly shred asteroids, the Prospector is indomitable in its role as a mining freighter. Due to its staggering cargo capacity, however, the Prospector is also highly versatile, and can be retrofitted as a capable transport or warship."
+	description "The Prospector is a recent development from Syndicated Shipyards, and is the only ship in human space specifically designed for mining operations. With more cargo space than even a Bulk Freighter and enough weaponry to instantly shred asteroids, the Prospector is indomitable in its role as a mining freighter."
 
-ship "Prospector" "Prospector (Warship)" # Overheats after about 1.5 minutes of constant firing, thrusting, and turning
+ship "Prospector" "Prospector (Warship)"
 	outfits
 		"Proton Gun" 8
 		"Heavy Anti-Missile Turret"
-		"Armageddon Core"
-		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
-		"Liquid Helium Cooler"
-		"Water Coolant System"
-		"Outfits Expansion" 3
-		"X4700 Ion Thruster"
-		"X4200 Ion Steering"
-		"X2200 Ion Steering"
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Water Coolant System" 2
+		"Precision Expansion" 3
+		"Outfits Expansion" 2
+		"X3700 Ion Thruster"
+		"X5200 Ion Steering"
 		"Hyperdrive"
 	turret
 	turret
 	turret "Heavy Anti-Missile Turret"
 
-ship "Prospector" "Prospector (Mark II)" # Overheats after about one minute of constant firing, thrusting, turning, and afterburning
+ship "Prospector" "Prospector (Mark II)"
 	outfits
-		"Particle Cannon" 5
+		"Neutron Gun" 5
 		"Torpedo Launcher" 3
 		"Torpedo" 90
-		"Heavy Anti-Missile Turret"
-		"Armageddon Core"
-		"LP073a Battery Pack"
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"LP072a Battery Pack"
 		"S-970 Regenerator"
-		"Liquid Helium Cooler"
-		"Outfits Expansion" 4
-		"Ionic Afterburner"
+		"Liquid Nitrogen Cooler"
+		"Water Coolant System" 2
+		"Precision Expansion" 5
+		"Outfits Expansion" 2
 		"X3700 Ion Thruster"
-		"X4200 Ion Steering"
-		"X2200 Ion Steering"
+		"X5200 Ion Steering"
 		"Hyperdrive"
 	gun
 	gun
-	gun "Particle Cannon"
-	gun "Particle Cannon"
-	gun "Particle Cannon"
-	gun "Particle Cannon"
-	gun "Particle Cannon"
+	gun "Neutron Gun"
+	gun "Neutron Gun"
+	gun "Neutron Gun"
+	gun "Neutron Gun"
+	gun "Neutron Gun"
 	gun
+
+ship "Barb" "Barb (Defensive)"
+		"Beam Laser"
+		"Anti-Missile Turret"
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X1050 Ion Engines"
