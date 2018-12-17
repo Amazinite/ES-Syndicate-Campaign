@@ -1,5 +1,5 @@
 # ES-Syndicate-Campaign
-The development repository for the Syndicate campaign of Endless Sky.
+The development repository for the Syndicate campaign of Endless Sky. Spoilers ahead.
 
 ### What's this exta stuff folder?
 I'm keeping my workflow public for anyone to check out and comment on. This folder contains all the things I'm using to help create the campaign, from Blender files of any new models to text files containing any work for the development process. Given the nature of my workflow, this will be a mix of new and old stuff, some (maybe even most) of which that may not make any sense whatsoever and may never be used. It can also get rather unorganized. Below is a description of the text files in the extra stuff folder, but just take everything you see in these files with a grain of salt as none of it is set in stone.
