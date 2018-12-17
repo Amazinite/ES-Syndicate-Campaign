@@ -213,7 +213,7 @@ mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mi
 			`	"I know, Sawyer," Johansen responds. "I'm the one who sent Captain <last> to save you."`
 			`	The two men talk to each other for a few minutes, not even paying attention to your presence. It's clear that they haven't seen each other in some time. After a while, Johansen reaches into his pocket and hands you a credit chip worth an astounding <payment>.`
 			`	"Thank you for saving Sawyer, <last>. I wish that I had more to give you."`
-			`	You talk with Sawyer and Johansen for a little longer. You learn that Sawyer is a physicist working for the Syndicate, and he has been for many years now. He was investigating a spacial anomaly that was detected in Durax when a pirate fleet destroyed his escorts and left him stranded. Eventually, Sawyer mentions that he must leave to return his findings to the Syndicate. You bid Sawyer and Johansen farewell before returning to your ship.`
+			`	You talk with Sawyer and Johansen for a little longer. You learn that Sawyer is a physicist working for the Syndicate, and he has been for many years now. He was investigating an anomaly that was detected in Durax when a pirate fleet destroyed his escorts and left him stranded. Eventually, Sawyer mentions that he must leave to return his findings to the Syndicate. You bid Sawyer and Johansen farewell before returning to your ship.`
 
 
 
@@ -327,7 +327,7 @@ mission "Syndi Workers 2" # Pretty much a spaceport-ized strike breaker job, but
 			choice
 				`	"I'd be glad to help."`
 					accept
-				`	"Sorry, I'm not going in that direction."`
+				`	"Sorry, I'm not interested in helping."`
 					defer
 					
 	on complete
@@ -337,7 +337,7 @@ mission "Syndi Workers 2" # Pretty much a spaceport-ized strike breaker job, but
 
 
 
-mission "Syndi Relations 0"
+mission "Syndi Communications 0"
 	name "The Final Final Frontier"
 	description "Travel to <destination> with Nate Remington to pick up supplies used to build the infrastructure of the Syndicate frontier worlds."
 	minor
@@ -420,7 +420,7 @@ mission "Syndi Relations 0"
 				accept
 				
 	npc save accompany
-		government Syndicate
+		government "Syndicate"
 		personality escort timid
 		ship "Arrow" "Libidine"
 	
@@ -429,7 +429,7 @@ mission "Syndi Relations 0"
 
 
 
-mission "Syndi Relations 1"
+mission "Syndi Communications 1"
 	name "The Final Final Frontier"
 	description "Bring the supplies you picked up from <origin> to <destination>."
 	landing
@@ -438,7 +438,7 @@ mission "Syndi Relations 1"
 		attributes frontier
 		near Polaris 1 100
 	to offer
-		has "Syndi Relations 0: done"
+		has "Syndi Communications 0: done"
 	to fail
 		has "chosen sides"
 	blocked "You have landed on <origin>, but you don't have enough space for the cargo. Return when you have at least 10 tons of free cargo space."
@@ -462,7 +462,7 @@ mission "Syndi Relations 1"
 		payment 200000
 		conversation
 			`The spaceport on <planet> does not have the same machinery as on <origin>, so it takes much longer to unload the ten tons of cargo. While you are waiting, Nate goes on and on talking about himself. He doesn't even wait for you to respond at any point, nor does he seem interested in if you're even listening. Judging by the smell, he must have been drinking while on the flight here.`
-			`	"When I was 20, I applied to work for Syndicated Relations. The Syndicate had had a number of public plunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
+			`	"When I was 20, I applied to work for Syndicated Communications. The Syndicate had had a number of public plunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
 			choice
 				`	"Please don't touch me."`
 				`	(Ignore it.)`
@@ -491,7 +491,7 @@ mission "Syndi Relations 1"
 
 
 
-mission "Syndi Relations 2"
+mission "Syndi Communications 2"
 	name "Party in Paradise"
 	description "Drop Nate off at his villa on <destination>."
 	minor
@@ -500,7 +500,7 @@ mission "Syndi Relations 2"
 	destination Shangri-La
 	passengers 1
 	to offer
-		has "Syndi Relations 1: done"
+		has "Syndi Communications 1: done"
 		has "event: initial deployment 4"
 		random < 30
 	to fail
@@ -568,7 +568,7 @@ mission "Syndi Relations 2"
 			
 			`	Shortly after the sun sets, ships begin landing and unloading their passengers before flying off to park at the spaceport. The party-goers look as expensive as you would expect, wearing extravigant clothing of all colors and styles. You feel very cheap by comparison. When Nate sees you looking down at your clothing, he reassures you by saying, "Don't worry, the fancy people always come first, but they're only a small part of the party." A few minutes later, another ship lands which unloads about a dozen passengers all wearing more civilian style clothing, some of which even manages to make you look like the fancy one.`
 			`	By the time midnight hits, the house is filled to the brim with guests and loud music blarring throughout every room. You spend your time wandering around the crowd, dancing, and socializing with people willing to talk to you. Never before have you seen a party this big, and you feel slightly bad for whoever has to clean up the mess that gets left behind.`
-			`` # Give a choice of some sort during the party? I'd like it to be a seemingly insignificant choice that actually helps you out later down the line. e.g. bump into someone important that will change something that happens in the middle.
+			``
 			`	The party starts to die down over the next few hours as guests either leave or pass out on the floor. Starting to get tired, you look around for a place away from all the noise where you can sleep. You end up finding an area farther back in the villa where no one seems to have been during the party. After opening a few doors that lead to bathrooms or closets, you finally find a bedroom.`
 				goto bed
 			
@@ -581,7 +581,7 @@ mission "Syndi Relations 2"
 
 
 
-mission "Syndi Relations 3A"
+mission "Syndi Communications 3A"
 	name "Lodestone Disaster"
 	description "Nate has been informed that the volcanos near the <planet> spaceport are becoming active. Transport him to <destination> so that he may be there should a disaster occur."
 	landing
@@ -589,7 +589,7 @@ mission "Syndi Relations 3A"
 	deadline
 	passengers 1
 	to offer
-		has "Syndi Relations 2: done"
+		has "Syndi Communications 2: done"
 	to fail
 		has "chosen sides"
 	on offer
@@ -630,14 +630,14 @@ event "lodestone eruption"
 
 
 
-mission "Syndi Relations 3B"
+mission "Syndi Communications 3B"
 	name "Lodestone Disaster"
 	description "Drop Nate Remington off on <destination> so that he may begin work on getting the spaceport rebuilt."
 	landing
 	destination Maker
 	passengers 1
 	to offer
-		has "Syndi Relations 3A: done"
+		has "Syndi Communications 3A: done"
 	to fail
 		has "chosen sides"
 	on offer
@@ -707,7 +707,7 @@ mission "Syndi Security 0"
 		near Bellatrix 0 1
 	to offer
 		random < 30
-		"combat rating" > 100
+		"combat rating" > 200
 		has "assisted the syndicate"
 	to fail
 		has "chosen sides"
@@ -724,7 +724,7 @@ mission "Syndi Security 0"
 			
 			label need
 			branch remington
-				has "Syndi Relations 3B: done"
+				has "Syndi Communications 3B: done"
 			`	Hensley removes the sunglasses that he is wearing and hangs them on his shirt collar. "I have spoken to a number of Syndicate employees who have had previous interactions with you, and they have spoken rather highly of you. Your combat record has also caught my eye; you have proven yourself as someone who is not to be messed with. As such, hearing that you were landing on <origin>, I was hoping you would be willing to help me, or should I say the Syndicate, thin some pirate influence up near the frontier worlds."`
 				goto next
 			
@@ -994,3 +994,477 @@ mission "syndicate occupation of almach"
 		fleet "Large Syndicate"
 
 event "syndicate occupation of almach"
+
+#########################
+# WORK IN PROGRESS ZONE #
+#########################
+
+mission "Syndi Sal 1"
+	name ``
+	description `Travel to <destination> to pick up cargo for Sal.`
+	minor
+	to offer
+		or
+			and
+				"assisted the syndicate" == 0
+				random < 10
+			and
+				"assisted the syndicate" == 1
+				random < 20
+			and
+				"assisted the syndicate" == 2
+				random < 50
+			and
+				"assisted the syndicate" == 3
+				random < 80
+	to fail
+		has "chosen sides"
+	source
+		government "Syndicate"
+	destination
+		attributes "deep"
+	on offer
+		conversation
+			`"Hey, I need 10 tons fo cargo transported no questions asked from <planet> to Hepheastus. Pay will be good."`
+			choice
+				`	"Alright."`
+					accept
+				`	"Back off, weirdo."`
+					decline
+				
+	on decline
+		event "Syndi Sal Alt 2: ready" 21
+
+mission "Syndi Sal 1B"
+	name ``
+	description `Bring Sal's cargo to <destination>.`
+	landing
+	destination "Hepheastus"
+	blocked `You don't have enough cargo space.`
+	cargo "mysterious cargo" 10
+	to offer
+		has "Syndi Sal 1: done"
+	on offer
+		conversation
+			`You pick up the cargo. A Deep Security guard questions you, but lets you go on your way.`
+				accept
+			
+	on complete
+		payment
+		conversation
+			`"Great. Meet me in the spaceport."`
+
+mission "Syndi Sal 2"
+	name ``
+	description `Bring some of Sal's "friends" to <destination>`
+	passengers 1
+	destination "Antipode"
+	to offer
+		has "Syndi Sal 1B: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`"Now, might you transport some friends of mine to <destination>?"`
+			choice
+				`	"Okay."`
+					accept
+				`	"I'll go find other work."`
+					decline
+	npc
+		government "Independent"
+		fleet
+			names "syndicate"
+			variant
+				"Quicksilver"
+
+mission "Syndi Sal 2: alt"
+	name ``
+	description `Bring some of Sal's "friends" to <destination>`
+	minor
+	passengers 1
+	source
+		government "Syndicate"
+	destination "Antipode"
+	to offer
+		has "Syndi Sal Alt 2: ready"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`"Sorry, I was too abrasive last time. Might you transport some friends of mine to <destination>?"`
+			choice
+				`	"Alright, I'll give you a chance."`
+					accept
+				`	"I said leave me alone."`
+					decline
+	npc
+		government "Independent"
+		fleet
+			names "syndicate"
+			variant
+				"Quicksilver"
+
+mission "Syndi Sal 2B"
+	name ``
+	description `Go to <destination> to meet Sal for another job.`
+	destination "Crossroads"
+	to offer
+		or
+			has "Syndi Sal 2: done"
+			has "Syndi Sal 2 alt: done"
+	to fail
+		has "chosen sides"
+	on offer
+		payment
+		dialog
+			`Your passengers hand you <payment> and leave your ship, only to board a Quicksilver in pirate colors and make their way toward the nearby pirate world. Who did you just transport?`
+			`	Sal asks you to meet him on <destination>`
+
+mission "Syndi Sal 3"
+	name ``
+	description `Scan the <npc> and land on <destination> when done.`
+	to offer
+		has "Syndi Sal 2B: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`You spot a shadowy figure stalking around the spaceport. Sal finally shows up, but when you look back the figure is gone.`
+			`	"Hey, I need you to scan the cargo of a ship for me. It's named the <npc> and has been staying in the system."`
+			choice
+				`	"Alright."`
+					accept
+				`	"This work is getting too shady for me."`
+					decline
+	npc "scan cargo"
+		government "Merchant"
+		ship "Bounder" "Original Ship Name"
+	on complete
+		payment
+		conversation
+			`You're lead to a private hangar of Sal. Sal takes your scan logs. "Nothing? BS." *Fiddles with some stuff.* "Hey look, equipment for testing nuclear related stuff. I think this guy's part of the group behind the bombings."`
+			`	"Now get out of my hangar and meet me in the spaceport. I don't enjoy having guests here for too long."`
+
+mission "Syndi Sal 4"
+	name ``
+	description `Bring Sal to <destination> to speak to a contact of his.`
+	passengers 1
+	clearance ``
+	destination "Deadman's Cove"
+	to offer
+		has "Syndi Sal 3: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`"The bombings. It's probably the Free Worlds. Innocent until proven guilty and all, you know. No one has any hard proof and the Navy's too afraid to pull the trigger and find it."`
+			`	"Bring me to <destination>. I have some contacts I need to speak with."`
+			choice
+				`	"Okay."`
+					accept
+				`	"Nope, too dangerous."`
+					decline
+
+mission "Syndi Sal 4B"
+	name ``
+	description `Return Sal to <destination>`
+	passengers 1
+	destination "Foundry"
+	to offer
+		has "Syndi Sal 4: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`Sal directs you to one of the many island complexes to where his "contact" is located. "Stick near me. Don't want your teeth pulled out."`
+			`	You bump into one of the pirates outside the complex. He pulls a knife and looks at you, but puts it away after seeing Sal. "Be careful who you associate with, punk."`
+			`	Inside the complex, the pirate warlord sits atop a throne chair like a king. The warlord says how everyone's loving the situation because of how the Navy are disoriented and spread thin. "I can chat with my other friends and tell you what they know. This'll be great for business."`
+			`	"I'm sure it will be for scum like you." Sal quips back. They both laugh.`
+			`	"Now get off my island!" the warlord says as he motions to his men to remove you, still laughing along with Sal as you are both escorted out of the complex at gun point.`
+			`	"Back to <destination>," Sal says.`
+				accept
+	
+	on complete
+		dialog `You drop Sal off at another private hangar of his. "Meet me in the spaceport later. I need to chat with the big CEO."`
+
+mission "Syndi Sal 4C"
+	name ``
+	description `Bring Sal to <destination> to speak with more contacts.`
+	passengers 1
+	clearance ``
+	destination "Stormhold"
+	to offer
+		has "Syndi Sal 4B: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`"CEO says we should chat with my contacts on <destination>. They have to deal with the Navy more than the guys on Deadman's Cove and may know more."`
+			choice
+				`	"Okay"`
+				`	"No way"`
+					decline
+			`	"Just make sure to follow my lead. The last guy I had ferrying me around looked at a warlord wrong and ended up being shot." Sal laughs, but you aren't sure if he's joking.`
+				accept
+
+mission "Syndi Sal 4D"
+	name ``
+	description `"Return Sal to <destination>"`
+	passengesr 1
+	destination "Reunion"
+	to offer
+		has "Syndi Sal 4C: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`You meet with another warlord on <origin>.`
+			`	"No idea what's going on, but business is good. Might be worth checking Bucanneer Bay or Covert."`
+			`	Sal's face goes white. "No thanks. Last time I spoke with them they said they'd kill me if I ever showed back up."`
+			`	On your way out, one of the pirates grimaces at you.`
+			choice
+				`	(Grimace back.)`
+				`	(Ignore it.)`
+					accept
+			`	You make a face back at the pirate, who responds by pulling his gun on you. Before you can react, you spot Sal with his gun pulled on the pirate.`
+			`	"Put it down, Bruce." The pirate lowers his gun and sulks away.`
+			`	Once you reach your ship, Sal grabs you by the shoulders and looks you in the eyes with a concerned look on his face. "I wasn't fucking joking about the person before you dying. Now bring me to <destination> before you get yourself killed."`
+				accept
+	
+	on complete
+		payment
+		dialog `"You're done doing work on pirate worlds for now. Meet me in the spaceport later after I've made some calls."`
+
+mission "Syndi Sal 5"
+	name ``
+	description `Bring Sal to <destination> to speak with more contacts.`
+	passengers 1
+	source "Reunion"
+	destination "Glory"
+	to offer
+		has "Syndi Sal 4D: done"
+	on offer
+		conversation
+			`"I need to deal with some things around the Paradise Worlds. Bring me to <destination> first."`
+			choice
+				`	"Okay."`
+					accept
+				`	"No way."`
+					decline
+
+mission "Syndi Sal 5B"
+	name ``
+	description `Bring Sal to <destination> to speak with more contacts.`
+	landing
+	passengers 1
+	source "Glory"
+	destination "Prime"
+	to offer
+		has "Syndi Sal 5: done"
+	on offer
+		conversation
+			`You meet a businessman who's clearly had too much plastic surgery done.`
+			`	"This better be over quick. It's just like the time the Navy left to deal with those peasents on Hope. My brother died from a pirate fleet in Alheka. That never would've happened had the Navy been doing their job!"`
+			`	"Those rubes down South better surrender quick."`
+			`	"Alright," Sal says. "Let's head to <destination> next. A contact of mine should be there by the time we show up."`
+				accept
+
+mission "Syndi Sal 5C"
+	name ``
+	description `Bring Sal to <destination> to speak with more contacts.`
+	landing
+	passengers 1
+	source "Prime"
+	destination "Pearl"
+	to offer
+		has "Syndi Sal 5B: done"
+	on offer
+		conversation
+			`You meet with Sal's contact in an alleyway just outside the spaceport. "I see you have a new lacky, Sal. What, lose your old one?"`
+			`	"Watch you mouth. Now, what do you know."`
+			`	"I know you're a fucking snake," the contact says. Sal pulls his gun.`
+			`	"No more playing around, cough up what you know about the bombings."`
+			`	"What in the world would I know? It's those damn Free Worlds that are up to no good, not anyone up here." Sal shoots the contact in the foot.`
+			`	"Alright! Alright! I've got a rat who says it was an inside job. Don't know how reliable the guy is, but he tells me the Navy have a stockpile of nukes somewhere and that they stages all this so the Republic wouldn't lose the worlds down south."`
+			`	"Sounds like a load of BS to me," Sal says before tossing a credit chip at the contact. "Bring me to <destination>, <first>."`
+				accept
+
+mission "Syndi Sal 5D"
+	name ``
+	description `Bring Sal to <destination> to speak with an old friend.`
+	landing
+	passengers 1
+	source "Pearl"
+	destination "Hestia"
+	to offer
+		has "Syndi Sal 5C: done"
+	on offer
+		conversation
+			`""`
+			choice
+				``
+				``
+			`	"Bring me to <destination>. I need to chat with an old friend before we head back to the Core."`
+				accept
+	
+	on complete
+		conversation
+			`"Nice place, ain't it? I might retire here one day." Meet me in the spaceport later.`
+
+mission "Syndi Sal 6"
+	name ``
+	description `Go to <destination> to pick up cargo.`
+	passengers 1
+	source "Hestia"
+	destination "Geminus"
+	to offer
+		has "Syndi Sal 5D: done"
+	on offer
+		conversation
+			`"Got word from corporate. We need to pick up cargo on <destination> before we head home."`
+			choice
+				`	"Okay."`
+					accept
+				`	"No way."`
+					decline
+
+mission "Syndi Sal 6B"
+	name ``
+	description `Drop the cargo off on <destination>.`
+	landing
+	passengers 1
+	source "Geminus"
+	destination "Hepheastus"
+	cargo "radioactive cargo" 5
+	to offer
+		has "Syndi Sal 6: done"
+	on offer
+		conversation
+			`"I ain't leaving the ship. Just head to this warehouse and talk to the guy there and he'll get the cargo loaded."`
+			`	When you find the cargo, it's marked radioactive.`
+			choice
+				`	"Okay."`
+					accept
+				`	"No way."`
+					decline
+
+mission "Syndi Sal 7"
+	name ``
+	description `Bring Sal to <destination> to speak with his warlord contact.`
+	landing
+	clearance ``
+	passengers 1
+	destination "Deadman's Cove"
+	to offer
+		has "Syndi Sal 6B: done"
+	on offer
+		conversation
+			`"I just got word that my contact on <destination> has more info. I'm gonna need you to bring me there again."`
+			choice
+				`	"Okay."`
+					accept
+				`	"No way."`
+					decline
+
+mission "Syndi Sal 8"
+	invisible
+	landing
+	to offer
+		has "Syndi Sal 7: done"
+	deadline 0
+	on offer
+		"assisted the syndicate" ++
+		payment 
+		conversation
+			`"Just so you know, I've contacted a few people in the Syndicate and floated your name around. Ever need anything, just tell em you know me. Might be worth heading to Foundry and applying for the Syndicate."`
+			`	When Sal steps off your ship, he's grabbed by a group of pirates. "Not like this. Think of all the good I've done you boys."`
+			choice
+				`	(Save him.)`
+				`	(Run.)`
+					goto run
+			
+			`	You pull your gun and fire on the pirate. You take down two of them and then duck for cover. You hear a loud gunshot go off in the distance and feel a pain in your stomach. They just shot through your ship and into your stomach. A pirate steps onto your ship, and too weak to retaliate, she shoots you.`
+				die
+			label run
+			`	You close the doors to your ship and rush to the cockpit to leave. As you take off, you head the sound of a number of gunshots go off on the ground, but you can't see what happened. Better get out of the system before they come for you next.`
+					launch
+	
+	npc kill
+		personality staying
+		government "Pirate"
+		fleet "Large Core Pirates" 2
+
+
+
+mission "Syndi Commitment"
+	name "Apply for the Syndicate"
+	description "If you want to work for the Syndicate, apply for a job on <destination>"
+	minor
+	source
+		government Syndicate Republic
+	destination Foundry
+	to offer
+		"assisted the syndicate" >= 3
+		has "Syndi Sal 7: done"
+	to fail
+		has "chosen sides"
+	to complete
+		never
+	
+	on offer
+		conversation
+			`	Joining the Syndicate, you probably shouldn't be given some sort of formal letter signed by all the people you've met up to this point like you do in the FW story. It would make far more sense instead for the player to have to go apply to the Syndicate, giving all those they've met in the Syndicate as references. Once they apply, they'll have say 30 days of free time to do whatever before being contacted either by a new character or someone they've met before, and since Kiko might kill off Sal at the end of the Syndicate intro, you might end up getting contacted by a new character to temporarily replace that of Sal.`
+			`	Given that the Syndicate has multiple departments to it, the 3 branches of the start could be three jobs that the player is able to choose from.`
+			choice
+				`	(Syndicated Security)`
+					goto security
+				`	(Syndicated Prospecting)`
+					goto prospecting
+				`	(Syndicated Communications)`
+				`	I don't want to join right now.`
+					defer
+			
+			apply
+				set "chose Communications"
+			`	Good choice.`
+				goto end
+			
+			label security
+			apply
+				set "chose security"
+			`	Good choice.`
+				goto end
+			
+			label prospecting
+			apply
+				set "chose prospecting"
+			`	Good choice.`
+			
+			label end
+			`	Each branch will bring you close to a different character or set of characters, and you'll get to learn a lot about them. Each character may have a different feeling about the extremists, trying to nudge the player into supporting the extremists or supporting the defector.`
+			`	You will be contacted in 30 days if you have been hired. Thank you. :)`
+				accept
+		
+	on accept
+		set "chosen sides"
+		event "syndicate application accepted" 30
+		event "capture of Kornephoros" 30
+			
+event "syndicate application accepted"
+
+mission "SSC: Learning the Ropes 0" # (Syndicate Start Communications)
+	to offer
+		has "chose communications"
+		has "event: syndicate application accepted"
+
+mission "SSS: Learning the Ropes 0" # (Syndicate Start Security)
+	to offer
+		has "chose security"
+		has "event: syndicate application accepted"
+
+mission "SSP: Learning the Ropes 0" # (Syndicate Start Prospecting)
+	to offer
+		has "chose prospecting"
+		has "event: syndicate application accepted"
+		
