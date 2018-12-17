@@ -298,7 +298,7 @@ mission "Syndi Workers 1"
 
 
 
-mission "Syndi Workers 2" # Pretty much a spaceport-ized strike breaker job, but this is done to make it apparent to the player that not everything in the Syndicate is all nice and cozy.
+mission "Syndi Workers 2"
 	name "Worker's Strike"
 	description `Bring <bunks> strike breakers to <destination>, to take the place of workers who are on strike.`
 	minor
@@ -372,7 +372,7 @@ mission "Syndi Communications 0"
 				goto choice1
 				
 			label hensley
-			`	"Really? Thomas Hensley has told me about you. Nate Remington's the name. Don't wear it out. What brings you to a place like this?"`
+			`	"Really? Thomas Hensley told me about you. Nate Remington's the name. Don't wear it out. What brings you to a place like this?"`
 			
 			label choice1
 			choice
@@ -462,7 +462,7 @@ mission "Syndi Communications 1"
 		payment 200000
 		conversation
 			`The spaceport on <planet> does not have the same machinery as on <origin>, so it takes much longer to unload the ten tons of cargo. While you are waiting, Nate goes on and on talking about himself. He doesn't even wait for you to respond at any point, nor does he seem interested in if you're even listening. Judging by the smell, he must have been drinking while on the flight here.`
-			`	"When I was 20, I applied to work for Syndicated Communications. The Syndicate had had a number of public plunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
+			`	"When I was 20, I applied to work for Syndicated Communications, the branch of the Syndicate that deals with public relations and such. The Syndicate had had a number of plunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
 			choice
 				`	"Please don't touch me."`
 				`	(Ignore it.)`
@@ -475,7 +475,7 @@ mission "Syndi Communications 1"
 			choice
 				`	"Sounds like a great place."`
 				`	"Sorry, but I don't want to go to Shangri-La with you."`
-			`	Before you can respond, a device on Nate's belt begins to ring. After a few tries, he finally unclips it from his belt.`
+			`	Before Nate can respond, a device on his belt begins to ring. After a few tries, he finally unclips it from his belt.`
 			`	"This is Nate Remington, what's so important right now? Oh, Hensley, nice to hear from you. What is it?" Nate, who was previously speaking loud enough for someone across the albeit small spaceport to hear, begins speaking in a hushed voice. "Really...? Oh my. Alright, I'll be over as soon as I can.`
 			
 			branch hensley
@@ -527,8 +527,21 @@ mission "Syndi Communications 2"
 					accept
 				`	"Sorry, but I don't want to go to Shangri-La."`
 					decline
-	
-	on complete
+
+
+
+mission "Syndi Communications 3A"
+	name "Lodestone Disaster"
+	description "Nate has been informed that the volcanos near the <planet> spaceport are becoming active. Transport him to <destination> so that he may be there should a disaster occur."
+	landing
+	destination Lodestone
+	deadline
+	passengers 1
+	to offer
+		has "Syndi Communications 2: done"
+	to fail
+		has "chosen sides"
+	on offer
 		conversation
 			`Nate gives you the coordinates to his villa, which is located far from the spaceport city in a mountainous region of the planet. It's almost night and the sun setting over the mountains is a beautiful sight. It's easy to see why Nate speaks so highly of this place.`
 			`	The villa itself is huge, far more than it seems that a single person could use. It is located part way up a mountain and overlooks a lake in the valley below. The front of the villa has four landing pads able to fit smaller transport ships. A larger ship would have to take up multiple landing pads. Only the largest of ships would be unable to land.`
@@ -563,53 +576,15 @@ mission "Syndi Communications 2"
 			`	Nate puts his face in his hands and takes a deep breath. "Ranting aside, about that party I mentioned on <origin>," he looks back up at you, "want to join?"`
 			choice
 				`	"You can count me in."`
-				`	"I'm not much of a party person. Is there somewhere I could sleep in peace?"`
-					goto sleep
+					goto party
+				`	"I'm not much of a party person."`
 			
+			`	"Well you've never been to a party thrown by THE Nate Remington. Stay a while, you'll have a blast."`
+			
+			label party
 			`	Shortly after the sun sets, ships begin landing and unloading their passengers before flying off to park at the spaceport. The party-goers look as expensive as you would expect, wearing extravigant clothing of all colors and styles. You feel very cheap by comparison. When Nate sees you looking down at your clothing, he reassures you by saying, "Don't worry, the fancy people always come first, but they're only a small part of the party." A few minutes later, another ship lands which unloads about a dozen passengers all wearing more civilian style clothing, some of which even manages to make you look like the fancy one.`
-			`	By the time midnight hits, the house is filled to the brim with guests and loud music blarring throughout every room. You spend your time wandering around the crowd, dancing, and socializing with people willing to talk to you. Never before have you seen a party this big, and you feel slightly bad for whoever has to clean up the mess that gets left behind.`
-			``
-			`	The party starts to die down over the next few hours as guests either leave or pass out on the floor. Starting to get tired, you look around for a place away from all the noise where you can sleep. You end up finding an area farther back in the villa where no one seems to have been during the party. After opening a few doors that lead to bathrooms or closets, you finally find a bedroom.`
-				goto bed
-			
-			label sleep
-			`	Nate leads you to an area near the back of the villa that seems very out of the way. "No one ever comes back here during my parties. Only the bass from the music reaches this far and all the fun happens up front anyway."`
-			
-			label bed
-			`	The room has a window overlooking the mountains outside of the villa. Almost like a fancy hotel, there's an unopened bottle of some expensive water brand sitting on the bedside table. The whole room looks very picture-esque. You haven't seen a single servant of any kind when you got here, so you wonder who keeps everything so neat and tidy if Nate is usually off planet.`
-			`	You lay down on the bed, which feels just as great as you imagined. You quickly slip into a deep sleep.`
-
-
-
-mission "Syndi Communications 3A"
-	name "Lodestone Disaster"
-	description "Nate has been informed that the volcanos near the <planet> spaceport are becoming active. Transport him to <destination> so that he may be there should a disaster occur."
-	landing
-	destination Lodestone
-	deadline
-	passengers 1
-	to offer
-		has "Syndi Communications 2: done"
-	to fail
-		has "chosen sides"
-	on offer
-		conversation
-			`When you wake up, everything is quiet. You can't hear any music or the noise of people moving around in the halls. Suddenly the door to your room opens, letting in the light from the hallway.`
-			`	"Rise and shine, Captain." After your eyes adjust to the new lighting, you see that the person who opened the door is Nate. "Still here, I see. I assume you slept well."`
-			choice
-				`	"Absolutely."`
-				`	(Pull the covers over your head.)`
-					goto covers
-			
-			`	"That's good. Just so you know, my ship is supposed to get back from the shop tomorrow. I don't have anywhere I need to go until then, so you can leave whenever you want."`
-				goto disaster
-			
-			label covers
-			`	Nate laughs. "I know the feeling. Anyway, my ship is supposed to get back from the shop tomorrow. I don't have anywhere I need to go until then, so you can leave whenever you want."`
-			
-			label disaster
-			`	Nate walks back out into the hallway. You eventually get up and make your way out to your ship. Right before you board, Nate comes running out of his house.`
-			`	"<first>! I need you to take me to <destination> now! The volcanos near the spaceport are showing signs of erupting. I need to be there if a disaster strikes."`
+			`	Shortly before midnight hits when Nate tells you the party is really suppose to get started, you see him yelling at people to get out of the house and go home.`
+			`	"Party's over, everyone. <first>! I need you to take me to <destination> now! The volcanos near the spaceport are showing signs of erupting. I need to be there if a disaster strikes."`
 			choice
 				`	"Get on board!"`
 					accept
@@ -641,7 +616,7 @@ mission "Syndi Communications 3B"
 	to fail
 		has "chosen sides"
 	on offer
-		conversation # The reading is a little thick before you reach the decision at the bottom: add another decision near the beginning. Maybe a karma decision: help or don't help.
+		conversation
 			`As you come in for a landing, you see towers of smoke billowing up from the volcano next to the spaceport, which is raised above the ground as to avoid being buried in lava. About two dozen ships are busy ferrying passengers to safety away from the spaceport.`
 			`	"The lava flows likely won't bury the spaceport, but there's the chance that the volcano could explode and launch lava up into the air. If that lands on the spaceport then the spaceport is done for. You should help evacuate the spaceport just in case that happens."`
 			choice
@@ -665,26 +640,10 @@ mission "Syndi Communications 3B"
 				accept
 	
 	on complete
-		event "syndicate notice player" 30
-		event "lodestone spaceport rebuilt" 120
-		dialog `Nate hops off your ship after you land. "Thanks for the ride <first>. I'll be in contact with you for the future, should you decide to continue doing work for the Syndicate. Heck, maybe you can even apply for a salaried position. I'll make sure the Syndicate knows that you've helped me, which should give you a pretty good shot at getting accepted if you apply. Goodbye until then, Captain."`
-
-
-
-event "syndicate notice player"
-
-mission "syndicate notice player"
-	invisible
-	landing
-	to offer
-		has "event: syndicate notice player"
-	on offer
 		payment 500000
 		"assisted the syndicate" ++
-		conversation 
-			`Upon landing, you receive a message from Nate Remington.`
-			`	"I hope you've been having a good time since I last met you, Captain. I'm calling to inform you that I've made sure that a few higher-ups in the Syndicate know of you helping during the Lodestone situation. We've transfered <payment> to your account for your help. Safe travels, Captain."`
-				decline
+		event "lodestone spaceport rebuilt" 120
+		dialog `Nate hops off your ship after you land. "Thanks for the ride <first>. I'll be in contact with you in the future, should you decide to continue doing work for the Syndicate. Heck, maybe you can even apply for a salaried position. I'll make sure the Syndicate knows that you've helped me, which should give you a pretty good shot at getting accepted if you apply." Nate hands you <payment>. "Goodbye until then, Captain."`
 
 
 
@@ -732,7 +691,7 @@ mission "Syndi Security 0"
 			`	Hensley removes the sunglasses that he is wearing and hangs them on his shirt collar. "I had a talk with a friend of mine named Nate Remington, and he spoke rather highly of you. Your combat record has also caught my eye; you have proven yourself as someone who is not to be messed with. As such, hearing that you were landing on <origin>, I was hoping you would be willing to help me, or should I say the Syndicate, thin some pirate influence up near the frontier worlds."`
 			
 			label next
-			`	"Most of SynSec, as we call it, is currently dealing with foiling a large pirate raid from Buccaneer Bay down south, so we are low on ships that would normally be up north."`
+			`	"Most of Security is currently dealing with foiling a large pirate raid from Buccaneer Bay down south, so we are low on ships that would normally be up north."`
 			choice
 				`	"I'd love to help."`
 					goto accept
@@ -757,7 +716,7 @@ mission "Syndi Security 0"
 
 
 
-mission "Syndi Security 1" # Rewrite
+mission "Syndi Security 1"
 	name "Defending the Frontier"
 	description "Fight off the pirates in the Zaurak system before landing on Canyon."
 	landing
@@ -772,26 +731,11 @@ mission "Syndi Security 1" # Rewrite
 			`	A security guard escorts you from your ship into the central building, which looks surprisingly similar to the bank you were on in New Boston, all the walls and floors a bright gleaming metal. You walk past a lounge area full of people in either security uniforms or civilian clothing.`
 			choice
 				`	"Who are they?"`
-				`	(Say nothing.)`
-					goto nothing
 			
 			`	"Those are the crew members of all the ships parked outside. Normally that room would be packed wall to wall with men in uniform, but given the situation we are using it to house the civilian crews as well."`
-			label nothing
 			`	The guard leads you to a room that overlooks the lounge area. You look around the room to see two men in Syndicated Security uniforms and a man and a woman both wearing civilian clothing. This is presumably where the captains of the ships are staying until an attack occurs. Given the expressions on the faces of the merchant captains, sitting around here isn't the most exhilarating activity.`
-			`	The three Syndicate captains in the room begin conversing in the corner. They keep glancing back at you and the other merchant captains every few moments, until one of them fully turns around to look at you. "I don't need to know your name and you don't need to know ours. You will refer to us as sir and we will refer to you as civilians, you got that? Now, we're all going to need to be rested for if and when something occurs that will require our attention. I suggest you choose your beds immediately." He motions over to a doorway along the side wall that opens to a small room with three bunk beds. You are the first in the room to choose your bed.`
-			choice
-				`	(Top bunk.)`
-				`	(Bottom bunk.)`
-					goto bottom
-			`	You lift yourself up onto the top bunk and lay down as the other captains walk in behind you. You instantly notice how soft the bed feels, and within minutes you are asleep.`
-				goto next
-			
-			label bottom
-			`	You lean down, slide into the bottom bunk, and watch the other captains walk past you to their beds. You roll back and forth a few times and try to fluff your pillow, but no position in this bed feels right. After a long time, you finally fall asleep.`
-			
-			label next
-			``
-			`	When you wake up, it appears to be midday. The two other merchant captains are still asleep, but the bunks that were holding the SynSec guards are empty. Just as you are about to get up out of bed and grab something to eat, a guard begins barks at everyone in the building over the loudspeaker. "Alright everyone, get to your ships and follow my Vanguard to <destination> immediately! I don't want a single pirate alive in that system, you hear me? We will rendezvous on <planet> once we are finished!"`
+			`	The Syndicate captain that led you hear begins speaking to you and the other two merchant captains. "I don't need to know your names and you don't need to know ours. You will refer to us as sir and we will refer to you as civilians, you got that?" You all nod. The Syndicate captain is about to speak again when a siren goes off.`
+			`	"Alright everyone, get to your ships and follow my Vanguard to <destination> immediately! I don't want a single pirate alive in that system, you hear me? We will rendezvous on <planet> once we are finished!"`
 				launch
 				
 	npc save
@@ -803,8 +747,11 @@ mission "Syndi Security 1" # Rewrite
 		personality heroic staying
 		government Pirate
 		system Zaurak
-		fleet "Large Core Pirates"
-		dialog `The pirate fleets attacking Zaurak have been killed.`
+		fleet
+			names "pirate"
+			variant
+				"Falcon"
+				"Quicksilver" 2
 	
 	on visit
 		dialog `You have landed on <planet>, but there are still pirates attacking the system! Depart and deal with the rest of the pirates before landing.`
@@ -826,7 +773,7 @@ mission "Syndi Security 1: Escorts"
 		fleet
 			names syndicate
 			variant
-				"Quicksilver (Proton)"
+				"Manta"
 				"Quicksilver (Proton)"
 	npc kill
 		personality escort heroic
@@ -839,7 +786,7 @@ mission "Syndi Security 1: Escorts"
 
 
 
-mission "Syndi Security 2" # Rewrite
+mission "Syndi Security 2"
 	name "Defending the Frontier"
 	description "The recent pirate fleet movements were all a distraction to allow the pirates to attack <destination>. Fend off the pirates attacking <planet>."
 	landing
@@ -865,7 +812,7 @@ mission "Syndi Security 2" # Rewrite
 			`	"Nothing so far, but I don't know whether that's a bad thing or a good thing. It could mean that nothing noteworthy happened or it could mean they've somehow all been wiped out, which I find highly unlikely."`
 			
 			label attack
-			`	Suddenly, the communication device on the guard's belt begins to beep. With almost lightning fast speed he removes the device from his belt and brings it up to the side of his head. "What's the situation?" The guard is silent as he listens to whoever is on the other side of the communication device when suddenly his face turns grim.`
+			`	The communication device on the guard's belt begins to beep. With almost lightning fast speed he removes the device from his belt and brings it up to the side of his head. "What's the situation?" The guard is silent as he listens to whoever is on the other side of the communication device when suddenly his face turns grim.`
 			`	"Understood sir, we'll be there immediately." He places the device back onto his belt and begins explaining the situation, talking so fast that you almost can't understand him. "Remember when I said the pirates might be planning something? The raids in the north and the south were meant to distract us, and a large pirate fleet from Deadman's Cove has just attacked <destination>. We need to get there now!"`
 			`	The guard makes a bolt for his ship and takes off in the direction of Polaris. The rest of the captains quickly follow suit, leaving you to get ready.`
 				accept
@@ -874,22 +821,26 @@ mission "Syndi Security 2" # Rewrite
 		personality escort heroic
 		government Syndicate
 		ship "Vanguard (Particle)" "S.S. Atticus"
-	npc kill
-		personality heroic staying
-		government Pirate
-		system Polaris
+	npc evade
+		personality heroic staying target
+		government "Pirate"
+		system "Polaris"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
-		fleet "Large Core Pirates"
-		fleet "Large Core Pirates"
-		dialog `All the pirates attacking Shangri-La have been destroyed.`
+		dialog `All the pirates attacking Shangri-La have been disabled or destroyed.`
 	npc
 		personality heroic staying
-		government Syndicate
-		system Polaris
+		government "Syndicate"
+		system "Polaris"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
+	npc
+		personality heroic staying derelict
+		government "Pirate"
+		system "Polaris"
+		fleet "Large Core Pirates"
+		fleet "Large Core Pirates"
 
 
 
@@ -935,26 +886,24 @@ mission "Syndi Security 3"
 				`	"Sorry, but I don't want to do work for Syndicated Security anymore."`
 					decline
 	
-	npc kill
-		personality heroic staying
-		government Pirate
-		system Almach
+	npc evade
+		personality heroic staying target
+		government "Pirate"
+		system "Almach"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
 		fleet "Large Core Pirates"
-		fleet "Large Core Pirates"
-		fleet "Large Core Pirates"
-		dialog `The pirates defending Deadman's Cove have been destroyed. Land on the planet to liberate the slaves.`
+		dialog `The pirates defending Deadman's Cove have been dealt with.`
 	npc
 		personality heroic
-		government Syndicate
+		government "Syndicate"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
 	npc
 		personality heroic staying
-		government Syndicate
-		system Almach
+		government "Syndicate"
+		system "Almach"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
@@ -967,7 +916,7 @@ mission "Syndi Security 3"
 		"assisted the syndicate" ++
 		event "syndicate occupation of almach ends" 7
 		conversation
-			`Most of the locals on the spaceport island of <planet> look more terrified than anything that a massive Syndicate fleet is landing on the planet. None of the Syndicate ships are firing their weapons, and none of the pirates on the ground look like they're in the mood for fighting.`
+			`Most of the locals on the spaceport island of <planet> look more terrified than anything that a massive Syndicate fleet is landing on the planet. None of the Syndicate ships are firing their weapons, and none of the pirates on the ground look like they're in the mood for a fight.`
 			`	The Syndicate quickly set up a small tent outpost along the shore of the main island. Hensley is standing over a table surrounded by a few other Syndicated Security officers and on the table is a map of the planet. The officers stop talking to each other when they see you walk in.`
 			`	"Thanks for the help <last>," Hensley says to you. "Hopefully this <payment> will go to good use."`
 			choice
@@ -1025,7 +974,7 @@ mission "Syndi Sal 1"
 		attributes "deep"
 	on offer
 		conversation
-			`"Hey, I need 10 tons fo cargo transported no questions asked from <planet> to Hepheastus. Pay will be good."`
+			`"Hey, I need 10 tons of cargo transported no questions asked from <planet> to Hepheastus. Pay will be good."`
 			choice
 				`	"Alright."`
 					accept

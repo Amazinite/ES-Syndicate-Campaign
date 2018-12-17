@@ -23,28 +23,23 @@ Post-bombing 2 - Communications: Meet and help a prominant Syndicate public rela
 	2) Help transport cargo to a frontier world with Nate Remington
 	3) Find Nate Remington again and bring him to his Villa on Shangri-La
 	4) Bring Nate Remington to Lodestone where a volcanic eruption has occurred
-Changes: 
-	Nix the party, and have Nate cancel it due to the volcanic eruption
 	
 Post-bombing 3 - Security: Meet and help members of Syndicated Security as they contract merchant pilots to help deal with pirates
 	1) Meet Thomas Hensley, a high ranking officer in Syndicated Security
 	2) Agree to act as a mercenary for Syndicated Security and fight off a small fleet of pirates attacking a frontier world
 	3) Travel to Shangri-La, where a large pirate force has attempted to plunder the rich frontier world.
 	4) Travel to Deadman's Cove, the source of the attack, and retrieve any stolen goods and slaves
-Changes:
-	Remove the whole sleeping thing from the second mission; just have the player jump straight from landing into combat
-	Remove the large scale battle at the end; have most of the fighting be done by the time the player arrives.
 
 Post-bombing main string: Meet and help Sal, a Syndicate fixer and contractor, who is dealing with some shady business.
 	1) Run into Sal while in a spaceport and he asks you to transport something from the Deep to the Syndicate. The pay is rather large and the way he describes it seems off, so the player is able to decline without consequence. 
-	2) Arrive in the Deep to have the cargo loaded. Get stopped by a DS Guard and questioned about what you're doing. Be allowed to go on your way. Speak with Sal on return. (2)
+	2) Arrive in the Deep to have the cargo loaded. Get stopped by a DS Guard and questioned about what you're doing. Be allowed to go on your way. Speak with Sal on return.
 	3 + alt) Sal wants you to transport a few friends of his friends to a frontier world. Followed by a Syndicate ship.
 	4) After landing with the "friends", they board another ship and make their way toward the pirate worlds. Sal wants you back on some other world.
-	5) Notice someone sneaking around the spaceport when Sal shows up, late, and pulls your attention away. Look back and the stranger is gone. Sal wants you to scan the cargo of a ship that's about to leave, then land on the planet once you're done. Scan the ship and it has nuclear testing equipment. On return to Foundry to Sal's private hangar, Sal says he's trying to find out who's behind the bombings and thinks who you just scanned has something to do with it. "Get out of my hangar and meet me in the spaceport. I don't enjoy having guests here for too long." (2)
+	5) Notice someone sneaking around the spaceport when Sal shows up, late, and pulls your attention away. Look back and the stranger is gone. Sal wants you to scan the cargo of a ship that's about to leave, then land on the planet once you're done. Scan the ship and it has nuclear testing equipment. On return to Foundry to Sal's private hangar, Sal says he's trying to find out who's behind the bombings and thinks who you just scanned has something to do with it. "Get out of my hangar and meet me in the spaceport. I don't enjoy having guests here for too long."
 	6) Meet with Sal in the hangar and he bad mouths the FW. "It's probably them. Innocent until proven guilty and all, you know. No one has any hard proof and the Navy's too afraid to pull the trigger and find it." Sal asks you to bring him to a nearby pirate world so that he can speak with his "contacts".
-	7) Sal brings you to a island complex on Deadman's Cove because he wants you to stick near him and make sure you're fine. Bump into a pirate, he pulls a knife and looks at you, he looks at Sal and puts the knife away, then says "Be careful who you associate with, punk." Sal speaks with contact who says how everyone's loving the situation because of how the Navy are disoriented. "This'll be great for business." "I'm sure it will be for scum like you." They both laugh. "Now get off my island!" the warlord says as he motions to his men to remove you, still laughing along with Sal. On return in a private hangar of Sal's, he speak with the CEO. (2)
+	7) Sal brings you to a island complex on Deadman's Cove because he wants you to stick near him and make sure you're fine. Bump into a pirate, he pulls a knife and looks at you, he looks at Sal and puts the knife away, then says "Be careful who you associate with, punk." Sal speaks with contact who says how everyone's loving the situation because of how the Navy are disoriented. "This'll be great for business." "I'm sure it will be for scum like you." They both laugh. "Now get off my island!" the warlord says as he motions to his men to remove you, still laughing along with Sal. On return in a private hangar of Sal's, he speak with the CEO.
 	8) The CEO suggests speaking with more warlords. Sal explains to the player how most pirates may be anarchists and not give two shits about what the Syndicate wants, but Sal is the Syndicate's main contact to the major pirate warlords. He makes a joke about the last guy he had to bring him places looking at a warlord wrong and being shot, then laughs it off and suggest you go to Stormhold to have a chat with another warlord.
-	9) Chat with a warlord on Stormhold. This warlord gives the same report as the last one, saying they aren't entirely sure what's up but business is good because of it. Suggests checking Covert and Bucanneer Bay, but Sal mentions how the last time he spoke with the warlords down there they said they'd kill him if he ever showed back up. Player does something that they shouldn't, and as you leave Sal looks you dead in the eyes and says he wasn't joking about the person before you that died. Land back on a Syndicate world where Sal says he needs to do some work in the Paradise Worlds. (2)
+	9) Chat with a warlord on Stormhold. This warlord gives the same report as the last one, saying they aren't entirely sure what's up but business is good because of it. Suggests checking Covert and Bucanneer Bay, but Sal mentions how the last time he spoke with the warlords down there they said they'd kill him if he ever showed back up. Player does something that they shouldn't, and as you leave Sal looks you dead in the eyes and says he wasn't joking about the person before you that died. Land back on a Syndicate world where Sal says he needs to do some work in the Paradise Worlds.
 	10) Land on Glory. Meet some plastic surgeried moneybags pissed about the Navy spreading out more.
 	11) Land on Prime to meet a "business associate" in private.
 	12) Land on Pearl. Sal gets word of needing to pick something up on Geminus, but first wants to go to Hestia to meet an "old friend".
@@ -55,21 +50,21 @@ Post-bombing main string: Meet and help Sal, a Syndicate fixer and contractor, w
 
 Katya: (For reference)
 	1. 1A) Confronted, asked for go to Paradise Worlds and pick up friends
-	2. 1B) Pick up friends. Able to be questioned by Navy on way pack (1C). Drop off friends. (3)
+	2. 1B) Pick up friends. Able to be questioned by Navy on way pack (1C). Drop off friends.
 	3. 2/2 alt) Get asked to pick up Ijs
 	4. 2B) Pick up Ijs and bring to Geminus
 	5. 2C) Have samples from Geminus, now go to Rand to meet up with Katya (2)
-	6. 3) Get a Surveillance Pod from a Navy drone (2)
+	6. 3) Get a Surveillance Pod from a Navy drone
 	7. 4) Chat about what to do next
 	8. 5) Check Oblivion, find nothing, decide to go to Harmony for help
 	9. 5B) Go to Harmony with the monks
-	10. 5C) Check Greenrock for info, return to Harmony (2)
+	10. 5C) Check Greenrock for info, return to Harmony
 	11. 6) Decide to check Sinter
 	12. 6B) Check Sinter, decide to check Hopper
 	13. 6C) Check Hopper, decide to check New Iceland
 	14. 7) Check New Iceland, decide to check Deep
 	15. 7B) Check Deep, decide to check Clink
-	16. 7C) It's Clink, not drop Ijs off on Zug (2)
+	16. 7C) It's Clink, now drop Ijs off on Zug
 
 
 Syndicate commitment
