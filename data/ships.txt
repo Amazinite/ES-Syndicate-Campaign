@@ -117,6 +117,7 @@ ship "Prospector" "Prospector (Mark II)"
 	gun
 
 ship "Barb" "Barb (Defensive)"
+	outfits
 		"Beam Laser"
 		"Anti-Missile Turret"
 		"nGVF-AA Fuel Cell"

@@ -33,12 +33,12 @@ outfit "Timer Weapon (1 Minute)"
 		"hull damage" 0.5
 
 event "mining in alnair"
-	system Alnair
+	system "Alnair"
 		remove fleet "Small Core Pirates"
 		remove fleet "Large Core Pirates"
 
 event "reset alnair"
-	system Alnair
+	system "Alnair"
 		add fleet "Small Core Pirates" 3000
 		add fleet "Large Core Pirates" 4000
 
@@ -47,8 +47,8 @@ mission "Core Prospecting 0"
 	description "Escort the Johansen's Glory to Alnair and distract or destroy any pirates in the system until the captain of the Johansen's Glory hails you. Then return to <destination>."
 	waypoint "Alnair"
 	source
-		government Syndicate
-		near Alnair 1 100
+		government "Syndicate"
+		not planet "Hippocrates"
 	to offer
 		random < 60
 		not "event: war begins"
@@ -90,20 +90,20 @@ mission "Core Prospecting 0"
 	
 	npc accompany
 		personality escort mining
-		government Merchant
+		government "Merchant"
 		ship "Hawk" "Johansen's Glory"
 	npc disable
 		personality unconstrained nemesis heroic
-		system Alnair
+		system "Alnair"
 		government "Test Dummy"
 		ship "Timer Ship (1 Minute)" "Timer"
 		dialog `The merchant captain hails your ship. "My cargo hold is full. Let's head back to <destination>."`
 	npc
 		personality nemesis heroic staying
-		system Alnair
-		government Pirate
+		system "Alnair"
+		government "Pirate"
 		fleet
-			names pirate
+			names "pirate"
 			variant
 				"Sparrow"
 	
@@ -120,10 +120,10 @@ mission "Core Prospecting 0"
 
 
 mission "Core Prospecting 1"
-	name "Mining For Iron"
+	name "Mining for Iron"
 	description "Mine 10 tons of iron for Johansen, then land on <destination>."
 	source
-		government Syndicate
+		government "Syndicate"
 	to offer
 		random < 40
 		not "event: war begins"
@@ -139,7 +139,7 @@ mission "Core Prospecting 1"
 	
 	npc accompany
 		personality escort mining
-		government Merchant
+		government "Merchant"
 		ship "Hawk" "Johansen's Glory"
 	
 	on visit
@@ -160,7 +160,7 @@ mission "Core Prospecting 2"
 	waypoint "Moktar"
 	waypoint "Cardax"
 	waypoint "Volax"
-	destination Foundry
+	destination "Foundry"
 	source
 		government Syndicate Republic
 	to offer
@@ -186,11 +186,11 @@ mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mi
 	name "Saving the Day"
 	description "Repair the <npc> in the Durax system and escort them safely back to <destination>."
 	source 
-		near Durax 1 6
-	destination Foundry
-	waypoint Durax
+		near "Durax" 1 6
+	destination "Foundry"
+	waypoint "Durax"
 	source
-		government Syndicate Republic
+		government "Syndicate" "Republic"
 	to offer
 		not "event: war begins"
 		has "event: sawyer stranded"
@@ -199,9 +199,9 @@ mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mi
 			`You receive another message from Johansen. "Captain <last>, I need you to do something really important. Although I wouldn't normally ask you to do this, you're the closest person I know who can help. I just got word that a friend of mine is stranded in Durax. His ship is named the <npc>. Please rescue him and escort his ship to <destination>."`
 	
 	npc accompany save
-		system Durax
+		system "Durax"
 		personality escort derelict timid
-		government Syndicate
+		government "Syndicate"
 		ship "Star Queen" "Pathos"
 	
 	on complete
@@ -222,12 +222,12 @@ mission "Syndi Workers 0"
 	description "Transport <bunks> former Syndicate factory workers to their new home on the frontier world of <destination>."
 	minor
 	source
-		government Syndicate
-		attributes factory
+		government "Syndicate"
+		attributes "factory"
 	destination 
-		government Syndicate
-		attributes frontier
-		near Polaris 1 100
+		government "Syndicate"
+		attributes "frontier"
+		not planet "Shangri-La"
 	to offer
 		random < 60
 	to fail
@@ -260,10 +260,10 @@ mission "Syndi Workers 1"
 	description "Syndicate employees have asked you to replace the job of a merchant who quit. Pick up a group of <bunks> workers on <stopovers> who have recently signed contracts with the Syndicate and transport them to <destination>."
 	minor
 	source
-		government Syndicate
+		government "Syndicate"
 		near "Delta Capricorni" 1 2
-	stopover Earth
-	destination Maker
+	stopover "Earth"
+	destination "Maker"
 	passengers 8
 	to offer
 		random < 40
@@ -303,10 +303,10 @@ mission "Syndi Workers 2"
 	description `Bring <bunks> strike breakers to <destination>, to take the place of workers who are on strike.`
 	minor
 	source
-		government Syndicate
+		government "Syndicate"
 	destination
-		government Syndicate
-		attributes factory
+		government "Syndicate"
+		attributes "factory"
 	to offer
 		random < 50
 		has "Syndi Workers 1: done"
@@ -342,10 +342,10 @@ mission "Syndi Communications 0"
 	description "Travel to <destination> with Nate Remington to pick up supplies used to build the infrastructure of the Syndicate frontier worlds."
 	minor
 	source
-		government Syndicate
-		attributes frontier
-		near Polaris 1 100
-	destination Foundry
+		government "Syndicate"
+		attributes "frontier"
+		not planet "Shangri-La"
+	destination "Foundry"
 	to offer
 		random < 20
 		has "event: war begins"
@@ -369,12 +369,12 @@ mission "Syndi Communications 0"
 			branch hensley
 				has "Syndi Security 3: done"
 			`	"Nate Remington's the name. Don't wear it out. What brings you to a place like this?"`
-				goto choice1
+				goto choice
 				
 			label hensley
 			`	"Really? Thomas Hensley told me about you. Nate Remington's the name. Don't wear it out. What brings you to a place like this?"`
 			
-			label choice1
+			label choice
 			choice
 				`	"I'm sightseeing the galaxy."`
 					goto sightseeing
@@ -389,8 +389,6 @@ mission "Syndi Communications 0"
 				`	"I'm looking for something to eat while my ship refuels."`
 				
 			label refuel
-			set
-				apply "refuel"
 			`	"If you really need something to eat, I'd wait till you get to a world with a little more culture. These frontier worlds never have anything good on them.`
 				goto nate
 			
@@ -399,18 +397,7 @@ mission "Syndi Communications 0"
 			
 			label nate
 			`	"I'm only here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on.`
-			
-			branch refuel
-				has "refuel"
-			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth sightseeing on."`
-				goto choice2
-			
-			label refuel
-			set
-				clear "refuel"
-			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth eating on."`
-			
-			label choice2
+			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth being on."`
 			choice
 				`	"Sounds like a good deal to me."`
 				`	"Sorry, but I'm not headed in that direction."`
@@ -434,9 +421,9 @@ mission "Syndi Communications 1"
 	description "Bring the supplies you picked up from <origin> to <destination>."
 	landing
 	destination
-		government Syndicate
-		attributes frontier
-		near Polaris 1 100
+		government "Syndicate"
+		attributes "frontier"
+		not planet "Shangri-La"
 	to offer
 		has "Syndi Communications 0: done"
 	to fail
@@ -451,7 +438,7 @@ mission "Syndi Communications 1"
 				accept
 		
 	npc save accompany
-		government Syndicate
+		government "Syndicate"
 		personality escort timid
 		ship "Arrow" "Libidine"
 	
@@ -496,8 +483,8 @@ mission "Syndi Communications 2"
 	description "Drop Nate off at his villa on <destination>."
 	minor
 	source
-		planet Hephaestus Foundry Reunion Tinker Nimbus
-	destination Shangri-La
+		planet "Hephaestus" "Foundry" "Reunion" "Tinker" "Nimbus"
+	destination "Shangri-La"
 	passengers 1
 	to offer
 		has "Syndi Communications 1: done"
@@ -534,7 +521,7 @@ mission "Syndi Communications 3A"
 	name "Lodestone Disaster"
 	description "Nate has been informed that the volcanos near the <planet> spaceport are becoming active. Transport him to <destination> so that he may be there should a disaster occur."
 	landing
-	destination Lodestone
+	destination "Lodestone"
 	deadline
 	passengers 1
 	to offer
@@ -576,12 +563,12 @@ mission "Syndi Communications 3A"
 			`	Nate puts his face in his hands and takes a deep breath. "Ranting aside, about that party I mentioned on <origin>," he looks back up at you, "want to join?"`
 			choice
 				`	"You can count me in."`
-					goto party
+					goto end
 				`	"I'm not much of a party person."`
 			
 			`	"Well you've never been to a party thrown by THE Nate Remington. Stay a while, you'll have a blast."`
 			
-			label party
+			label end
 			`	Shortly after the sun sets, ships begin landing and unloading their passengers before flying off to park at the spaceport. The party-goers look as expensive as you would expect, wearing extravigant clothing of all colors and styles. You feel very cheap by comparison. When Nate sees you looking down at your clothing, he reassures you by saying, "Don't worry, the fancy people always come first, but they're only a small part of the party." A few minutes later, another ship lands which unloads about a dozen passengers all wearing more civilian style clothing, some of which even manages to make you look like the fancy one.`
 			`	Shortly before midnight hits when Nate tells you the party is really suppose to get started, you see him yelling at people to get out of the house and go home.`
 			`	"Party's over, everyone. <first>! I need you to take me to <destination> now! The volcanos near the spaceport are showing signs of erupting. I need to be there if a disaster strikes."`
@@ -597,7 +584,7 @@ mission "Syndi Communications 3A"
 			`As soon as you enter the system, Nate bursts into the bridge. "I've just been told that the volcano has erupted. We need to get down there now!"`
 	
 event "lodestone eruption"
-	planet Lodestone
+	planet "Lodestone"
 		description `Lodestone is a young, volcanically active world. The atmosphere is often filled with choking dust or sulfur dioxide, and new eruptions can occur with hardly any warning. Building any sort of structure here is an exercise in futility.`
 		description `	The only reason Lodestone is inhabited is because of the planet's unusually rich reserves of heavy metals and other rare minerals.`
 		description `	Due to a recent volcanic disaster, the spaceport has been left unusable. It will take months before a new one can be built.`
@@ -609,7 +596,7 @@ mission "Syndi Communications 3B"
 	name "Lodestone Disaster"
 	description "Drop Nate Remington off on <destination> so that he may begin work on getting the spaceport rebuilt."
 	landing
-	destination Maker
+	destination "Maker"
 	passengers 1
 	to offer
 		has "Syndi Communications 3A: done"
@@ -648,7 +635,7 @@ mission "Syndi Communications 3B"
 
 
 event "lodestone spaceport rebuilt"
-	planet Lodestone
+	planet "Lodestone"
 		description `Lodestone is a young, volcanically active world. The atmosphere is often filled with choking dust or sulfur dioxide, and new eruptions can occur with hardly any warning. Building any sort of structure here is an exercise in futility.`
 		description `	The only reason Lodestone is inhabited is because of the planet's unusually rich reserves of heavy metals and other rare minerals.`
 		spaceport `As was suspected, the Fourth Port eventually needed to be replaced by a fifth. As is tradition, the new spaceport has been named the "Fifth Port." Syndicate engineers are hoping that by installing modified repulsor engines designed to push away lava flying through the air in combination with the hundred meter stilts keeping the port above the ground that a new port will never need to be created, but only time will tell for sure.`
@@ -660,10 +647,10 @@ mission "Syndi Security 0"
 	description "A large pirate presence in the south of Syndicate space has left the north dangerously under defended. Assist in defending the northern Syndicate worlds from pirates alongside the security stationed on <destination>."
 	minor
 	source
-		government Syndicate
-		near Ankaa 0 2
+		government "Syndicate"
+		near "Ankaa" 0 2
 	destination
-		near Bellatrix 0 1
+		near "Bellatrix" 0 1
 	to offer
 		random < 30
 		"combat rating" > 200
@@ -720,7 +707,7 @@ mission "Syndi Security 1"
 	name "Defending the Frontier"
 	description "Fight off the pirates in the Zaurak system before landing on Canyon."
 	landing
-	destination Canyon
+	destination "Canyon"
 	to offer
 		has "Syndi Security 0: done"
 	to fail
@@ -740,13 +727,13 @@ mission "Syndi Security 1"
 				
 	npc save
 		personality escort heroic
-		government Syndicate
+		government "Syndicate"
 		ship "Vanguard (Particle)" "S.S. Atticus"
 	
 	npc kill
 		personality heroic staying
-		government Pirate
-		system Zaurak
+		government "Pirate"
+		system "Zaurak"
 		fleet
 			names "pirate"
 			variant
@@ -769,17 +756,17 @@ mission "Syndi Security 1: Escorts"
 			has "chosen sides"
 	npc kill
 		personality escort heroic
-		government Syndicate
+		government "Syndicate"
 		fleet
-			names syndicate
+			names "syndicate small"
 			variant
 				"Manta"
 				"Quicksilver (Proton)"
 	npc kill
 		personality escort heroic
-		government Merchant
+		government "Merchant"
 		fleet
-			names merchant
+			names "civilian"
 			variant
 				"Splinter (Laser)"
 				"Quicksilver"
@@ -790,7 +777,7 @@ mission "Syndi Security 2"
 	name "Defending the Frontier"
 	description "The recent pirate fleet movements were all a distraction to allow the pirates to attack <destination>. Fend off the pirates attacking <planet>."
 	landing
-	destination Shangri-La
+	destination "Shangri-La"
 	clearance
 	to offer
 		has "Syndi Security 1: done"
@@ -819,7 +806,7 @@ mission "Syndi Security 2"
 	
 	npc
 		personality escort heroic
-		government Syndicate
+		government "Syndicate"
 		ship "Vanguard (Particle)" "S.S. Atticus"
 	npc evade
 		personality heroic staying target
@@ -914,7 +901,6 @@ mission "Syndi Security 3"
 	on complete
 		payment 500000
 		"assisted the syndicate" ++
-		event "syndicate occupation of almach ends" 7
 		conversation
 			`Most of the locals on the spaceport island of <planet> look more terrified than anything that a massive Syndicate fleet is landing on the planet. None of the Syndicate ships are firing their weapons, and none of the pirates on the ground look like they're in the mood for a fight.`
 			`	The Syndicate quickly set up a small tent outpost along the shore of the main island. Hensley is standing over a table surrounded by a few other Syndicated Security officers and on the table is a map of the planet. The officers stop talking to each other when they see you walk in.`
@@ -929,27 +915,24 @@ mission "Syndi Security 3"
 mission "syndicate occupation of almach"
 	landing
 	invisible
+	deadline 7
 	to offer
 		has "Syndi Security 3: done"
-	to fail
-		has "event: syndicate occupation of almach ends"
 	npc kill
 		personality heroic staying
-		government Syndicate
-		system Almach
+		government "Syndicate"
+		system "Almach"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
 		fleet "Large Syndicate"
-
-event "syndicate occupation of almach"
 
 #########################
 # WORK IN PROGRESS ZONE #
 #########################
 
 mission "Syndi Sal 1"
-	name ``
+	name `Milk Run`
 	description `Travel to <destination> to pick up cargo for Sal.`
 	minor
 	to offer
@@ -974,7 +957,7 @@ mission "Syndi Sal 1"
 		attributes "deep"
 	on offer
 		conversation
-			`"Hey, I need 10 tons of cargo transported no questions asked from <planet> to Hepheastus. Pay will be good."`
+			`"Hey, I need 10 tons of cargo transported no questions asked from <planet> to Hephaestus. Pay will be good."`
 			choice
 				`	"Alright."`
 					accept
@@ -984,11 +967,13 @@ mission "Syndi Sal 1"
 	on decline
 		event "Syndi Sal Alt 2: ready" 21
 
+event "Syndi Sal Alt 2: ready"
+
 mission "Syndi Sal 1B"
 	name ``
 	description `Bring Sal's cargo to <destination>.`
 	landing
-	destination "Hepheastus"
+	destination "Hephaestus"
 	blocked `You don't have enough cargo space.`
 	cargo "mysterious cargo" 10
 	to offer
@@ -1023,7 +1008,7 @@ mission "Syndi Sal 2"
 	npc
 		government "Independent"
 		fleet
-			names "syndicate"
+			names "syndicate small"
 			variant
 				"Quicksilver"
 
@@ -1050,7 +1035,7 @@ mission "Syndi Sal 2: alt"
 	npc
 		government "Independent"
 		fleet
-			names "syndicate"
+			names "syndicate small"
 			variant
 				"Quicksilver"
 
@@ -1160,7 +1145,7 @@ mission "Syndi Sal 4C"
 mission "Syndi Sal 4D"
 	name ``
 	description `"Return Sal to <destination>"`
-	passengesr 1
+	passengers 1
 	destination "Reunion"
 	to offer
 		has "Syndi Sal 4C: done"
@@ -1284,7 +1269,7 @@ mission "Syndi Sal 6B"
 	landing
 	passengers 1
 	source "Geminus"
-	destination "Hepheastus"
+	destination "Hephaestus"
 	cargo "radioactive cargo" 5
 	to offer
 		has "Syndi Sal 6: done"
