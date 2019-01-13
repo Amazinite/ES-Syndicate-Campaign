@@ -25,9 +25,9 @@ Syndicate Worlds:
 		Canyon
 			High gravity for humans, but not as uncomfrotable as Burthen. Most of the farming occurs in fertile canyons, as the high mesas are lifeless. Rumors of being home to an ancient alien civilization. A frontier world.
 		Charybdis Station
-			A deuterium refinery own by the Syndicate. No spaceport, so can't repair or refuel.
+			A deuterium refinery owned by the Syndicate. No spaceport, so can't repair or refuel.
 		Crossroads
-			Uranium strip mining. Sandstorms have apparently been getting worse in recent years, and given the urnaium mining the sands are someone radioactive. Likely has a high cancer rate.
+			Uranium strip mining. Sandstorms have apparently been getting worse in recent years, and given the urnaium mining the sands are somewhat radioactive. Likely has a high cancer rate.
 		Hippocrates
 			Mostly settled by scientific research outposts. 10 billion years old around a small red dwarf, so lots of time for life to evolve, but nothing advanced. Spaceport not designed for large ships. A frontier world.
 		Icefall
@@ -41,13 +41,13 @@ Syndicate Worlds:
 		Oberon Station
 			Another deuterium refinery owned by the Syndicate.
 		Placer
-			A frontier world, mostly uninhabited except for a small mining outpost. Inhabitance must wear breathing asks due to the amonia and sulfur rich atmosphere. Has had unsuccessful research experiments to have micros change the atmospheric composition to be more human.
+			A frontier world, mostly uninhabited except for a small mining outpost. Inhabitance must wear breathing masks due to the amonia and sulfur rich atmosphere. Has had unsuccessful research experiments to have micro-organisms change the atmospheric composition to be more human.
 		Quicksilver
 			Volcanic mining world. Has violent weather, such as lots of hurricanes and thunderstorms. 
 		Sundive
-			A tropical world with enough open plains to make it a major farming world. Tornadoes and thunderstorms are fairly common during the summer. Has large radio telescope arraies that study the core and the super massive black hole there. A frontier world.
+			A tropical world with enough open plains to make it a major farming world. Tornadoes and thunderstorms are fairly common during the summer. Has large radio telescope arraies that study the galactic core and the super massive black hole there. A frontier world.
 		Trove
-			A small moon where the Syndicate does something called "jack mining" where they bust open the crust to ming the core. Most of the work is done by machines.
+			A small moon where the Syndicate does something called "jack mining" where they bust open the crust to mine the core. Most of the work is done by machines.
 	Greater Worlds:
 		Delve
 			The biggest mining world in the region. Most cities are actually underground in old mines, and the inhabitance fear of cave ins and power failures given that ventilation must get breathable air kilometers down into the mines.
@@ -61,9 +61,9 @@ Syndicate Worlds:
 		Maker
 			Where most inhabitance of Earth leave to go to. The Syndicate offers free transportation and housing to here, but essentially put people into indentured servitude for five years in a mine or factory. Takes anywhere from five to ten years to work up the money to leave.
 		Millrace
-			An overpopulated factory and manufacturing world. The second greatest destination for those leaving Earth. Most of the production here goes to other worlds for building ships or driving other industries, so this is a key world for basic materials. Pays a living wage for workers to be able to leave. This feeds a cycle where old wokrers leave and new workers come in to replace them. The Syndicate believes that this will not stop any time soon. Near Earth.
+			An overpopulated factory and manufacturing world. The second greatest destination for those leaving Earth. Most of the production here goes to other worlds for building ships or driving other industries, so this is a key world for basic materials. Pays a living wage for workers to be able to leave. This feeds a cycle where old workers leave and new workers come in to replace them. The Syndicate believes that this will not stop any time soon. Near Earth.
 		Moonshake
-			Another overpopulated factory world. Production doubles every few decades given the incoming immigrants. A regional center for reactor-grade plutonium, textiles, and molded plastic parts. Dense wilderness wherever there isnt a factory or city that will get plowed over whenever expansion is needed.
+			Another overpopulated factory world. Production doubles every few decades given the incoming immigrants. A regional center for reactor-grade plutonium, textiles, and molded plastic parts. Dense wilderness wherever there isn't a factory or city that will get plowed over whenever expansion is needed.
 		Reunion
 			Mostly urban factory world, very Earth like and inhabited early on. A highly political planet. Near Earth.
 		Shangri-La

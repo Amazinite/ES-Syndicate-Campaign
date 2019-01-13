@@ -4,49 +4,14 @@ Syndicate worker: someone who just works for the Syndicate, usually in a factory
 Syndicate employee: someone who works for the Syndicate in uniform, more than a factory worker
 Syndicate guard: someone in Syndicated Security
 ____________________________
-############################
-# Syndicate start branches #
-############################
-
-# Syndicated Security: A combat focused branch. Early on involves fighting local pirates, maybe even having some diplomacy with local warlords to swap them to independent. Later involves fighting the Korath Raiders and acquiring jump drives. Given access to war-freighter versions of the Prospector for testing. Main character is Thomas Hensley, high-ranking captain in SynSec
-
-# Syndicated Communications: more diplomatic and directly involved in the dealings that the Syndicate has with the Free Worlds (you get to meet Alondo) and Republic. Probably going to have a situation where you fly through a warzone and get shot at by some trigger happy FW interceptors. Maybe even involve coming into contact with the Hai. Will focus on passenger missions, but might also have combat in the form of fighting bounty hunters. Probably won't deal with the Korath Raiders (but might hear about them). 
-
-# Syndicated Prospecting: mining and exploration focused. Has some pirate fighting and you do have a runin with the Korath. Includes stuff like mining uranium and other materials for the construction of nukes and other new tech (not entirely known to the player). Directly involved in the unlocking of the Prospector ship. Might get to meet the Hai since you'll probably be hanging around in the Far North.
-
-#############################
-# Syndicate middle branches #
-#############################
-
-# Corporate Espionage: the player gets noticed by some higher ups for their work in the start and is offered a high paying position as a corporate spy. Involves spying on companies outside of the Syndicate, and even on the workings of the Republic itself.
-
-# Technological Advancement: Deals with making contact with the Korath and Hai. Create new technologies based on alien tech. Syndicate shield generators could be directly based off of Hai generators. Korath likely too advanced for the Syndicate to create much from their tech. Possibly create a precision expansion outfit by working with Korath heat shunts, figuring out how the Korath make such dang good cooling.
-
-# Military Expansion: The Syndicate ramps up their military in these "uncertain times." Involves conquering a pirate world (for show) and testing out new technology on the Korath (mod proton gun) and local Pirates (Class C Freighter). Given that the Navy is split between the southern front and northern front, the Syndicate offer to act as security where the Navy has had to pull out. Might even involve some frontline battles, having the Syndicate fly Republic colors. (Some Navy fleets used Protectors during the war. Whether these were Syndicate in disguise or just the Syndicate selling warships to the Navy while they were low on capitals is unknown.) Having Syndicated Security act as the Navy will likely create tensions with Deep Security and the Oathkeepers.
-
-#####################
-# Syndicate endings #
-#####################
-
-# Extremist: The player decides to go after the defector and successfully returns him. From there it is a matter of making sure the Free Worlds are framed for the bombings and that no ties to the Syndicate are ever found. Because the player kills the defector, the FW can not prove its innocence and must turn to using nukes, so the FW go Checkmate.
-
-# Justice: The player decides to let the defector go and prove the innocence of the Free Worlds while trying to take down the extremists from inside. This branch will split based off of your karma, because whether the FW go after the defector is a toss-up.
-#
-#	Justice-Checkmate (Bad karma): The player allows the defector to go, but the FW doesn't go after the defector. The defector gets killed by the few extremist forces that go after him and the FW start using nukes. With the Syndicate basically pointless when it comes to the war now, this branch will take a very different direction than has been seen before.
-#
-#	Justice-Reconciliation (Good karma): The player's good karma means that the FW end up going after and rescuing the defector. This means that the FW can prove itself innocent, and the extremists are backed into a corner. The extremists send their nuke armed fleet to Earth. The player goes after fleet before being trapped in Pug captured space. The player finds the remains of the nuke-armed fleet and must return to Syndicate space with the news.
-
-# Defector: The player is lead to believe that most of the Syndicate is part of the extremist faction and defects with Sawyer, fighting off the extremists who come after him. The player ends up personally meeting members of the Free Worlds and Navy and essentially plays along a merged branch. Given that the player makes sure the defector gets to the FW alive, they have a means of showing their innocence and the FW don't use nukes; FW go Reconciliation
-
 ####################
 # Campaign unlocks #
 ####################
 
-# Syndicate Campaign Unlocks: Ionic Afterburner, S-type Regenerators, Prospector, Class C Freighter
-#
-# Espionage Exclusives: ??? (Class C, Ionic Afterburner early access) [good karma or rep to be offered?]
-# Tech Exclusives: Precision Expansion (S-type Regen, Ionic Afterburner early access)
-# Military Exclusives: Neutron Gun (Class C early access)
+# Middle unlocks: Ionic afterburners, S-type regenerators, Class C Freighter, Prospector
+# Espionage Exclusives: Navy License??? [good karma or rep to be offered?]
+# Tech Exclusives: Precision Expansion
+# Military Exclusives: Neutron Gun
 #
 # Extremist Exclusives: Nuke loading system (8 unlocks total)
 # Justice-Checkmate Exclusives: Cloaking Device (8 unlocks total)
@@ -115,6 +80,7 @@ Decide to go extremist. Your karma is good. The FW try to go after Sawyer, but y
 Decide to go extremist. Your karma is bad. You have no problem tracking down and killing Sawyer, and you hear news of the FW using nukes on Navy fleets.
 ____________________________
 So the Defector branch is going to need to utilize conversation branching
+____________________________
 The Syndicate have a rat inside of the FW. For much of the start, the rat allows inside information to get to the Syndicate, and depending on who you're with to the player. This rat goes cold near the end of the start. Remington and Hensley finish the start by telling you they're going to investigate. 
 During the Wolf Pack campaign, find out that the rat was actually taken out by the Pack.
 ____________________________
@@ -151,4 +117,15 @@ _________________________________
 "It's been a while," Remington says to Alondo with a wink. Alondo noticeably avoids Remington's gaze.
 _________________________________
 The Syndicate appear to be working on automaton technology, at least when looking at the test dummy jobs that now have a high level of confusion for the test dummies. This could be an interesting plot point, especially in relation to the Korath.
+_________________________________
+Due to Republic laws about automated stuffs, all automaton fleets of the Syndicate would need at least one human supervisor present.
+_________________________________
+Planet info (stuff derived from the planet descriptions):
+	* Sundive is actually used to study Korath.
+	* Crossroads is not the source of the uranium used in the nukes as it would be too easy to track; uranium was mined form asteroids.
+	* Canyon was inhabited by the Hai.
+	* Furnace is the home-base of Syndicated Security.
+	* Millrace: unforseen consequence of war is less migration; Syndicate worlds start bleeding workers as old workers leave but new ones don't show up (Moonshake, Maker)
+	* Moonshake: produces plutonium
+	* Sunracer: home to Megaparsec, but what is the relation between Megaparsec and the Syndicate?
 _________________________________

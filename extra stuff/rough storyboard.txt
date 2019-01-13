@@ -72,10 +72,21 @@ Syndicate commitment
 
 __________________ Side Plots __________________
 
-____________ Communications Start ______________
+_________ Start (shared plot points) ___________
 Learn about the Navy/FW fight
 Hear about creation of Oathkeepers
-Meet Alondo
+
+____________ Communications Start ______________
+# Syndicated Communications: more diplomatic and directly involved in the dealings that the Syndicate has with the Free Worlds (you get to meet Alondo) and Republic. Probably going to have a situation where you fly through a warzone and get shot at by some trigger happy FW interceptors. Maybe even involve coming into contact with the Hai. Will focus on passenger missions, but might also have combat in the form of fighting bounty hunters. Probably won't deal with the Korath Raiders (but might hear about them). 
+
+Intersects with FW start when:
+	Alondo shows up
+	FW get deuterium refinery materials from Syndicate
+Major plot points:
+	* Syndicate supporting both sides of the war
+	* Deal with drop in migration to Syndicate factory worlds caused by the war
+	* Syndicate speaks with Megaparsec about creation of new ship(s) or cheaper ships for the Syndicate
+	* Remington investigate disappearance of Sal
 
 1. War starts; transport Remington to Foundry [transport]
 	a. Learn about what occured in Kornephoros, get word of the capture of Katya
@@ -83,6 +94,16 @@ Meet Alondo
 	a. Meet Alondo
 3. 
 _______________ Security Start _________________
+# Syndicated Security: A combat focused branch. Early on involves fighting local pirates, maybe even having some diplomacy with local warlords to swap them to independent. Later involves fighting the Korath Raiders and acquiring jump drives. Given access to war-freighter versions of the Prospector for testing. Main character is Thomas Hensley, high-ranking captain in SynSec
+
+Intersects with FW start when:
+	FW makes deal to escort Syndicate convoys to Tarazed
+Major plot points:
+	* Syndicated Security supplementing Navy ranks
+	* Syndicate use of automated ships
+	* Negotiate with pirates for the sake of allowing everyone to focus on the war
+	* Deal with Korath (capturing technology, jump drives)
+
 1. War starts; transport Hensley to Foundry [transport]
 	a. Learn about what occured in Kornephoros, get word of the capture of Katya
 2. Fight pirates in Zaurak [combat]
@@ -92,6 +113,14 @@ _______________ Security Start _________________
 	a. Learn about the Quarg and their jump drives; Hensley makes reference to the Korath
 4. 
 _____________ Prospecting Start ________________
+# Syndicated Prospecting: mining and exploration focused. Has some pirate fighting and you do have a runin with the Korath. Includes stuff like mining uranium and other materials for the construction of nukes and other new tech (not entirely known to the player). Directly involved in the unlocking of the Prospector ship. Might get to meet the Hai since you'll probably be hanging around in the Far North.
+
+Major plot points:
+	* Creation of the Prospector
+	* Mining uranium for the Syndicate
+	* Bump into Hai
+	* Bump into Korath
+
 1. War starts; Johansen isn't require to go to Foundry
 	a. Begin working on the Prospector by transporting supplies from Maker to Foundry (get paid for this decision) [cargo]
 		A. Upon landing on Foundry, you only get a little bit on information on what is occuring.
@@ -99,10 +128,24 @@ _____________ Prospecting Start ________________
 	a. See the battle going on in Zaurak that you partake in during the Security branch.
 3. 
 _____________ Technology Middle ________________
-______________ Military Middle _________________
-______________ Espionage Middle ________________
+# Technological Advancement: Deals with making contact with the Korath and Hai. Create new technologies based on alien tech. Syndicate shield generators could be directly based off of Hai generators. Korath likely too advanced for the Syndicate to create much from their tech. Possibly create a precision expansion outfit by working with Korath heat shunts, figuring out how the Korath make such dang good cooling.
 
+______________ Military Middle _________________
+# Military Expansion: The Syndicate ramps up their military in these "uncertain times." Involves conquering a pirate world (for show) and testing out new technology on the Korath (mod proton gun) and local Pirates (Class C Freighter). Given that the Navy is split between the southern front and northern front, the Syndicate offer to act as security where the Navy has had to pull out. Might even involve some frontline battles, having the Syndicate fly Republic colors. (Some Navy fleets used Protectors during the war. Whether these were Syndicate in disguise or just the Syndicate selling warships to the Navy while they were low on capitals is unknown.) Having Syndicated Security act as the Navy will likely create tensions with Deep Security and the Oathkeepers.
+
+______________ Espionage Middle ________________
+# Corporate Espionage: the player gets noticed by some higher ups for their work in the start and is offered a high paying position as a corporate spy. Involves spying on companies outside of the Syndicate, and even on the workings of the Republic itself.
+
+________________________________________________
+# Justice: The player decides to let the defector go and prove the innocence of the Free Worlds while trying to take down the extremists from inside. This branch will split based off of your karma, because whether the FW go after the defector is a toss-up.
 _____________ Justice-Recon End ________________
-________________ Defector End __________________
-_______________ Extremist End __________________
+#	Justice-Reconciliation (Good karma): The player's good karma means that the FW end up going after and rescuing the defector. This means that the FW can prove itself innocent, and the extremists are backed into a corner. The extremists send their nuke armed fleet to Earth. The player goes after fleet before being trapped in Pug captured space. The player finds the remains of the nuke-armed fleet and must return to Syndicate space with the news.
+
 _____________ Justice-Check End ________________
+#	Justice-Checkmate (Bad karma): The player allows the defector to go, but the FW doesn't go after the defector. The defector gets killed by the few extremist forces that go after him and the FW start using nukes. With the Syndicate basically pointless when it comes to the war now, this branch will take a very different direction than has been seen before.
+________________ Defector End __________________
+# Defector: The player is lead to believe that most of the Syndicate is part of the extremist faction and defects with Sawyer, fighting off the extremists who come after him. The player ends up personally meeting members of the Free Worlds and Navy and essentially plays along a merged branch. Given that the player makes sure the defector gets to the FW alive, they have a means of showing their innocence and the FW don't use nukes; FW go Reconciliation
+
+_______________ Extremist End __________________
+# Extremist: The player decides to go after the defector and successfully returns him. From there it is a matter of making sure the Free Worlds are framed for the bombings and that no ties to the Syndicate are ever found. Because the player kills the defector, the FW can not prove its innocence and must turn to using nukes, so the FW go Checkmate.
+

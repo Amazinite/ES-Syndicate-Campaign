@@ -9,9 +9,8 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 # To-do:
-# 	Logs (ctrl+f "[To do]")
 #	Offer rates based off of how much you've helped
-#	Commitment mission(s)
+#	Post-commitment missions that lead into the middle
 
 # Need some system other than a timer ship, which seems inconsistent
 ship "Timer Ship (1 Minute)"
@@ -118,6 +117,7 @@ mission "Core Prospecting 0"
 	on complete
 		event "reset alnair"
 		payment 30000
+		log `Defended an asteroid miner named Adam Johansen while he mined in a dangerous system. Asteroid mining seems like a good way to make credits in a small ship.`
 		conversation
 			`	After selling off the minerals on the local market, the merchant captain returns to you and hands you <payment>. "Thanks for the help, Captain. By the way, my name's Adam Johansen. And you are?"`
 			`	"<first> <last>," you respond.`
@@ -212,7 +212,7 @@ mission "Core Prospecting 3" # Must add a branch in FW Reconciliation if this mi
 	
 	on complete
 		payment 150000
-		log `[To do]`
+		log `Rescued a friend of Johansen's named Sawyer, who said he was investigating an anomoly in Durax for the Syndicate when he was ambushed by pirates.`
 		conversation
 			`You land on <planet> with the <npc>. A bearded man steps off of the <npc> and runs over to you.`
 			`	"Thank you so much. I wouldn't be alive if you hadn't come to save me." As the man begins to explain his situation to you, he turns and notices Johansen across the spaceport.`
@@ -412,9 +412,6 @@ mission "Syndi Communications 0"
 			
 			`	"Great. The supplies need picked up from <destination>. After that we'll make our way back out to the frontier."`
 				accept
-			
-	on accept
-		log `[To do]`
 				
 	npc save accompany
 		government "Syndicate"
@@ -457,7 +454,7 @@ mission "Syndi Communications 1"
 	
 	on complete
 		payment 200000
-		log `[To do]`
+		log `Helped a Syndicate employee named Nate Remington to bring infrastructure supplies to one of the Syndicate's frontier worlds. Received great pay for only transporting ten tons of material.`
 		conversation
 			`The spaceport on <planet> does not have the same machinery as on <origin>, so it takes much longer to unload the ten tons of cargo. While you are waiting, Nate goes on and on talking about himself. He doesn't even wait for you to respond at any point, nor does he seem interested in if you're even listening. Judging by the smell, he must have been drinking while on the flight here.`
 			`	"When I was 20, I applied to work for Syndicated Communications, the branch of the Syndicate that deals with public relations and such. The Syndicate had had a number of plunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
@@ -614,7 +611,7 @@ mission "Syndi Communications 3B"
 	to fail
 		has "chosen sides"
 	on offer
-		log `[To do]`
+		log `Witnessed the Lodestone spaceport get destroyed by a volcanic eruption. Hopefully the next spaceport that is built doesn't suffer the same fate as the first three.`
 		conversation
 			`As you come in for a landing, you see towers of smoke billowing up from the volcano next to the spaceport, which is raised above the ground as to avoid being buried in lava. About two dozen ships are busy ferrying passengers to safety away from the spaceport.`
 			`	"The lava flows likely won't bury the spaceport, but there's the chance that the volcano could explode and launch lava up into the air. If that lands on the spaceport then the spaceport is done for. You should help evacuate the spaceport just in case that happens."`
@@ -642,7 +639,7 @@ mission "Syndi Communications 3B"
 		payment 500000
 		"assisted the syndicate" ++
 		event "lodestone spaceport rebuilt" 120
-		log `[To do]`
+		log `Dropped off Nate Remington on Maker to deal with the Lodestone eruption. Earned a good reputation with the Syndicate thanks to helping Nate.`
 		conversation
 			`Nate hops off your ship after you land. "Thanks for the ride <first>. I'll be in contact with you in the future, should you decide to continue doing work for the Syndicate. Heck, maybe you can even apply for a salaried position. I'll make sure the Syndicate knows that you've helped me, which should give you a pretty good shot at getting accepted if you apply." Nate hands you <payment>. "Goodbye until then, Captain."`
 
@@ -715,8 +712,8 @@ mission "Syndi Security 0"
 			`	"Fabulous, fabulous. The few forces that we have stationed up north are currently on <destination>. Meet them there and they'll tell you what you need to do."`
 				accept
 			
-		on accept
-			log `[To do]`
+	on accept
+		log `Agreed to help fight alongside Syndicated Security in the northern Core while they deal with a large pirate raid in the south.`
 
 
 
@@ -801,7 +798,7 @@ mission "Syndi Security 2"
 	to fail
 		has "chosen sides"
 	on offer
-		log `[To do]`
+		log `Fought off a pirate raid on Canyon, but found out that these pirate raids were just a distraction to allow the pirates to attack Shangri-La, a wealthy frontier world.`
 		conversation
 			`You follow the remaining ships of the defense force to the spaceport of <origin>. The captain of the Vanguard steps off his ship and motions for the rest of the captains to meet him on the ground. You all gather in a circle between two of the ships, and the captain of the Vanguard begins speaking.`
 			`	"It's good that we still have ships left. That was a surprisingly small raid compared to what normally occurs. Either we got lucky... or the pirates are planning something."`
@@ -919,7 +916,7 @@ mission "Syndi Security 3"
 	on complete
 		payment 500000
 		"assisted the syndicate" ++
-		log `[To do]`
+		log `Helped the Syndicate to defeat the pirates attacking Shangri-La and rescue the people that the pirates kidnapped. The Syndicate will be occupying the system until they've rescued everyone.`
 		conversation
 			`Most of the locals on the spaceport island of <planet> look more terrified than anything that a massive Syndicate fleet is landing on the planet. None of the Syndicate ships are firing their weapons, and none of the pirates on the ground look like they're in the mood for a fight.`
 			`	The Syndicate quickly set up a small tent outpost along the shore of the main island. Hensley is standing over a table surrounded by a few other Syndicated Security officers and on the table is a map of the planet. The officers stop talking to each other when they see you walk in.`
@@ -1045,11 +1042,10 @@ mission "Syndi Sal 1"
 			
 	on decline
 		event "Syndi Sal Alt 2: ready" 21
-		log `[To do]`
+		log `Had a run in with a strange man named Salidar Garcia. Didn't like how he acted and declined his job offer.`
 	
 	on accept
-		log `[To do]`
-		log "Salidar Garcia" `[To do]`
+		log `Agreed to transport cargo from the Deep to the Syndicate for a strange man named Salidar Garcia.`
 
 event "Syndi Sal Alt 2: ready"
 
@@ -1201,7 +1197,7 @@ mission "Syndi Sal 2B"
 	to fail
 		has "chosen sides"
 	on offer
-		log `[To do]`
+		log `Dropped off two of Sal's friends on Antipode. They boarded another ship and traveled to the pirate worlds nearby. Sal seems like he could be trouble.`
 		conversation
 			`Chad and Virgo thank you for transporting them to <origin>. When they leave your ship, you spot them walk to a nearby landing pad and board a Quicksilver in pirate colors, which launches and makes its way toward the nearby pirate worlds. You wonder who exactly it is you just transported.`
 			`	You receive a message from Sal asking to meet him on <destination> to pick up your payment and for another job offer.`
@@ -1242,7 +1238,7 @@ mission "Syndi Sal 3"
 		
 	on complete
 		payment 50000
-		log `[To do]`
+		log `Scanned the ship of a corporate spy for Sal. The ship contained equipment for inspecting nuclear radiation.`
 		conversation
 			`The spaceport authorities lead you to a private hangar owned by Sal. Sal greets you with <payment> when you step off your ship. "I have a private hangar on almost every world in the Core. Helps when I need stuff done in secret," he says with a wink.`
 			`	You hand over the scan logs to Sal, even though they returned nothing of interest. "Clever boy," Sal mumbles. He inserts the logs into a console nearby. "My money says he had interference platings. No way there was nothing in his cargo. Lucky for me I know just the way to sift through logs to find what I'm looking for. Interference plating scrambles the scan, but with the right tools and knowledge you can work out what is actually there."`
@@ -1297,7 +1293,9 @@ mission "Syndi Sal 4B"
 	to fail
 		has "chosen sides"
 	on offer
-		log `[To do]`
+		log `Brought Sal to Deadman's Cove to speak with a powerful pirate warlord to see what he knows about the Free Worlds having nukes. The warlord didn't have any information, but the chaos caused by the bombings has been good for his criminal business.`
+		log "People" "Salidar Garcia" `A self-proclaimed man of many connections, Sal works for the Syndicate as somewhat of a fixer, allowing the Syndicate to keep contact with the pirate warlords of the Core. It is said that every pirate in the Core knows his name, although how he has so much sway among pirates is said to be unknown, even to the Syndicate.`
+		log "People" "Alvice the Golden" `Alvice the Golden, as he is called by his subjects, is a notorious pirate warlord from Deadman's Cove. He lives like a king thanks to the riches he has obtained doing criminal business around the Core. Any attempts made on his life by the Syndicate are said to have ended badly for the them.`
 		conversation
 			`Instead of landing at the <origin> spaceport, Sal gives you the coordinates to an island complex that he says is owned by one of the most powerful pirate warlords in the system. "Normally getting anywhere close to this place would get you blasted out of the sky, but they know we're coming."`
 			`	The complex looks like a giant castle from the middle ages on ancient Earth; despite already being on an island, the castle even includes a moat. "Stick near me," Sal says in a hushed voice. "Don't want your teeth pulled out."`
@@ -1417,7 +1415,7 @@ mission "Syndi Sal 4D"
 	
 	on complete
 		payment 100000
-		log `[To do]`
+		log `Nearly died after bringing Sal to meet more pirate warlords, this time on Stormhold. No longer going to pirate worlds with Sal, at least for now.`
 		conversation
 			`Sal hands you <payment> when you land. "You're done doing work on pirate worlds for now," he says. "And trust me, that's for my safety as much as it is for yours. Now, meet me in the spaceport in an hour or so. I have some calls to make."`
 
@@ -1555,7 +1553,7 @@ mission "Syndi Sal 7"
 		has "Syndi Sal 6B: done"
 	on offer
 		payment 50000
-		log `[To do]`
+		log `Transported a part of the nuclear bomb that went off on Geminus to the Syndicate for study. The Navy is apparently studying another part of the bomb as well.`
 		conversation
 			`The radioactive cargo is unloaded from your ship by a group of Syndicate workers. Unlike on Geminus, these workers are not wearing hazmat suits. A Syndicate employee hands you <payment> for transporting the cargo.`
 			`	Sal approaches you with a smile on his face. "I just had a talk with Alvice, and he tells me he's received some rather interesting information regarding the Free Worlds. Could you give me a lift to <destination>? You should... probably stay in the ship."`
@@ -1576,8 +1574,7 @@ mission "Syndi Sal 8"
 	on offer
 		"assisted the syndicate" ++
 		payment 250000
-		log `[To do]`
-		log "People" "Salidar Garcia"`[To do]`
+		log `Brought Sal to Deadman's Cove to speak with Alvice again. Sal was ambushed by a group of pirates and presumably killed. Had to flee the planet.`
 		conversation
 			`As you bring your ship in to land on the island, Sal hands you <payment> and begins speaking in a surprisingly soft tone compared to what you're use to.`
 			`	"Just so you know, I've contacted a few people in the Syndicate and floated your name around. Ever need anything, just tell them you know me. Might even be worth heading to Foundry and applying for the Syndicate."`
@@ -1596,17 +1593,14 @@ mission "Syndi Sal 8"
 
 
 
-#########################
-# WORK IN PROGRESS ZONE #
-#########################
-
-mission "Syndi Commitment"
+mission "Syndi Job Offer"
+	landing
 	name "Apply for the Syndicate"
-	description "If you want to work for the Syndicate, apply for a job on <destination>"
+	description
 	minor
 	source
-		government Syndicate Republic
-	destination Foundry
+		government "Syndicate" "Republic" "Free Worlds"
+	destination "Foundry"
 	to offer
 		"assisted the syndicate" >= 3
 		has "Syndi Sal 7: done"
@@ -1614,47 +1608,79 @@ mission "Syndi Commitment"
 		has "chosen sides"
 	to complete
 		never
-	
 	on offer
 		conversation
-			`	Joining the Syndicate, you probably shouldn't be given some sort of formal letter signed by all the people you've met up to this point like you do in the FW story. It would make far more sense instead for the player to have to go apply to the Syndicate, giving all those they've met in the Syndicate as references. Once they apply, they'll have say 30 days of free time to do whatever before being contacted either by a new character or someone they've met before, and since Kiko might kill off Sal at the end of the Syndicate intro, you might end up getting contacted by a new character to temporarily replace that of Sal.`
-			`	Given that the Syndicate has multiple departments to it, the 3 branches of the start could be three jobs that the player is able to choose from.`
+			`You think of what Sal said about working for the Syndicate. Having already done a number of jobs for the Syndicate, it doesn't seem like that bad of an idea. Perhaps you should go to <destination> to see if they have any job openings.`
+				accept
+	
+
+mission "Syndi Commitment"
+	invisible
+	source Foundry
+	to offer
+		has "Syndi Job Offer: offered"
+		not "chosen sides"
+	on offer
+		conversation
+			`You are on Foundry, the headquarters of the entire Syndicate corporation. Do you apply for the Syndicate?`
 			choice
-				`	(Syndicated Security)`
-					goto security
-				`	(Syndicated Prospecting)`
-					goto prospecting
-				`	(Syndicated Communications)`
-				`	I don't want to join right now.`
+				`	(Yes.)`
+				`	(Not yet.)`
 					defer
 			
+			`	You walk into the spaceport and find the Syndicate main building. You ask the woman at the front desk if there are any job openings and she begins mentioning available factory jobs on other worlds. Not wanting to go from a factory worker to a captain and right back to a factory worker, you mention how you know Sal. The woman looks surprised, then tells you to wait so that she can make a phone call. She returns with a paper listing a number of job openings with a description of each.`
+			``
+			`	Syndicated Security is always looking for new members to help keep the Core a safe place for business! Combining the corporate structure with military prowess, Syndicated Security has all the effectiveness of a military force without all the wastefulness one finds in the Republic Navy. All new hires are provided with a bonus of one million credits to help them buy a better ship to defend the region with!`
+			`	Syndicated Communications is looking for a seasoned pilot and negotiator to act as an assistant for the famous Nate Remington. Travel the galaxy working for the Syndicate by dealing with other corporations, the Navy, the Republic government, and even the Free Worlds!`
+			`	Syndicated Prospecting is the newest branch of the Syndicate corporation. For much of human history since the invention of the hyperdrive, asteroid mining has been ignored as a source of income due to the plentifulness of planets to mine from. Not anymore, as Syndicated Prospecting is here to explore the region for the rare minerals found in asteroids, helping to provide the materials for a brighter future!`
+			``
+			choice
+				`	(Choose Syndicated Security.)`
+					goto security
+				`	(Choose Syndicated Communications.)`
+					goto communications
+				`	(Choose Syndicated Prospecting.)`
+					goto prospecting
+				`	"I'm not interested in any of these jobs."`
+			
+			`	"Are you sure?" the woman asks. "We might not have any positions like these open again any time soon if you don't take them."`
+			choice
+				`	"Yeah, I'm sure."`
+					decline
+				`	(Choose Syndicated Security.)`
+					goto security
+				`	(Choose Syndicated Communications.)`
+				`	(Choose Syndicated Prospecting.)`
+					goto prospecting
+			
+			label communications
 			apply
-				set "chose Communications"
-			`	Good choice.`
-				goto end
+				set "chose communications"
+			`	You fill out an application for Syndicated Communications and hand it to the woman. She thanks you and says that you will be contacted in 30 days if you are hired.`
+				decline
 			
 			label security
 			apply
 				set "chose security"
-			`	Good choice.`
-				goto end
+			`	You fill out an application for Syndicated Security and hand it to the woman. She thanks you and says that you will be contacted in 30 days if you are hired.`
+				decline
 			
 			label prospecting
 			apply
 				set "chose prospecting"
-			`	Good choice.`
-			
-			label end
-			`	Each branch will bring you close to a different character or set of characters, and you'll get to learn a lot about them. Each character may have a different feeling about the extremists, trying to nudge the player into supporting the extremists or supporting the defector.`
-			`	You will be contacted in 30 days if you have been hired. Thank you. :)`
-				accept
+			`	You fill out an application for Syndicated Prospecting and hand it to the woman. She thanks you and says that you will be contacted in 30 days if you are hired.`
+				decline
 		
-	on accept
+	on decline
 		set "chosen sides"
 		event "syndicate application accepted" 30
 		event "capture of Kornephoros" 30
 			
 event "syndicate application accepted"
+
+#########################
+# WORK IN PROGRESS ZONE #
+#########################
 
 mission "SSC: Learning the Ropes 0" # (Syndicate Start Communications)
 	to offer

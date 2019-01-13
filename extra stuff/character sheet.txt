@@ -19,6 +19,5 @@ Syndicate:
 		
 		* Hensley and Remington are good friends
 		* Sal and Hensley aren't on good terms
-		* Johansen, being new, knows no one.
-		* Sawyer and Johansen are old friends
-		* Soylent and Remington hang out together a lot.
+		* Sawyer and Johansen are old friends, but Johansen doesn't really know anyone else
+		* Soylent and Remington hang out together a lot
