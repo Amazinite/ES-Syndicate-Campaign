@@ -1,12 +1,3 @@
-# Copyright (c) 2015 by Michael Zahniser
-#
-# Endless Sky is free software: you can redistribute it and/or modify it under the
-# terms of the GNU General Public License as published by the Free Software
-# Foundation, either version 3 of the License, or (at your option) any later version.
-#
-# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
-# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 outfitter "Syndicate Advanced"
 	"Precision Expansion"
@@ -14,14 +5,14 @@ outfitter "Syndicate Advanced"
 	"Nuclear Warhead"
 	"Warhead Loading System"
 
-# 36 tons of cargo space becomes 8 tons of outfit space and 24 tons of space devoted to making sure that cooling outfits still work as intended. The downside of the Outfits Expansion is how it hurts cooling. The downside of the Precision Expansion will be how it hurts turning and acceleration given how much more massive it is.
-# 1 outfit : 4 cargo space conversion compared to the Outfits Expansion's 3 outfit : 4 cargo space conversion.
+# 36 tons of cargo space becomes 12 tons of outfit space and 24 tons of space devoted to making sure that cooling outfits still work as intended. The downside of the Outfits Expansion is how it hurts cooling. The downside of the Precision Expansion will be how it hurts turning and acceleration given how much more massive it is.
+# 1 outfit : 3 cargo space conversion compared to the Outfits Expansion's 3 outfit : 4 cargo space conversion.
 outfit "Precision Expansion"
 	category "Systems"
 	cost 150000
 	thumbnail "outfit/blue screwdriver"
 	"mass" 24
-	"outfit space" 8
+	"outfit space" 12
 	"cargo space" -36
 	unplunderable 1
 	description "An outfits expansion system which converts cargo space into outfit space in a more precise manor, allowing for cooling systems to work properly at the cost of converting less space." # Description not finalized
@@ -33,11 +24,6 @@ outfit "Precision Expansion"
 
 # Precision expansions require specific knowledge of the design of the ship itself. This means that at first they will only appear on a select few Syndicate ships where the design with precision expansions has been perfected, and only later on will they become available to the player to install on all ships. Yes, lore pretty much ends up going out the window with this outfit as soon as you talk about bringing alien ships to human space in order to install these things.
 
-# In case anyone's wondering if this will become OP, don't worry.
-# One can install 4 outfits expansions (~83.7% normal cooling efficiency) before the cooling inefficiency starts to get too bad. That's 80 cargo space for 60 outfits space. To get the same 60 outfit space from precision expansion requires 7.5 expansions. Rounding up to 8, that's 288 cargo space needed to fit those 8 precision expansions. 
-# If you want to push it and go to 7 outfits expansions (53.4% cooling) then you need 14 (rounded up from 13.125) precision expansions, or 504 cargo to beat it (meaning that 14 is the most precision expansions you can put on a Bactrian, gaining 112 extra outfit space at the cost of 504 cargo space and 336 extra mass, instead of the 7 outfits expansions which only sacrifice 140 cargo space, 35 extra mass, and 46.6% of your cooling).
-
-# The Bactrian with max mass expansions had 1,130 outfit space. This was more than ANY OTHER SHIP IN THE GAME (the hate still flows). The Bactrian with max precision expansions gets to only 852 outfit space. This matches the Solifuge with max precision expansions and is beat by the Kar Ik Vot 349 (highest outfit space under precision expansions), Model 512, Hurricane, Heliarch Punisher, and Model 256 (above the Bactrian by 21). The Prospector, given its low base outfit space, only reaches 806 outfit space with max precision expansions, and that's at the cost of a whopping 648 additional mass, doubling the Prospector's base mass then adding 8 to a grand total of 1288 tons, not including the additional 806 tons that can come from outfits. 
 # Have fun.
 
 #############################################

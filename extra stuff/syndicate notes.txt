@@ -129,3 +129,8 @@ Planet info (stuff derived from the planet descriptions):
 	* Moonshake: produces plutonium
 	* Sunracer: home to Megaparsec, but what is the relation between Megaparsec and the Syndicate?
 _________________________________
+Notable systems with uranium asteroids
+	Caph (Syndi system next to Sol)
+	Diphda (Next to Caph)
+	Sospi (Near Ultima Thule)
+	Not very many systems with uranium; perhaps make more.

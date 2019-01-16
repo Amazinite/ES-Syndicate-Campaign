@@ -79,56 +79,94 @@ Hear about creation of Oathkeepers
 ____________ Communications Start ______________
 # Syndicated Communications: more diplomatic and directly involved in the dealings that the Syndicate has with the Free Worlds (you get to meet Alondo) and Republic. Probably going to have a situation where you fly through a warzone and get shot at by some trigger happy FW interceptors. Maybe even involve coming into contact with the Hai. Will focus on passenger missions, but might also have combat in the form of fighting bounty hunters. Probably won't deal with the Korath Raiders (but might hear about them). 
 
-Intersects with FW start when:
-	Alondo shows up
-	FW get deuterium refinery materials from Syndicate
 Major plot points:
 	* Syndicate supporting both sides of the war
 	* Deal with drop in migration to Syndicate factory worlds caused by the war
 	* Syndicate speaks with Megaparsec about creation of new ship(s) or cheaper ships for the Syndicate
 	* Remington investigate disappearance of Sal
 
-1. War starts; transport Remington to Foundry [transport]
-	a. Learn about what occured in Kornephoros, get word of the capture of Katya
-2. The Free Worlds reach out to the Syndicate; accompany Remington to a meeting [transport]
-	a. Meet Alondo
-3. 
+The Breakout of War
+	1. The player is contacted about getting the job; told to travel to some planet. [Travel]
+	2. Find Remington at said planet. Receive word that the FW and Navy have started fighting. Bring Nate to a meeting on Foundry. [Transport]
+	3. Learn about what occured in Kornephoros, get word of the capture of Katya. 
+	4. Do two missions for some reason or another. Should involve meeting new characters that will be of importance later on. Alexander Soylent.
+	5. The Free Worlds reach out to the Syndicate; accompany Remington to a meeting, which is the one where Alondo and the player would have come to the Syndicate for diplomacy. [Transport]
+	6. With FW-Syndi ties made, bring Remington to the Republic to discuss the Syndicate supporting them and the Navy; Remington makes deal where Syndicate will supply ships to the Navy (reason for appearance of Navy Protectors). Like 3 missions. [Transport]
+Internal Politics
+	7. Return to worrying about home base; the fear caused by the war has dropped migration numbers to factory worlds ever since the bombing. Bring Nate to some major Syndicate world to discuss this. [Transport]
+	8. Continue the work from the into of building up frontier worlds; making frontier worlds better places increases the cost of moving there, therefore keeping more workers in the factories longer. "We can't just force them to stay." Five missions or so working with frontier worlds. [Transport/Cargo/Combat/Escort]
+	9. With less workers leaving, now get more workers to show up. Travel to urban Republic worlds to advertise for the Syndicate. Three or four misions doing this. [Transport/Cargo/Escort]
+	10. Now travel to Megaparsec to speak with them; make a deal about buiding a new ship (Prospector). Megaparsec also promises to provide ships at a discount to the Syndicate, helping to build up their fleets. Help bring supplies to Megaparsec for the building of the new ship. Fight off pirates. Say three missions. [Transport/Cargo/Combat/Escort]
+	11. Megaparsec have to deal with raids from Stormhold; travel to Stormhold to negotiate. Say two missions, involving fighting pirates that refuse to negotiate. Remington calls in Syndicated Security to deal with it. [Transport/Combat]
+Disappearance of Sal
+	12. Having visited the pirate world, Nate thinks about Sal. Asks you about what happened. [Transport]
+	13. Travel to Deadman's Cove. Speak with Alvice about what happened. Alvice doesn't budge, claiming he needs work done first. Storyline branches depending on if player does the work for Alvice or not, doing the work being bad karma. [Transport]
+	14a. Do 7 or 8 jobs for Alvice, giving the player bad karma but letting them in on Sal's fate. Involve flying pirate colors for a bit. Deal with Alvice's friends in the far north.
+	14b. Refuse Alvice's offer. Do 7 or 8 normal jobs instead. One includes bringing the refinery equipment to be picked up by the FW.
+		Nate leaves the choice up to you. "You were there when he got dragged off. I can't believe Alvice would've had him killed, but if you were there and saw it then I'll believe you."
+	15. Nate hears about a spy in the FW that's gone cold. Tells you he needs to deal with it. Break in the storyline.
+	16. When Nate contacts you again, tells you about your "promotion." Given choice of which middle branch to go into next.
 _______________ Security Start _________________
 # Syndicated Security: A combat focused branch. Early on involves fighting local pirates, maybe even having some diplomacy with local warlords to swap them to independent. Later involves fighting the Korath Raiders and acquiring jump drives. Given access to war-freighter versions of the Prospector for testing. Main character is Thomas Hensley, high-ranking captain in SynSec
 
-Intersects with FW start when:
-	FW makes deal to escort Syndicate convoys to Tarazed
 Major plot points:
 	* Syndicated Security supplementing Navy ranks
 	* Syndicate use of automated ships
 	* Negotiate with pirates for the sake of allowing everyone to focus on the war
 	* Deal with Korath (capturing technology, jump drives)
 
-1. War starts; transport Hensley to Foundry [transport]
-	a. Learn about what occured in Kornephoros, get word of the capture of Katya
-2. Fight pirates in Zaurak [combat]
-	a. Get paid enough to immediately buy a Quicksilver (?)
-		A. The Syndicate would certainly want their security armed well.
-3. Escort a convoy of freighters down to Tarazed [escort]
-	a. Learn about the Quarg and their jump drives; Hensley makes reference to the Korath
-4. 
+The Breakout of War
+	1. The player is contacted about getting the job; told to travel to some planet.
+	2. Find Hensley at said planet. Receive word that the FW and Navy have started fighting. Travel to Foundry.
+	3. Learn about what occured in Kornephoros, get word of the capture of Katya.
+	4. Return to some Syndicate world for "basic training." Receive your 1 mil bonus to help buy a bigger ship.
+	5. Do some basic security stuff. Patrol some systems. Fight some pirates. Then escort some freighters down south to Tarazed that get picked up half way by FW escorts as per the agreement. Say five or six missions.
+	6. Hear about how the Syndicate will now be helping the Navy. Escort a number of Syndicate ships to a Navy planet for them to use.
+Show of Force
+	7. The Syndicate has unveiled its automated ships to the public. Supervise a fleet that goes on a tour around some Paradise Worlds, advertising as an ever-present alternative to the Navy. Say three or four missions.
+	8. Show the automated ships in action; travel to the far north and show off next to the Oathkeepers. Two missions.
+	9. Return to Syndicate space with details of the trip. Now told about the development of the Prospector.
+	10. Escort a prototype Prospector to a military planet to be outfitted. Then take it into battle to see how it holds up. Two or three missions.
+	11. A mission or two for something.
+	12. Told about the need to suppress the pirates on Stormhold to help Megaparsec. Travel there and deal with the pirates. Three missions.
+Enemy Unknown
+	13. After fighting on Stormhold, travel to Durax to "take out any stragglers" and find a Korath Raider. Be like "wtf was that" and get told to go to a Syndicate world for info. Three missions.
+	14a. Seven or so missions doing some basic stuff with the Raiders, idk.
+	14b. Refuse to deal with the Raiders and you'll instead be tasked with fighting alongside the Navy or something, idk.
+	15. Hensley hears about a spy in the FW that's gone cold. Tells you he needs to deal with it. Break in the storyline.
+	16. When Hensley contacts you again, tells you about your "promotion." Given choice of which middle branch to go into next.
 _____________ Prospecting Start ________________
 # Syndicated Prospecting: mining and exploration focused. Has some pirate fighting and you do have a runin with the Korath. Includes stuff like mining uranium and other materials for the construction of nukes and other new tech (not entirely known to the player). Directly involved in the unlocking of the Prospector ship. Might get to meet the Hai since you'll probably be hanging around in the Far North.
 
 Major plot points:
 	* Creation of the Prospector
 	* Mining uranium for the Syndicate
+	* Mining of strange minerals for study
 	* Bump into Hai
 	* Bump into Korath
 
-1. War starts; Johansen isn't require to go to Foundry
-	a. Begin working on the Prospector by transporting supplies from Maker to Foundry (get paid for this decision) [cargo]
-		A. Upon landing on Foundry, you only get a little bit on information on what is occuring.
-2. Either continue cargo (from Sunracer to Foundry) to work on the Prospector [cargo]
-	a. See the battle going on in Zaurak that you partake in during the Security branch.
-3. 
-_____________ Technology Middle ________________
+The Breakout of War
+	1. The player is contacted about getting the job; told to travel to some planet.
+	2. Find Johansen at said planet. Receive word that the FW and Navy have started fighting. Johansen says something about being happy he doesn't need to worry about it. "Mining asteroids all day is grunt work."
+	3. Begin work on the Prospector. Hear after the fact what's happened on Kornephoros, but don't hear about Katya. Three missions or so dealing with the creation of the Prospector.
+	4. Scout out the Terminus area, known for being rich in asteroids. Escort a group of Syndicate miners to there, including a newly built Prospector to see it in action. Five missions.
+Dirty Jobs (13-14 missions)
+	5. Return to Syndicate space. Hear about a mine collapse on Canyon leading to lowered uranium production. Tasked with picking up the slack.
+	6. Travel to Sheratan to pick up some escorts for the scouting mission. Upon leaving, spot a Raider fleeing the system. Land on a planet and be told it's just some strange pirate tech that the Syndicate has been tracking or the like. Three missions.
+	7. Scout out the Far North uninhabited systems. Find large deposits of uranium and a strange mineral. Bring the mineral back for study. Three missions.
+	8. Mine uranium for tbe Syndicate. Three or four missions dealing with this, including some pirate combat and perhaps rescuing a stranded ship in the north.
+	9. Drop the uranium off near where the nukes are being made.
+Alien Encounters (branch involving exposing Hai to the Syndicate and dealing with them more or ignoring them and doing other Syndicate work. Piss Oathkeepers off if you do.)
+	10. Get word about what Syndicate scientists have found out about the rare mineral mined in the Far North. Be tasked with mining more of it. (Quantum keystone asteroids). Two or three missions.
+	11. Stumble upon the Hai wormhole. Go to the other side and explore Hai space. Two missions.
+	12a. Tell the Syndicate about the Hai. 7 or 8 missions dealing with the Hai. (bad karma)
+	12b. Don't tell the Syndicate about the Hai. 7 or 8 normal missions. 
+	13. Vacation time. Break in the storyline.
+	14. When Johansen contacts you again, tells you about your "promotion." Given choice of which middle branch to go into next.
+_____________ Technology/Research Middle ________________
 # Technological Advancement: Deals with making contact with the Korath and Hai. Create new technologies based on alien tech. Syndicate shield generators could be directly based off of Hai generators. Korath likely too advanced for the Syndicate to create much from their tech. Possibly create a precision expansion outfit by working with Korath heat shunts, figuring out how the Korath make such dang good cooling.
+# Meet Marco Bugati
+# Either you tell the Syndicate about the Hai, or Johansen does.
 
 ______________ Military Middle _________________
 # Military Expansion: The Syndicate ramps up their military in these "uncertain times." Involves conquering a pirate world (for show) and testing out new technology on the Korath (mod proton gun) and local Pirates (Class C Freighter). Given that the Navy is split between the southern front and northern front, the Syndicate offer to act as security where the Navy has had to pull out. Might even involve some frontline battles, having the Syndicate fly Republic colors. (Some Navy fleets used Protectors during the war. Whether these were Syndicate in disguise or just the Syndicate selling warships to the Navy while they were low on capitals is unknown.) Having Syndicated Security act as the Navy will likely create tensions with Deep Security and the Oathkeepers.
