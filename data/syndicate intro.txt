@@ -1596,7 +1596,7 @@ mission "Syndi Sal 8"
 mission "Syndi Job Offer"
 	landing
 	name "Apply for the Syndicate"
-	description
+	description `If you want to join the Syndicate, apply for a job on <destination>.`
 	minor
 	source
 		government "Syndicate" "Republic" "Free Worlds"

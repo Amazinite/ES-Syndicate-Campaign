@@ -1,10 +1,24 @@
 The following tags indicate a mission where the player must...
+[travel]: travel on your own
 [transport]: transport passengers
 [cargo]: deliver cargo
 [escort]: escort ships
 [combat]: fight an opposing force
 [mining]: mine
 [recon]: survey systems or planets by flying through or landing on them
+
+FW Campaign: number of real missions; number of missions on an expected playthrough (i.e. after choosing branches)
+	Intro: 37 (-3 to intro, -1 questioning); 31
+	Start: 34 (+3 from intro); 28
+	Middle: 45 (-2 to ends); 38
+	Rec: 45 (+1 from middle): 43 (-2 optionals)
+	Check: 38 (+1 from middle); 37 (-1 optional)
+
+A playthrough of ____ should consist of roughly _____ missions, but the number of written missions will be higher due to branching and invisible missions.
+	Intro: ~30
+	Start: ~30
+	Middle: ~40
+	End: ~45
 
 __________________ Intro ____________________
 Pre-bombing mission: Meet with and help out a random miner merchant in the Core region of space.
