@@ -24,6 +24,19 @@ outfit "Precision Expansion"
 
 # Precision expansions require specific knowledge of the design of the ship itself. This means that at first they will only appear on a select few Syndicate ships where the design with precision expansions has been perfected, and only later on will they become available to the player to install on all ships. Yes, lore pretty much ends up going out the window with this outfit as soon as you talk about bringing alien ships to human space in order to install these things.
 
+# The following is MZ's explanation of outfits expansions reducing cooling efficiency.
+#
+# The idea is that when ship designers determine the layout for a new model
+# of ship, they carefully account for the amount of heat that the outfit
+# sections will produce and either lay them out in a way that avoids hot
+# spots, or add built-in heating ducts or heat sinks to wick the excess heat
+# out to the hull. (Basically, the same way that CPU designers spread out the
+# components of the chip that draw the most power.)
+#
+# If you start rearranging the interior of your ship, that careful balance
+# gets out of whack, and it also becomes harder to lay out extra cooling
+# ducts and stuff like that.
+
 # Have fun.
 
 #############################################

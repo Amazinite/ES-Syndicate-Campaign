@@ -1367,7 +1367,7 @@ mission "Syndi Sal 4C"
 
 mission "Syndi Sal 4D"
 	name `Pirate Contacts`
-	description `"Return Sal to <destination>"`
+	description `Return Sal to <destination>.`
 	passengers 1
 	source "Stormhold"
 	destination "Reunion"
@@ -1568,6 +1568,7 @@ mission "Syndi Sal 7"
 mission "Syndi Sal 8"
 	invisible
 	landing
+	description `Sal got dragged off and killed by a gang of pirates, making him tonight's biggest loser.`
 	to offer
 		has "Syndi Sal 7: done"
 	deadline 1
@@ -1674,7 +1675,9 @@ mission "Syndi Commitment"
 		
 	on accept
 		set "chosen sides"
+		set "chose syndicate"
 		event "syndicate application accepted" 30
+		log `Decided to apply for a job at the Syndicate. Will be contacted about it in 30 days if hired.`
 		fail
 			
 event "syndicate application accepted"
