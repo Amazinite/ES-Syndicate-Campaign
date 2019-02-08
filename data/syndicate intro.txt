@@ -396,14 +396,14 @@ mission "Syndi Communications 0"
 				`	"I'm looking for something to eat while my ship refuels."`
 				
 			label refuel
-			`	"If you really need something to eat, I'd wait 'til you get to a world with a little more culture. These frontier worlds never have anything good on them.`
+			`	"If you really need something to eat, I'd wait 'til you get to a world with a little more culture. These frontier worlds never have anything good on them."`
 				goto nate
 			
 			label sightseeing
-			`	Nate begins to laugh right as you mention sightseeing. "Sightseeing? On a planet like this? Oh boy, either you don't have the kind of money to sightsee on a world like Calda or you just don't know yet. You're wasting your time on a place like this, buddy.`
+			`	Nate begins to laugh right as you mention sightseeing. "Sightseeing? On a planet like this? Oh boy, either you don't have the kind of money to sightsee on a world like Calda or you just don't know yet. You're wasting your time on a place like this, buddy."`
 			
 			label nate
-			`	"I'm only here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on.`
+			`	"I'm only here because I have to be. The Syndicate has me transporting supplies to frontier worlds for building up the infrastructure. Boring work, but if it makes the Syndicate look good then I have to do it. At least maybe then these frontier worlds could become a place worth stepping on."`
 			`	"Tell you what, <first>. I have one more planet to drop supplies off on, but the ship I have can only carry half the load. If you carry the other half in your own ship then I will bring you to a world worth being on."`
 			choice
 				`	"Sounds like a good deal to me."`
