@@ -396,7 +396,7 @@ mission "Syndi Communications 0"
 				`	"I'm looking for something to eat while my ship refuels."`
 				
 			label refuel
-			`	"If you really need something to eat, I'd wait till you get to a world with a little more culture. These frontier worlds never have anything good on them.`
+			`	"If you really need something to eat, I'd wait 'til you get to a world with a little more culture. These frontier worlds never have anything good on them.`
 				goto nate
 			
 			label sightseeing
