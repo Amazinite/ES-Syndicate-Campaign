@@ -383,7 +383,7 @@ mission "Syndi Communications 0"
 			
 			label choice
 			choice
-				`	"I'm sightseeing the galaxy."`
+				`	"I'm sightseeing across the galaxy."`
 					goto sightseeing
 				`	"I'm looking for something to eat while my ship refuels."`
 					goto refuel
@@ -391,7 +391,7 @@ mission "Syndi Communications 0"
 				
 			`	"You could, but I asked you first."`
 			choice
-				`	"I'm sightseeing the galaxy."`
+				`	"I'm sightseeing across the galaxy."`
 					goto sightseeing
 				`	"I'm looking for something to eat while my ship refuels."`
 				
