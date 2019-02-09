@@ -471,7 +471,7 @@ mission "Syndi Communications 1"
 				`	"Sounds like a great place."`
 				`	"Sorry, but I don't want to go to Shangri-La with you."`
 			`	Before Nate can respond, a device on his belt begins to ring. After a few tries, he finally unclips it from his belt.`
-			`	"This is Nate Remington, what's so important right now? Oh, Hensley, nice to hear from you. What is it?" Nate, who was previously speaking loud enough for someone across the albeit small spaceport to hear, begins speaking in a hushed voice. "Really...? Oh my. Alright, I'll be over as soon as I can.`
+			`	"This is Nate Remington, what's so important right now? Oh, Hensley, nice to hear from you. What is it?" Nate, who was previously speaking loud enough for someone across the albeit small spaceport to hear, begins speaking in a hushed voice. "Really...? Oh my. Alright, I'll be over as soon as I can."`
 			
 			branch hensley
 				has "Syndi Security 3: done"
@@ -509,11 +509,11 @@ mission "Syndi Communications 2"
 					goto yes
 				`	"No, I can't believe it. Do they have any proof that the Free Worlds are the ones responsible for the bombings?"`
 					
-			`	"Well you should believe it. I don't know what proof they have, but they clearly have enough if they're going to build a base so close by and send so many ships down to the south.`
+			`	"Well you should believe it. I don't know what proof they have, but they clearly have enough if they're going to build a base so close by and send so many ships down to the south."`
 				goto lift
 					
 			label yes
-			`	"And now they're going to pay for it once Parliament give the Navy the order to attack. The Free Worlds will be gone within a year after that happens, you can bet on that.`
+			`	"And now they're going to pay for it once Parliament give the Navy the order to attack. The Free Worlds will be gone within a year after that happens, you can bet on that."`
 			
 			label lift
 			`	"Since you're here, could you give me a lift to <destination>? My ship is at the shop so I've been borrowing rides for a while now, and I need to get back to my villa soon. I'll be throwing a party with a few friends over this situation once I get home."`
@@ -1269,11 +1269,11 @@ mission "Syndi Sal 4"
 				goto scan
 			
 			label concern
-			`	"I'm concerned because things aren't looking good. The economy took a hit after the bombs went off, and things are only going to get worse as long as everyone's too scared to make a move, you know?`
+			`	"I'm concerned because things aren't looking good. The economy took a hit after the bombs went off, and things are only going to get worse as long as everyone's too scared to make a move, you know?"`
 			
 			label scan
 			`	"That ship I had you scan was carrying someone connected to the Free Worlds. What they were carrying was nothing new to me, though. I just wonder what he's doing snooping around the Core at a time like this."`
-			`	Sal sits back and thinks for a moment. "Tell you what, how about you bring me to <destination>. I have a contact there, a well connected man like myself, who might have an idea as to where the Free Worlds got those nukes. The Navy aren't the type to work with pirates, but that's their loss, I say. There's a lot they miss out on because of it." Sal pauses for a moment. "Don't worry that <planet> is a pirate world, I can keep you safe."`
+			`	Sal sits back and thinks for a moment. "Tell you what, how about you bring me to <destination>. I have a contact there, a well-connected man like myself, who might have an idea as to where the Free Worlds got those nukes. The Navy aren't the type to work with pirates, but that's their loss, I say. There's a lot they miss out on because of it." Sal pauses for a moment. "Don't worry that <planet> is a pirate world, I can keep you safe."`
 			choice
 				`	"Okay. Hopefully we'll find something important."`
 					accept
