@@ -1381,7 +1381,7 @@ mission "Syndi Sal 4D"
 			`	You hike with Sal through what must be five kilometers of forest before he finally motions for you to stop by a riverside. He points down river to what looks like a cave.`
 			`	Sal approaches the cave. "Wakey wakey, boys!" he shouts into the cave. Three of the roughest pirates you've ever seen come walking out of the cave with their guns drawn. The one at the front of the group, a tall, thin man with more piercings than you can count, looks you up and down. You try not to make eye contact.`
 			`	"I see you have a new lacky, Sal. What, lose your old one?" The pirates all laugh.`
-			`	"They don't make them like they use to, I guess," Sal retorts. "How's life been treating you three? Enjoying the Navy being busier than usual?"`
+			`	"They don't make them like they used to, I guess," Sal retorts. "How's life been treating you three? Enjoying the Navy being busier than usual?"`
 			`	"I haven't noticed much of a change. Haven't been off this rock lately to find out. Although, the trip from Zenith to here did feel much easier after that bombing. Quite the blessing, I'd say."`
 			choice
 				`	(Let Sal do the talking.)`
@@ -1577,7 +1577,7 @@ mission "Syndi Sal 8"
 		payment 250000
 		log `Brought Sal to Deadman's Cove to speak with Alvice again. Sal was ambushed by a group of pirates and presumably killed. Had to flee the planet.`
 		conversation
-			`As you bring your ship in to land on the island, Sal hands you <payment> and begins speaking in a surprisingly soft tone compared to what you're use to.`
+			`As you bring your ship in to land on the island, Sal hands you <payment> and begins speaking in a surprisingly soft tone compared to what you're used to.`
 			`	"Just so you know, I've contacted a few people in the Syndicate and floated your name around. Ever need anything, just tell them you know me. Might even be worth heading to Foundry and applying for the Syndicate."`
 			`	The mood turns sour though when Sal steps off your ship to meet with Alvice and is grabbed by a group of heavily armed pirates. Sal looks shocked, but doesn't fight back against them. "Not like this!" he yells. "Think of all the good I've done you boys." The pirates don't seem to pay any attention to you.`
 			choice
