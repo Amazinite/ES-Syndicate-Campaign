@@ -1460,7 +1460,7 @@ mission "Syndi Sal 5B"
 				`	"Where to next?"`
 					goto next
 				`	"What kind of documents are those?"`
-			`	"Just documents about a project the Syndicate has been working on the past few years. We've allowed a select few business men and women in the Paradise Worlds to get a sneak peak, but we're about to go public with the project soon."`
+			`	"Just documents about a project the Syndicate has been working on the past few years. We've allowed a select few business men and women in the Paradise Worlds to get a sneak peek, but we're about to go public with the project soon."`
 			label next
 			`	"Let's head to <destination> next. I have to meet with some engineers from Betelgeuse Shipyards."`
 				accept
