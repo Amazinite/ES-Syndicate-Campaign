@@ -611,7 +611,7 @@ mission "Syndi Communications 3B"
 	to fail
 		has "chosen sides"
 	on offer
-		log `Witnessed the Lodestone spaceport get destroyed by a volcanic eruption. Hopefully the next spaceport that is built doesn't suffer the same fate as the first three.`
+		log `Witnessed the Lodestone spaceport get destroyed by a volcanic eruption. Hopefully the next spaceport that is built doesn't suffer the same fate as the first four.`
 		conversation
 			`As you come in for a landing, you see towers of smoke billowing up from the volcano next to the spaceport, which is raised above the ground as to avoid being buried in lava. About two dozen ships are busy ferrying passengers to safety away from the spaceport.`
 			`	"The lava flows likely won't bury the spaceport, but there's the chance that the volcano could explode and launch lava up into the air. If that lands on the spaceport then the spaceport is done for. You should help evacuate the spaceport just in case that happens."`
