@@ -1273,7 +1273,7 @@ mission "Syndi Sal 4"
 			
 			label scan
 			`	"That ship I had you scan was carrying someone connected to the Free Worlds. What they were carrying was nothing new to me, though. I just wonder what he's doing snooping around the Core at a time like this."`
-			`	Sal sits back and thinks for a moment. "Tell you what, how about you bring me to <destination>. I have a contact there, a well connected man like myself, who might have an idea as to where the Free Worlds got those nukes. The Navy aren't the type to work with pirates, but that's their loss, I say. There's a lot they miss out on because of it." Sal pauses for a moment. "Don't worry that <planet> is a pirate world, I can keep you safe."`
+			`	Sal sits back and thinks for a moment. "Tell you what, how about you bring me to <destination>. I have a contact there, a well-connected man like myself, who might have an idea as to where the Free Worlds got those nukes. The Navy aren't the type to work with pirates, but that's their loss, I say. There's a lot they miss out on because of it." Sal pauses for a moment. "Don't worry that <planet> is a pirate world, I can keep you safe."`
 			choice
 				`	"Okay. Hopefully we'll find something important."`
 					accept
