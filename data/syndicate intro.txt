@@ -655,7 +655,7 @@ event "lodestone spaceport rebuilt"
 
 mission "Syndi Security 0"
 	name "Defending the Frontier"
-	description "A large pirate presence in the south of Syndicate space has left the north dangerously under defended. Assist in defending the northern Syndicate worlds from pirates alongside the security stationed on <destination>."
+	description "A large pirate presence in the south of Syndicate space has left the north dangerously underdefended. Assist in defending the northern Syndicate worlds from pirates alongside the security stationed on <destination>."
 	minor
 	source
 		government "Syndicate"
@@ -1076,7 +1076,7 @@ mission "Syndi Sal 1B"
 				`	(Get in your ship and run.)`
 					goto run
 			
-			`	"Yes you can," she responds. "I saw that your buddies over there loaded that cargo for you. All cargo transfers are suppose to go through spaceport authorities, so I'm going to need to check your cargo."`
+			`	"Yes you can," she responds. "I saw that your buddies over there loaded that cargo for you. All cargo transfers are supposed to go through spaceport authorities, so I'm going to need to check your cargo."`
 			choice
 				`	(Run.)`
 					goto run
@@ -1311,12 +1311,12 @@ mission "Syndi Sal 4B"
 					goto sal
 				`	"I'm just his ride."`
 			
-			`	Alvice laughs. "You better watch yourself sticking around Sal. He's a real trouble maker." Sal motions to you to stop talking.`
+			`	Alvice laughs. "You better watch yourself sticking around Sal. He's a real troublemaker." Sal motions to you to stop talking.`
 			
 			label sal
 			`	"I came here to chat with you, Alvice, not so you could chat with <first>. How's life been treating you since the bombings?"`
 			`	"Oh it's been splendid," Alvice responds with a smile, revealing a row of golden teeth. "Thanks to this whole Free Worlds situation, the Navy's disoriented and spread thin. Now normally I wouldn't be one to care for what happens with the Navy since I never deal with them directly, but it seems as though all this trouble has lead to a nice boom in business for myself. Turns out it's a lot easier to deal with my buddies up north when the Navy isn't breathing down their neck as much."`
-			`	Sal gives Alvice a sly smile. "Speaking of your buddies heard anything on the grape vine about the Free Worlds and those nukes of theirs?"`
+			`	Sal gives Alvice a sly smile. "Speaking of your buddies, heard anything on the grapevine about the Free Worlds and those nukes of theirs?"`
 			`	Alvice slouches in his chair with his fist under his chin. "I can't say I have, but maybe I'll hear something by the time you come back with something enticing. All I know is that this situation will be great while it lasts."`
 			`	"I'm sure it will be for scum like you." Sal quips back. They both laugh for an uncomfortable amount of time.`
 			`	"Now get off my island!" the warlord says as he motions to his men to remove you, still laughing along with Sal as you are both escorted out of the complex at gunpoint.`
@@ -1347,14 +1347,14 @@ mission "Syndi Sal 4C"
 				`	"It sure was."`
 					goto sure
 				`	"I'm surprised we even made it out alive."`
-			`	"It should be no surprised when you're with me. Those pirates wouldn't lay a finger on me," Sal chuckles.`
+			`	"It should be no surprise when you're with me. Those pirates wouldn't lay a finger on me," Sal chuckles.`
 			goto korban
 			
 			label sure
 			`	"Glad to hear you enjoyed it. Then you'll love this next job.`
 			
 			label korban
-			`	"Now, I had a chat with some big wig friends of mine in the Syndicate, and they're interested in knowing more of what the pirates know. How about we head to <destination> next? They have to deal with the Navy more than the guys on Deadman's Cove, so I'm sure they've heard more than Alvice has."`
+			`	"Now, I had a chat with some bigwig friends of mine in the Syndicate, and they're interested in knowing more of what the pirates know. How about we head to <destination> next? They have to deal with the Navy more than the guys on Deadman's Cove, so I'm sure they've heard more than Alvice has."`
 			choice
 				`	"Okay, I'll get my ship ready."`
 				`	"Sorry, but I'm not putting myself in danger like that again."`
@@ -1492,7 +1492,7 @@ mission "Syndi Sal 5C"
 					decline
 			
 	on complete
-		dialog `Sal takes a deep breathe when he steps off your ship. "Nice place, ain't it? I might retire here one day. I'd like to speak with my friend in private, so meet me in the spaceport later."`
+		dialog `Sal takes a deep breath when he steps off your ship. "Nice place, ain't it? I might retire here one day. I'd like to speak with my friend in private, so meet me in the spaceport later."`
 
 
 
