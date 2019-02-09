@@ -1507,7 +1507,7 @@ mission "Syndi Sal 6"
 		has "Syndi Sal 5C: done"
 	on offer
 		conversation
-			`You wait in the spaceport for a while and are about to leave when Sal finally shows up. "I just got word from corporate. There's cargo that needs pick up on <destination> and brought to Hephaestus. It's only five tons, so you should have space."`
+			`You wait in the spaceport for a while and are about to leave when Sal finally shows up. "I just got word from corporate. There's cargo that needs picked up on <destination> and brought to Hephaestus. It's only five tons, so you should have space."`
 			choice
 				`	"Okay."`
 					accept
