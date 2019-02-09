@@ -1162,7 +1162,7 @@ mission "Syndi Sal 2: alt"
 		has "chosen sides"
 	on offer
 		conversation
-			`While walking through the spaceport, you feel a finger tap your shoulder. When you turn around, you're met face to face with Sal.`
+			`While walking through the spaceport, you feel a finger tap your shoulder. When you turn around, you're face to face with Sal.`
 			`	"Sorry if I was too abrasive with you last time, Captain. I know I can be quite the handful. Don't worry because I had someone else take care of that last job, but I'd still be interested in doing business with you right now."`
 			choice
 				`	"Well I'm still not interested in working with you."`
@@ -1294,7 +1294,7 @@ mission "Syndi Sal 4B"
 		has "chosen sides"
 	on offer
 		log `Brought Sal to Deadman's Cove to speak with a powerful pirate warlord to see what he knows about the Free Worlds having nukes. The warlord didn't have any information, but the chaos caused by the bombings has been good for his criminal business.`
-		log "People" "Salidar Garcia" `A self-proclaimed man of many connections, Sal works for the Syndicate as somewhat of a fixer, allowing the Syndicate to keep contact with the pirate warlords of the Core. It is said that every pirate in the Core knows his name, although how he has so much sway among pirates is said to be unknown, even to the Syndicate.`
+		log "People" "Salidar Garcia" `A self-proclaimed man of many connections, Sal works for the Syndicate as somewhat of a fixer, allowing the Syndicate to keep in contact with the pirate warlords of the Core. It is said that every pirate in the Core knows his name, although how he has so much sway among pirates is said to be unknown, even to the Syndicate.`
 		log "People" "Alvice the Golden" `Alvice the Golden, as he is called by his subjects, is a notorious pirate warlord from Deadman's Cove. He lives like a king thanks to the riches he has obtained doing criminal business around the Core. Any attempts made on his life by the Syndicate are said to have ended badly for the them.`
 		conversation
 			`Instead of landing at the <origin> spaceport, Sal gives you the coordinates to an island complex that he says is owned by one of the most powerful pirate warlords in the system. "Normally getting anywhere close to this place would get you blasted out of the sky, but they know we're coming."`
@@ -1507,7 +1507,7 @@ mission "Syndi Sal 6"
 		has "Syndi Sal 5C: done"
 	on offer
 		conversation
-			`You wait in the spaceport for a while and are about to leave when Sal finally shows up. "I just got word from corporate. There's cargo that needs picked up on <destination> and brought to Hephaestus. It's only five tons, so you should have space."`
+			`You wait in the spaceport for a while and are about to leave when Sal finally shows up. "I just got word from corporate. There's cargo that needs pick up on <destination> and brought to Hephaestus. It's only five tons, so you should have space."`
 			choice
 				`	"Okay."`
 					accept
@@ -1632,9 +1632,9 @@ mission "Syndi Commitment"
 			
 			`	You walk into the spaceport and find the Syndicate main building. You ask the woman at the front desk if there are any job openings and she begins mentioning available factory jobs on other worlds. Not wanting to go from a factory worker to a captain and right back to a factory worker, you mention how you know Sal. The woman looks surprised, then tells you to wait so that she can make a phone call. She returns with a paper listing a number of job openings with a description of each.`
 			``
-			`	Syndicated Security is always looking for new members to help keep the Core a safe place for business! Combining the corporate structure with military prowess, Syndicated Security has all the effectiveness of a military force without all the wastefulness one finds in the Republic Navy. All new hires are provided with a bonus of one million credits to help them buy a better ship to defend the region with!`
+			`	Syndicated Security is always looking for new members to help keep the Core a safe place for business! Combining the corporate structure with military prowess, Syndicated Security has all the effectiveness of a military force without all the wastefulness one finds in the Republic Navy. All new hires are provided with a stipend of one million credits to help them buy a better ship to defend the region with!`
 			`	Syndicated Communications is looking for a seasoned pilot and negotiator to act as an assistant for the famous Nate Remington. Travel the galaxy working for the Syndicate by dealing with other corporations, the Navy, the Republic government, and even the Free Worlds!`
-			`	Syndicated Prospecting is the newest branch of the Syndicate corporation. For much of human history since the invention of the hyperdrive, asteroid mining has been ignored as a source of income due to the plentifulness of planets to mine from. Not anymore, as Syndicated Prospecting is here to explore the region for the rare minerals found in asteroids, helping to provide the materials for a brighter future!`
+			`	Syndicated Prospecting is the newest branch of the Syndicate corporation. For much of human history since the invention of the hyperdrive, asteroid mining has been ignored as a source of income due to the plentitude of planets to mine from. Not anymore, as Syndicated Prospecting is here to explore the region for the rare minerals found in asteroids, helping to provide the materials for a brighter future!`
 			``
 			choice
 				`	(Choose Syndicated Security.)`
