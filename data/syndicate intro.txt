@@ -1294,7 +1294,7 @@ mission "Syndi Sal 4B"
 		has "chosen sides"
 	on offer
 		log `Brought Sal to Deadman's Cove to speak with a powerful pirate warlord to see what he knows about the Free Worlds having nukes. The warlord didn't have any information, but the chaos caused by the bombings has been good for his criminal business.`
-		log "People" "Salidar Garcia" `A self-proclaimed man of many connections, Sal works for the Syndicate as somewhat of a fixer, allowing the Syndicate to keep in contact with the pirate warlords of the Core. It is said that every pirate in the Core knows his name, although how he has so much sway among pirates is said to be unknown, even to the Syndicate.`
+		log "People" "Salidar Garcia" `A self-proclaimed man of many connections, Sal works for the Syndicate as somewhat of a fixer, allowing the Syndicate to keep contact with the pirate warlords of the Core. It is said that every pirate in the Core knows his name, although how he has so much sway among pirates is said to be unknown, even to the Syndicate.`
 		log "People" "Alvice the Golden" `Alvice the Golden, as he is called by his subjects, is a notorious pirate warlord from Deadman's Cove. He lives like a king thanks to the riches he has obtained doing criminal business around the Core. Any attempts made on his life by the Syndicate are said to have ended badly for the them.`
 		conversation
 			`Instead of landing at the <origin> spaceport, Sal gives you the coordinates to an island complex that he says is owned by one of the most powerful pirate warlords in the system. "Normally getting anywhere close to this place would get you blasted out of the sky, but they know we're coming."`
