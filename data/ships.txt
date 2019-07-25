@@ -113,6 +113,6 @@ ship "Barb" "Barb (Defensive)"
 		"Beam Laser"
 		"Anti-Missile Turret"
 		"nGVF-AA Fuel Cell"
-		"LP036a Battery Pack"
+		"Supercapacitor" 3
 		"D14-RN Shield Generator"
 		"X1050 Ion Engines"
