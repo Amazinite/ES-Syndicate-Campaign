@@ -396,7 +396,7 @@ mission "Syndi Communications 0"
 				`	"I'm looking for something to eat while my ship refuels."`
 				
 			label refuel
-			`	"If you really need something to eat, I'd wait till you get to a world with a little more culture. These frontier worlds never have anything good on them.`
+			`	"If you really need something to eat, I'd wait 'til you get to a world with a little more culture. These frontier worlds never have anything good on them.`
 				goto nate
 			
 			label sightseeing
@@ -457,7 +457,7 @@ mission "Syndi Communications 1"
 		log `Helped a Syndicate employee named Nate Remington to bring infrastructure supplies to one of the Syndicate's frontier worlds. Received great pay for only transporting ten tons of material.`
 		conversation
 			`The spaceport on <planet> does not have the same machinery as on <origin>, so it takes much longer to unload the ten tons of cargo. While you are waiting, Nate goes on and on talking about himself. He doesn't even wait for you to respond at any point, nor does he seem interested in if you're even listening. Judging by the smell, he must have been drinking while on the flight here.`
-			`	"When I was 20, I applied to work for Syndicated Communications, the branch of the Syndicate that deals with public relations and such. The Syndicate had had a number of plunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
+			`	"When I was 20, I applied to work for Syndicated Communications, the branch of the Syndicate that deals with public relations and such. The Syndicate had had a number of blunders recently, something about ion engines blowing up in flight, so I thought I would be able to help them out since I've always been the kind of guy to be able to turn those kinds of situations around and make them look good. Let me tell you what, it only took me five months to make everyone forget about the exploding engines. Now ion engines are sold all over the galaxy." He leans over and puts his hand on your shoulder. "And you can thank me for that."`
 			choice
 				`	"Please don't touch me."`
 				`	(Ignore it.)`
@@ -611,7 +611,7 @@ mission "Syndi Communications 3B"
 	to fail
 		has "chosen sides"
 	on offer
-		log `Witnessed the Lodestone spaceport get destroyed by a volcanic eruption. Hopefully the next spaceport that is built doesn't suffer the same fate as the first three.`
+		log `Witnessed the Lodestone spaceport get destroyed by a volcanic eruption. Hopefully the next spaceport that is built doesn't suffer the same fate as the first four.`
 		conversation
 			`As you come in for a landing, you see towers of smoke billowing up from the volcano next to the spaceport, which is raised above the ground as to avoid being buried in lava. About two dozen ships are busy ferrying passengers to safety away from the spaceport.`
 			`	"The lava flows likely won't bury the spaceport, but there's the chance that the volcano could explode and launch lava up into the air. If that lands on the spaceport then the spaceport is done for. You should help evacuate the spaceport just in case that happens."`
@@ -655,7 +655,7 @@ event "lodestone spaceport rebuilt"
 
 mission "Syndi Security 0"
 	name "Defending the Frontier"
-	description "A large pirate presence in the south of Syndicate space has left the north dangerously under defended. Assist in defending the northern Syndicate worlds from pirates alongside the security stationed on <destination>."
+	description "A large pirate presence in the south of Syndicate space has left the north dangerously underdefended. Assist in defending the northern Syndicate worlds from pirates alongside the security stationed on <destination>."
 	minor
 	source
 		government "Syndicate"
@@ -1076,7 +1076,7 @@ mission "Syndi Sal 1B"
 				`	(Get in your ship and run.)`
 					goto run
 			
-			`	"Yes you can," she responds. "I saw that your buddies over there loaded that cargo for you. All cargo transfers are suppose to go through spaceport authorities, so I'm going to need to check your cargo."`
+			`	"Yes you can," she responds. "I saw that your buddies over there loaded that cargo for you. All cargo transfers are supposed to go through spaceport authorities, so I'm going to need to check your cargo."`
 			choice
 				`	(Run.)`
 					goto run
@@ -1162,7 +1162,7 @@ mission "Syndi Sal 2: alt"
 		has "chosen sides"
 	on offer
 		conversation
-			`While walking through the spaceport, you feel a finger tap your shoulder. When you turn around, you're met face to face with Sal.`
+			`While walking through the spaceport, you feel a finger tap your shoulder. When you turn around, you're face to face with Sal.`
 			`	"Sorry if I was too abrasive with you last time, Captain. I know I can be quite the handful. Don't worry because I had someone else take care of that last job, but I'd still be interested in doing business with you right now."`
 			choice
 				`	"Well I'm still not interested in working with you."`
@@ -1273,7 +1273,7 @@ mission "Syndi Sal 4"
 			
 			label scan
 			`	"That ship I had you scan was carrying someone connected to the Free Worlds. What they were carrying was nothing new to me, though. I just wonder what he's doing snooping around the Core at a time like this."`
-			`	Sal sits back and thinks for a moment. "Tell you what, how about you bring me to <destination>. I have a contact there, a well connected man like myself, who might have an idea as to where the Free Worlds got those nukes. The Navy aren't the type to work with pirates, but that's their loss, I say. There's a lot they miss out on because of it." Sal pauses for a moment. "Don't worry that <planet> is a pirate world, I can keep you safe."`
+			`	Sal sits back and thinks for a moment. "Tell you what, how about you bring me to <destination>. I have a contact there, a well-connected man like myself, who might have an idea as to where the Free Worlds got those nukes. The Navy aren't the type to work with pirates, but that's their loss, I say. There's a lot they miss out on because of it." Sal pauses for a moment. "Don't worry that <planet> is a pirate world, I can keep you safe."`
 			choice
 				`	"Okay. Hopefully we'll find something important."`
 					accept
@@ -1311,12 +1311,12 @@ mission "Syndi Sal 4B"
 					goto sal
 				`	"I'm just his ride."`
 			
-			`	Alvice laughs. "You better watch yourself sticking around Sal. He's a real trouble maker." Sal motions to you to stop talking.`
+			`	Alvice laughs. "You better watch yourself sticking around Sal. He's a real troublemaker." Sal motions to you to stop talking.`
 			
 			label sal
 			`	"I came here to chat with you, Alvice, not so you could chat with <first>. How's life been treating you since the bombings?"`
 			`	"Oh it's been splendid," Alvice responds with a smile, revealing a row of golden teeth. "Thanks to this whole Free Worlds situation, the Navy's disoriented and spread thin. Now normally I wouldn't be one to care for what happens with the Navy since I never deal with them directly, but it seems as though all this trouble has lead to a nice boom in business for myself. Turns out it's a lot easier to deal with my buddies up north when the Navy isn't breathing down their neck as much."`
-			`	Sal gives Alvice a sly smile. "Speaking of your buddies heard anything on the grape vine about the Free Worlds and those nukes of theirs?"`
+			`	Sal gives Alvice a sly smile. "Speaking of your buddies, heard anything on the grapevine about the Free Worlds and those nukes of theirs?"`
 			`	Alvice slouches in his chair with his fist under his chin. "I can't say I have, but maybe I'll hear something by the time you come back with something enticing. All I know is that this situation will be great while it lasts."`
 			`	"I'm sure it will be for scum like you." Sal quips back. They both laugh for an uncomfortable amount of time.`
 			`	"Now get off my island!" the warlord says as he motions to his men to remove you, still laughing along with Sal as you are both escorted out of the complex at gunpoint.`
@@ -1347,14 +1347,14 @@ mission "Syndi Sal 4C"
 				`	"It sure was."`
 					goto sure
 				`	"I'm surprised we even made it out alive."`
-			`	"It should be no surprised when you're with me. Those pirates wouldn't lay a finger on me," Sal chuckles.`
+			`	"It should be no surprise when you're with me. Those pirates wouldn't lay a finger on me," Sal chuckles.`
 			goto korban
 			
 			label sure
 			`	"Glad to hear you enjoyed it. Then you'll love this next job.`
 			
 			label korban
-			`	"Now, I had a chat with some big wig friends of mine in the Syndicate, and they're interested in knowing more of what the pirates know. How about we head to <destination> next? They have to deal with the Navy more than the guys on Deadman's Cove, so I'm sure they've heard more than Alvice has."`
+			`	"Now, I had a chat with some bigwig friends of mine in the Syndicate, and they're interested in knowing more of what the pirates know. How about we head to <destination> next? They have to deal with the Navy more than the guys on Deadman's Cove, so I'm sure they've heard more than Alvice has."`
 			choice
 				`	"Okay, I'll get my ship ready."`
 				`	"Sorry, but I'm not putting myself in danger like that again."`
@@ -1381,7 +1381,7 @@ mission "Syndi Sal 4D"
 			`	You hike with Sal through what must be five kilometers of forest before he finally motions for you to stop by a riverside. He points down river to what looks like a cave.`
 			`	Sal approaches the cave. "Wakey wakey, boys!" he shouts into the cave. Three of the roughest pirates you've ever seen come walking out of the cave with their guns drawn. The one at the front of the group, a tall, thin man with more piercings than you can count, looks you up and down. You try not to make eye contact.`
 			`	"I see you have a new lacky, Sal. What, lose your old one?" The pirates all laugh.`
-			`	"They don't make them like they use to, I guess," Sal retorts. "How's life been treating you three? Enjoying the Navy being busier than usual?"`
+			`	"They don't make them like they used to, I guess," Sal retorts. "How's life been treating you three? Enjoying the Navy being busier than usual?"`
 			`	"I haven't noticed much of a change. Haven't been off this rock lately to find out. Although, the trip from Zenith to here did feel much easier after that bombing. Quite the blessing, I'd say."`
 			choice
 				`	(Let Sal do the talking.)`
@@ -1460,7 +1460,7 @@ mission "Syndi Sal 5B"
 				`	"Where to next?"`
 					goto next
 				`	"What kind of documents are those?"`
-			`	"Just documents about a project the Syndicate has been working on the past few years. We've allowed a select few business men and women in the Paradise Worlds to get a sneak peak, but we're about to go public with the project soon."`
+			`	"Just documents about a project the Syndicate has been working on the past few years. We've allowed a select few business men and women in the Paradise Worlds to get a sneak peek, but we're about to go public with the project soon."`
 			label next
 			`	"Let's head to <destination> next. I have to meet with some engineers from Betelgeuse Shipyards."`
 				accept
@@ -1492,7 +1492,7 @@ mission "Syndi Sal 5C"
 					decline
 			
 	on complete
-		dialog `Sal takes a deep breathe when he steps off your ship. "Nice place, ain't it? I might retire here one day. I'd like to speak with my friend in private, so meet me in the spaceport later."`
+		dialog `Sal takes a deep breath when he steps off your ship. "Nice place, ain't it? I might retire here one day. I'd like to speak with my friend in private, so meet me in the spaceport later."`
 
 
 
@@ -1507,7 +1507,7 @@ mission "Syndi Sal 6"
 		has "Syndi Sal 5C: done"
 	on offer
 		conversation
-			`You wait in the spaceport for a while and are about to leave when Sal finally shows up. "I just got word from corporate. There's cargo that needs picked up on <destination> and brought to Hephaestus. It's only five tons so you should have space."`
+			`You wait in the spaceport for a while and are about to leave when Sal finally shows up. "I just got word from corporate. There's cargo that needs picked up on <destination> and brought to Hephaestus. It's only five tons, so you should have space."`
 			choice
 				`	"Okay."`
 					accept
@@ -1577,7 +1577,7 @@ mission "Syndi Sal 8"
 		payment 250000
 		log `Brought Sal to Deadman's Cove to speak with Alvice again. Sal was ambushed by a group of pirates and presumably killed. Had to flee the planet.`
 		conversation
-			`As you bring your ship in to land on the island, Sal hands you <payment> and begins speaking in a surprisingly soft tone compared to what you're use to.`
+			`As you bring your ship in to land on the island, Sal hands you <payment> and begins speaking in a surprisingly soft tone compared to what you're used to.`
 			`	"Just so you know, I've contacted a few people in the Syndicate and floated your name around. Ever need anything, just tell them you know me. Might even be worth heading to Foundry and applying for the Syndicate."`
 			`	The mood turns sour though when Sal steps off your ship to meet with Alvice and is grabbed by a group of heavily armed pirates. Sal looks shocked, but doesn't fight back against them. "Not like this!" he yells. "Think of all the good I've done you boys." The pirates don't seem to pay any attention to you.`
 			choice
@@ -1632,9 +1632,9 @@ mission "Syndi Commitment"
 			
 			`	You walk into the spaceport and find the Syndicate main building. You ask the woman at the front desk if there are any job openings and she begins mentioning available factory jobs on other worlds. Not wanting to go from a factory worker to a captain and right back to a factory worker, you mention how you know Sal. The woman looks surprised, then tells you to wait so that she can make a phone call. She returns with a paper listing a number of job openings with a description of each.`
 			``
-			`	Syndicated Security is always looking for new members to help keep the Core a safe place for business! Combining the corporate structure with military prowess, Syndicated Security has all the effectiveness of a military force without all the wastefulness one finds in the Republic Navy. All new hires are provided with a bonus of one million credits to help them buy a better ship to defend the region with!`
+			`	Syndicated Security is always looking for new members to help keep the Core a safe place for business! Combining the corporate structure with military prowess, Syndicated Security has all the effectiveness of a military force without all the wastefulness one finds in the Republic Navy. All new hires are provided with a stipend of one million credits to help them buy a better ship to defend the region with!`
 			`	Syndicated Communications is looking for a seasoned pilot and negotiator to act as an assistant for the famous Nate Remington. Travel the galaxy working for the Syndicate by dealing with other corporations, the Navy, the Republic government, and even the Free Worlds!`
-			`	Syndicated Prospecting is the newest branch of the Syndicate corporation. For much of human history since the invention of the hyperdrive, asteroid mining has been ignored as a source of income due to the plentifulness of planets to mine from. Not anymore, as Syndicated Prospecting is here to explore the region for the rare minerals found in asteroids, helping to provide the materials for a brighter future!`
+			`	Syndicated Prospecting is the newest branch of the Syndicate corporation. For much of human history since the invention of the hyperdrive, asteroid mining has been ignored as a source of income due to the plentitude of planets to mine from. Not anymore, as Syndicated Prospecting is here to explore the region for the rare minerals found in asteroids, helping to provide the materials for a brighter future!`
 			``
 			choice
 				`	(Choose Syndicated Security.)`
