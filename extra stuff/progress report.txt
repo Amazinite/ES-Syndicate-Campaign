@@ -1,0 +1,24 @@
+intro:
+	Pre-war missions need looked at. The "timer" ship isn't exactly working, so either new mechanics need added or that missions. Might also want to redo the plot of the final pre-war mission as to not include Sawyer at all. No real point in having him be there. Also looking to change the first mission as to not have it be a copy-paste scenario of the Pact Recon mission.
+	Feeling pretty good about the smaller intro mission strings. The Sal string needs looked at though; I feel that it's rather lacking right now.
+	Overall, I'd say that the intro is like 90% done.
+start:
+	Mostly storyboarded, but nothing written yet.
+middle:
+	Floating ideas.
+end:
+	Floating ideas.
+
+
+	
+7/24/19
+
+My original intention was for the Syndicate campaign to contain more branching than the FW campaign to a large degree, but for the purposes of simply having something done to show for, that's going to not be the case, at least for now. There's been talk of "reworking" the FW campaign once the Navy and Syndicate campaigns are done; changing the game plan to be that all three campaigns will simply be expanded upon after they're done.
+
+The Syndicate campaign, instead of being 1 intro, 3 starts, 3 middles, 4 ends will instead follow the same 1 intro, 1 start, 1 middle, 2 ends formula of the FW campaign. Once expanded upon, the extra starts, middles, and ends will be added. The chosen start will be Communications. The chosen middle will be either Military or Espionage. The chosen ends will be Extremist and Defector.
+
+The idea behind expanding the FW campaign was to add a parallel story where instead of directly joining the FW, the player instead joins the Wolf Pack. The Wolf Pack would have its own start, middle, and ends, but with the player having a choice to swap to being with the FW proper after the start; a similar choice to leave the FW proper and join the Wolf Pack would be given to the player during the FW start depending on the player's decisions. In this way, the FW campaign would consist of 1 intro, 2 starts (FW or Wolf), 4 middles (FW, FW Defected, Wolf, or Wolf Defected), and 4 ends (FW Check, FW Rec, Wolf Check, Wolf Rec).
+
+
+
+
