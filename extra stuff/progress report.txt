@@ -22,3 +22,11 @@ The idea behind expanding the FW campaign was to add a parallel story where inst
 
 
 
+7/28/19
+
+I've created a new storyboard file and distinguished it from the old one. The new one follows the above path of not having massive branching. Right now this file is just copy pasted parts of what I'm keeping from the old file.
+
+It's better to do something than to do nothing, so instead of just sitting around hoping that I get the motivation to work on this, I'm just going to start pushing myself to work on it for a bit each day until I get on a roll. My plan is to first finish a rough storyboard in the new file, then finish the intro, then begin writing from there. The storyboard will likely evolve over time as more stuff gets done, and I may skip to finishing the intro if I can't seem to finish the storyboard.
+
+
+
