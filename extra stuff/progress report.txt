@@ -30,3 +30,13 @@ It's better to do something than to do nothing, so instead of just sitting aroun
 
 
 
+8/3/19
+
+Planning on changing most of the character names. Lore states how the FW can be contrasted against the Syndicate in that the FW is almost entirely of European ancestry, implying that the Syndicate is more mixed.
+Existing names are a bit odd in that regard. Sawyer? English origin. Korban? Same boat. Bugati? French. Even Kiko's character, Sal; Garcia is of Spanish origin. So still, all of European origin. 
+The FW characters at least line up with how they're described. Voigt? Springborn? Reynolds? German origins. Soleau? French. Winters? Generic west and north European origins. Gruyere? Google gives me a town in Switzerland. Edward Tivrusky? Lol he's a Cowboy Bepop character. Name sounds Russian so it fits.
+I'd be interested in having the planned characters (Johansen, Hensley, Remington) be renamed to have names of African, Indian, East Asian origin. 
+
+I'm currently fleshing out the branchs that I plan to introduce in the start. I've written down "do 7 to 8 missions that depend on the choice you chose," but I haven't fleshed out what those 7 to 8 missions will actually be for each mini branch. After that's done, I'll move into figuring out how the middle should go down. 
+
+I've moved the contribution log to a PR summary file in the extra stuff folder, which will also allow me to slowly build up the PR summary for this massive content addition.

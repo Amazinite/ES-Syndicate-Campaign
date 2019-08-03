@@ -94,27 +94,29 @@ Major plot points:
 	* Syndicate speaks with Megaparsec about creation of new ship(s) or cheaper ships for the Syndicate
 	* Remington investigate disappearance of Sal
 
-The Breakout of War
+The Breakout of War - Player learns about the situation of the Navy attacking the FW, and helps to make preperations for the war's continuation.
 	1. The player is contacted about getting the job; told to travel to some planet. [Travel]
 	2. Find Remington at said planet. Receive word that the FW and Navy have started fighting. Bring Nate to a meeting on Foundry. [Transport]
 	3. Learn about what occured in Kornephoros, get word of the capture of Katya. 
 	4. Do two missions for some reason or another. Should involve meeting new characters that will be of importance later on. Alexander Soylent.
 	5. The Free Worlds reach out to the Syndicate; accompany Remington to a meeting, which is the one where Alondo and the player would have come to the Syndicate for diplomacy. [Transport]
 	6. With FW-Syndi ties made, bring Remington to the Republic to discuss the Syndicate supporting them and the Navy; Remington makes deal where Syndicate will supply ships to the Navy (reason for appearance of Navy Protectors). Like 3 missions. [Transport]
-Internal Politics
+Internal Politics - The player deals more with the internal workings of the Syndicate, bolstering the Syndicate's strength.
 	7. Return to worrying about home base; the fear caused by the war has dropped migration numbers to factory worlds ever since the bombing. Bring Nate to some major Syndicate world to discuss this. [Transport]
-	8. Continue the work from the into of building up frontier worlds; making frontier worlds better places increases the cost of moving there, therefore keeping more workers in the factories longer. "We can't just force them to stay." Five missions or so working with frontier worlds. [Transport/Cargo/Combat/Escort]
+	8. Continue the work from the intro of building up frontier worlds; making frontier worlds better places increases the cost of moving there, therefore keeping more workers in the factories longer. "We can't just force them to stay." Five missions or so working with frontier worlds. [Transport/Cargo/Combat/Escort]
 	9. With less workers leaving, now get more workers to show up. Travel to urban Republic worlds to advertise for the Syndicate. Three or four misions doing this. [Transport/Cargo/Escort]
 	10. Now travel to Megaparsec to speak with them; make a deal about buiding a new ship (Prospector). Megaparsec also promises to provide ships at a discount to the Syndicate, helping to build up their fleets. Help bring supplies to Megaparsec for the building of the new ship. Fight off pirates. Say three missions. [Transport/Cargo/Combat/Escort]
 	11. Megaparsec have to deal with raids from Stormhold; travel to Stormhold to negotiate. Say two missions, involving fighting pirates that refuse to negotiate. Remington calls in Syndicated Security to deal with it. [Transport/Combat]
-Disappearance of Sal
+Disappearance of Sal - With work done, help Remington to track down what happened to Sal... or don't.
 	12. Having visited the pirate world, Nate thinks about Sal. Asks you about what happened. [Transport]
 	13. Travel to Deadman's Cove. Speak with Alvice about what happened. Alvice doesn't budge, claiming he needs work done first. Storyline branches depending on if player does the work for Alvice or not, doing the work being bad karma. [Transport]
-	14a. Do 7 or 8 jobs for Alvice, giving the player bad karma but letting them in on Sal's fate. Involve flying pirate colors for a bit. Deal with Alvice's friends in the far north.
-	14b. Refuse Alvice's offer. Do 7 or 8 normal jobs instead. One includes bringing the refinery equipment to be picked up by the FW.
 		Nate leaves the choice up to you. "You were there when he got dragged off. I can't believe Alvice would've had him killed, but if you were there and saw it then I'll believe you."
-	15. Nate hears about a spy in the FW that's gone cold. Tells you he needs to deal with it. Break in the storyline.
-	16. When Nate contacts you again, tells you about your "promotion." Given choice of which middle branch to go into next.
+	14a. Do 7 or 8 jobs for Alvice, giving the player bad karma but letting them in on Sal's fate. Involve flying pirate colors for a bit. Deal with Alvice's friends in the far north.
+		15. 
+	14b. Refuse Alvice's offer. Do 7 or 8 normal jobs instead. One includes bringing the refinery equipment to be picked up by the FW.
+		15. 
+	X. Nate hears about a spy in the FW that's gone cold. Tells you he needs to deal with it. Break in the storyline.
+	X+1. When Nate contacts you again, tells you about your "promotion." Given choice of which middle branch to go into next.
 	
 	
 	
@@ -122,8 +124,8 @@ ____________ Middle ______________
 
 
 
-____________ Extremist End ______________
+________________ Defector End __________________
+# Defector: The player is lead to believe that most of the Syndicate is part of the extremist faction and defects with Sawyer, fighting off the extremists who come after him. The player ends up personally meeting members of the Free Worlds and Navy and essentially plays along a merged branch. Given that the player makes sure the defector gets to the FW alive, they have a means of showing their innocence and the FW don't use nukes; FW go Reconciliation
 
-
-
-____________ Defector End ______________
+_______________ Extremist End __________________
+# Extremist: The player decides to go after the defector and successfully returns him. From there it is a matter of making sure the Free Worlds are framed for the bombings and that no ties to the Syndicate are ever found. Because the player kills the defector, the FW can not prove its innocence and must turn to using nukes, so the FW go Checkmate.
