@@ -3,7 +3,7 @@ intro:
 	Feeling pretty good about the smaller intro mission strings. The Sal string needs looked at though; I feel that it's rather lacking right now.
 	Overall, I'd say that the intro is like 90% done.
 start:
-	Mostly storyboarded, but nothing written yet.
+	Finished storyboarding, writing has begun.
 middle:
 	Floating ideas.
 end:
@@ -18,7 +18,6 @@ My original intention was for the Syndicate campaign to contain more branching t
 The Syndicate campaign, instead of being 1 intro, 3 starts, 3 middles, 4 ends will instead follow the same 1 intro, 1 start, 1 middle, 2 ends formula of the FW campaign. Once expanded upon, the extra starts, middles, and ends will be added. The chosen start will be Communications. The chosen middle will be either Military or Espionage. The chosen ends will be Extremist and Defector.
 
 The idea behind expanding the FW campaign was to add a parallel story where instead of directly joining the FW, the player instead joins the Wolf Pack. The Wolf Pack would have its own start, middle, and ends, but with the player having a choice to swap to being with the FW proper after the start; a similar choice to leave the FW proper and join the Wolf Pack would be given to the player during the FW start depending on the player's decisions. In this way, the FW campaign would consist of 1 intro, 2 starts (FW or Wolf), 4 middles (FW, FW Defected, Wolf, or Wolf Defected), and 4 ends (FW Check, FW Rec, Wolf Check, Wolf Rec).
-
 
 
 
@@ -40,3 +39,11 @@ I'd be interested in having the planned characters (Johansen, Hensley, Remington
 I'm currently fleshing out the branchs that I plan to introduce in the start. I've written down "do 7 to 8 missions that depend on the choice you chose," but I haven't fleshed out what those 7 to 8 missions will actually be for each mini branch. After that's done, I'll move into figuring out how the middle should go down. 
 
 I've moved the contribution log to a PR summary file in the extra stuff folder, which will also allow me to slowly build up the PR summary for this massive content addition.
+
+
+
+8/10/19
+
+I've finished the storyboard for the start, and I'm pretty confident in what I have down. While the ideas are fresh in my head, I'm going to jump into writing the start. After that, I'll wrap back around to finishing the intro, and by then I'll hopefully have a sense of what I want to do for the middle. 
+
+Progress has been slow thanks to me being sick for the better part of a week now. Nothing too serious, just general low energy mixed with throwing up every so often. I'm feeling better now so hopefully finishing the writing of the start won't take long.
