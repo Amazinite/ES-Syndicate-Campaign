@@ -1,5 +1,5 @@
 intro:
-	Pre-war missions need looked at. The "timer" ship isn't exactly working, so either new mechanics need added or that missions. Might also want to redo the plot of the final pre-war mission as to not include Sawyer at all. No real point in having him be there. Also looking to change the first mission as to not have it be a copy-paste scenario of the Pact Recon mission.
+	Pre-war missions need looked at. The "timer" ship isn't exactly working, so either new mechanics need added or that mission needs changed. Might also want to redo the plot of the final pre-war mission as to not include Sawyer at all. No real point in having him be there. Also looking to change the first mission as to not have it be a copy-paste scenario of the Pact Recon mission.
 	Feeling pretty good about the smaller intro mission strings. The Sal string needs looked at though; I feel that it's rather lacking right now.
 	Overall, I'd say that the intro is like 90% done.
 start:
@@ -47,3 +47,18 @@ I've moved the contribution log to a PR summary file in the extra stuff folder, 
 I've finished the storyboard for the start, and I'm pretty confident in what I have down. While the ideas are fresh in my head, I'm going to jump into writing the start. After that, I'll wrap back around to finishing the intro, and by then I'll hopefully have a sense of what I want to do for the middle. 
 
 Progress has been slow thanks to me being sick for the better part of a week now. Nothing too serious, just general low energy mixed with throwing up every so often. I'm feeling better now so hopefully finishing the writing of the start won't take long.
+
+
+
+8/11/19
+
+MZ mentions in the story ideas part of the wiki that he intended the Syndicate campaign to start off with dealing with pirates, then transition into dealing with the Korath. Given that, the middle branch that I intend to use is the military middle, which was suppose to deal with fighting Korath. The research middle would have also dealt with the Korath, but the military middle has more ideas behind it that I'd like to deal with (e.g. Syndicated Security trying to suplant the Navy with the new autonamous ships). 
+
+Given that the idea of autonamous ships is planted in the intro and start, this plot point could totally be expanded upon in the middle; imagine bringing autonamous ships to attack the Korath, but the Korath instead freak out that the humans they encounter are using automatons.
+
+8/13/19
+
+Finished the skeleton of the entire start. That is, the missions are created and nearly playable (haven't chosen sources and destinations yet, or NPC ships), but none of the conversations are written. The only thing written is the description of each mission, allowing you to skim the file and see how the start will play out mission by mission.
+
+Although I have been looking at the number of missions in the FW campaign to compare to how many missions I should be writing, I think a better measure would be to count and compare the number of conversations the player ends up reading, as the conversations are where the story is happening. I'm ignoring dialog blocks because those are so small and are generally just "you completed your objective, now travel to X." Counting conversations, there are 38 in FW start. A good karma run of FW start will have you run into (about) 31 conversations, give or take a few depending on stuff like if you try to destroy more sensors on Hope and if you do or don't test the flamethrower. This includes the conversations that are just announcements to the player, like the one announcing that the Oathkeepers have formed and the one announcing that the plasma turret is ready for purchase. A bad karma run will end up with a few extra conversations than that. Counting the conversations in my skeleton of SSC, there will be about 35 that the player runs into. That's more than an FW start run, but the mission count for SSC is more similar; 34 total in FW Start and 35 in SSC.
+Just something to keep in mind going forward, I'd say.

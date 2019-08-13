@@ -8,7 +8,7 @@ The following tags indicate a mission where the player must...
 [recon]: survey systems or planets by flying through or landing on them
 
 FW Campaign: number of real missions; number of missions on an expected playthrough (i.e. after choosing branches)
-	Intro: 37 (-3 to intro, -1 questioning); 31
+	Intro: 37 (-3 to start, -1 questioning); 31
 	Start: 34 (+3 from intro); 28
 	Middle: 45 (-2 to ends); 38
 	Rec: 45 (+1 from middle): 43 (-2 optionals)
@@ -85,7 +85,7 @@ Syndicate commitment
 	
 	
 	
-____________ Start ______________
+____________ Start: Communications ______________
 # Syndicated Communications: more diplomatic and directly involved in the dealings that the Syndicate has with the Free Worlds (you get to meet Alondo) and Republic. Probably going to have a situation where you fly through a warzone and get shot at by some trigger happy FW interceptors. Maybe even involve coming into contact with the Hai. Will focus on passenger missions, but might also have combat in the form of fighting bounty hunters. Probably won't deal with the Korath Raiders (but might hear about them). 
 
 Major plot points:
@@ -103,7 +103,7 @@ The Breakout of War - Player learns about the situation of the Navy attacking th
 	6. With FW-Syndi ties made, bring Remington to the Republic to discuss the Syndicate supporting them and the Navy; Remington makes deal where Syndicate will supply ships to the Navy (reason for appearance of Navy Protectors). Like 3 missions. [Transport]
 Internal Politics - The player deals more with the internal workings of the Syndicate, bolstering the Syndicate's strength.
 	7. Return to worrying about home base; the fear caused by the war has dropped migration numbers to factory worlds ever since the bombing. Bring Nate to some major Syndicate world to discuss this. [Transport]
-	8. Continue the work from the intro of building up frontier worlds; making frontier worlds better places increases the cost of moving there, therefore keeping more workers in the factories longer. "We can't just force them to stay." Five missions or so working with frontier worlds, bringing supplies and defending from pirates. [Transport/Cargo/Combat/Escort]
+	8. Continue the work from the intro of building up frontier worlds; making frontier worlds better places increases the cost of moving there, therefore keeping more workers in the factories longer. "We can't just force them to stay! That'd be a breach of contract." Five missions or so working with frontier worlds, bringing supplies and defending from pirates. [Transport/Cargo/Combat/Escort]
 	9. With less workers leaving, now get more workers to show up. Travel to urban Republic worlds to advertise for the Syndicate. Three or four misions doing this, including escorting ships of new workers back to the Syndicate. [Transport/Escort]
 	10. Now travel to Megaparsec to speak with them; make a deal about buiding a new ship (the Prospector). Megaparsec also promises to provide ships at a discount to the Syndicate, helping to build up their fleets. Help bring supplies to Megaparsec for the building of the new ship. Fight off pirates. Say three missions. [Transport/Cargo/Combat/Escort]
 	11. Megaparsec have to deal with raids from Stormhold; travel to Stormhold to negotiate. Say two missions, involving fighting pirates that refuse to negotiate. Remington calls in Syndicated Security to deal with it. You hand the issue off to them. Start spotting Prospectors among security fleets. [Transport/Combat]
@@ -112,30 +112,30 @@ Disappearance of Sal - With work done, help Remington to track down what happene
 	13. Travel to Deadman's Cove. Speak with Alvice about what happened. Alvice doesn't budge, claiming he needs work done first. Storyline branches depending on if player does the work for Alvice or not, doing the work being bad karma. Nate mentions how there's some work that the Syndicate need done elsewhere, but he can get some grunts to do it if you decide to accept Alvice's offer. [Transport]
 		Nate leaves the choice up to you. "You were there when he got dragged off. I can't believe Alvice would've had him killed, but if you were there and saw it then I'll believe you."
 	14a. Do 7 or 8 jobs for Alvice, giving the player bad karma but letting them in on Sal's fate. Involve flying pirate colors for a bit. Deal with Alvice's friends in the far north.
-		15. Despite the outbreak of war now much easier for pirate activities, Alvice's influence can only spread so far. He had a deal with a warlord in the North to transport weapons and illicit goods to the Core, but the shipment never showed up. Travel to the North to find out what happened. [Transport]
+		15. Despite the outbreak of war making things much easier for pirate activities, Alvice's influence can only spread so far. He had a deal with a warlord in the North to transport weapons and illicit goods to the Core, but the shipment never showed up. Travel to the North to find out what happened. [Transport]
 		16. While in the North, you talk to some new pirate character. This character mentions something to you about the Syndicate paying off pirates, but Remington doesn't seem to react to the accusation. After asking what happened, this character tells you that the Navy still has a strong hold on the area, and the shipment that was suppose to reach the Core was apprehended. He asks you if you could distract the Navy for him so that the ships can get through, and he pulls out a container of red paint. [Transport]
 			If the player agrees, they paint their ship red, essentially become a pirate for a bit, and continue this string.
 			If the player disagrees, you leave, return to Alvice, and make up some BS about not being able to finish the job. Alvice keeps his mouth shut about Sal, and the player hops back on to the other branch of missions as if they'd refused Alvice's offer.
-		17. The player attacks a small Navy patrol in one of the uninhabited systems. They return to one of the pirate worlds, only to find that the Navy has send a strike force in retaliation. Fend of the Navy fleet with the help of some pirates. Two or so missions. [combat]
+		17. The player attacks a small Navy patrol in one of the uninhabited systems. They return to one of the pirate worlds, only to find that the Navy has send a strike force in retaliation. Fend off the Navy fleet with the help of some pirates. Two or so missions. [combat]
 		18. Upon defeating the Navy, you return to Alvice's "friend," and he tells you how most of the ships made it through, but there's a few that hadn't gotten off the ground because his crew was slacking. Escort the remaining ships back to the Core, still in pirate colors. [escort]
-		19. When you return to the Core, you find that the Syndicate aren't firing on you or your escorts (but you might spot them firing on normal pirates). You get the rest of the shipment to Alvice, for which he thanks you. To your surprise, he tells you that he knows nothing of Sal's status of whereabouts, despite having acted as though he did. He tosses you some spare credits for helping him. You repaint your ship purple and leave.
+		19. When you return to the Core, you find that the Syndicate aren't firing on you or your escorts (but you might spot them firing on normal pirates). You get the rest of the shipment to Alvice, for which he thanks you. To your surprise, he tells you that he knows nothing of Sal's status or whereabouts, despite having acted as though he did. He tosses you some spare credits for helping him. You repaint your ship purple and leave.
 	14b. Refuse Alvice's offer. Do 7 or 8 missions for the Syndicate instead. Have these missions deal more with other characters as oppose to always having Nate with you. 
-		15. Nate mentions needing to stop by another pirate planet nearby (probably the southern Core ones), so you bring him there. There he picks up his Arrow from "the shop," now a Marauder Arrow. Spot MMK's Fury parked nearby. Escort him back to Syndicate space. [Escort]
-		16. When you return to Syndicate space, you part ways with Nate so that he can take care of some "sensitive matters." You meet with Hensley, who mentions what happened with the pirates near Megaparsec. You revisit the planet to see if they'll "cooperate" more now.
-		17. Return to Megaparsec and get an up close look at a Prospector. Escort a couple Prospectors to Hephaestus, where you see Syndicated Shipyards making upgrades to the shipyard to fit such a massive ship. Also spot a bulk freighter with some drones being lifted into it, foreshadowing the use of the Class-C Freighter. [Escort]
-		18. Meet back up with Nate. He mentions how the FW have requested parts for a deuterium refinery. Travel to some Syndicate planet to pick them up.
+		15. Nate mentions needing to stop by another pirate planet nearby (probably the southern Core ones), so you bring him there. There he picks up his Arrow from "the shop," now a Marauder Arrow. Spot MMK's Fury parked nearby. [Escort]
+		16. Return to Megaparsec and get an up close look at a Prospector. There you meet with Hensley, who tells you that the pirates attacking Megaparsec have been "dealt with." Part ways with Nate as he needs to deal with some "sensitive matters."
+		17. Escort a couple Prospectors to Hephaestus, where you see Syndicated Shipyards making upgrades to the shipyard to fit such a massive ship. Also spot a bulk freighter with some drones being lifted into it, foreshadowing the use of the Class-C Freighter. [Escort]
+		18. You're contacted about how the FW have requested parts for a deuterium refinery. Pick up the parts.
 		19. Bring the refinery parts to Tundra for the FW to pick up. The player ends up saying exactly what the Syndicate employee says from the FW perspective. Return to Syndicate space. [cargo]
 	20. Nate hears about a spy in the FW that's gone cold. Tells you he needs to deal with it. Break in the storyline.
 	21. When Nate contacts you again, tells you about your "promotion." Given choice of which middle branch to go into next.
 	
 	
 	
-____________ Middle ______________
+____________ Middle: Military ______________
 
 
 
-________________ Defector End __________________
+________________ End: Defector __________________
 # Defector: The player is lead to believe that most of the Syndicate is part of the extremist faction and defects with Sawyer, fighting off the extremists who come after him. The player ends up personally meeting members of the Free Worlds and Navy and essentially plays along a merged branch. Given that the player makes sure the defector gets to the FW alive, they have a means of showing their innocence and the FW don't use nukes; FW go Reconciliation
 
-_______________ Extremist End __________________
+_______________ End: Extremist __________________
 # Extremist: The player decides to go after the defector and successfully returns him. From there it is a matter of making sure the Free Worlds are framed for the bombings and that no ties to the Syndicate are ever found. Because the player kills the defector, the FW can not prove its innocence and must turn to using nukes, so the FW go Checkmate.
